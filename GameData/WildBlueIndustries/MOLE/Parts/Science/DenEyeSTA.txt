@@ -1,0 +1,45 @@
+PART
+{
+	// --- general parameters ---
+	name = WBI_DenEyeSTA
+	module = Part
+	author = Angel-125
+
+	// --- asset parameters ---
+	rescaleFactor = 1
+	MODEL
+	{
+	    model = WildBlueIndustries/MOLE/Parts/Titan/Titan1800
+	}
+
+	// --- node definitions ---
+	node_stack_top = 0.0, 2.0, 0.0, 0.0, 1.0, 0.0, 2
+	node_stack_bottom = 0.0, -2.0, 0.0, 0.0, -1.0, 0.0, 2
+	node_attach = 1.05, 0.0, 0.0, 1.0, 0.0, 0.0, 2
+
+	// --- editor parameters ---
+	TechRequired = generalConstruction //spaceExploration
+	entryCost = 2200
+	cost = 1000
+	category = Science
+	subcategory = 0
+	title = DenEye STA
+	manufacturer = Wild Blue Industries
+	description = Built from a Titan 1800 fuel tank, the DenEye Structural Test Article is a mass simulator designed to help rocket scientists create their launch vehicles.
+
+	// attachment rules: stack, srfAttach, allowStack, allowSrfAttach, allowCollision
+	attachRules = 1,1,1,1,0
+
+	// --- standard part parameters ---
+	mass = 4.0 //FungEye is 1.5, CactEye is 8
+	dragModelType = default
+	maximum_drag = 0.2
+	minimum_drag = 0.3
+	angularDrag = 2
+	crashTolerance = 6
+	breakingForce = 5000
+	breakingTorque = 5000
+	maxTemp = 2000
+	fuelCrossFeed = True
+	bulkheadProfiles = size1p5
+}
