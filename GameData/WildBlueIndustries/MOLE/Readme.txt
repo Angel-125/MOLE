@@ -23,6 +23,12 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+0.7.8.1
+
+- Fixed an issue where the Bonus Science tab would break the MOLE Operations Manager in the VAB/SPH.
+- Fixed an issue where the light switch wasn't available in the context menu.
+- Fixed an issue where the MOLE Lab couldn't generate bonus science when there were no experiments in the lab.
+
 0.7.8
 
 Science System
