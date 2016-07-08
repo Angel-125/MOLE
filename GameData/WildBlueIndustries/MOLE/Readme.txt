@@ -23,6 +23,43 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+0.7.8
+
+Science System
+- Experiment Manifest and transfer screens now list the part they're associated with.
+- Fixed an issue where experiment info wasn't showing up in the VAB/SPH.
+- The Load Experiment window now appears slightly offset from the Manifest window to make it easier to distinguish that you're now loading experiments into the part.
+- The Transfer Experiment button now makes it more clear that it is a transfer experiment button.
+- In the VAB/SPH, the Experiment Manifest will show a new "Load Experiment" button.
+- You can now run/pause individual experiments.
+- Additional MOLE Labs can contribute to a lab currently running experiments as long as the extra labs don't have any experiments running.
+- Experiments now individually keep track of the resources they consume during research.
+- Added clarification to the MOLE Lab operations manager to make it clear that you will gain bonus science and generate LabTime independently of any running experiments.
+- The Experiment Lab will no longer stop if it, say, runs out of resources or the part doesn't have enough crew.
+- Improved rendering performance of the experiment windows.
+- Previously occupied experiment slots properly report as empty after the completed experiment's final transfer.
+- After the final transfer, experiments will show their results (via the stock experiment results window).
+- Added the ability to send an in-game email if the MOLE Lab suffers a catastrophic failure during research (assuming you have the "Parts Can Break" option set).
+- Added the ability to specify whether or not parts require resources to fix and/or parts can break. Currently this only applies to the MOLE Lab.
+- MOLE Lab repairs are working properly.
+
+Science Experiments
+
+Special thanks to DStaal for providing new science results and new experiments. Thanks DStaal! :)
+
+- Updated the science defs in the existing experiments.
+- Added Temperature Study, Thermal study, and Surface Construction Study, courtsey of the DStaal Institute of Technology.
+
+NOTE: Play balancing still needed! Help balance the cost/rewards of the experiments.
+NOTE: Due to the increasing number of experiments, you might want to lower your science rewards for your game.
+
+Power Generation
+- Decreased consumption rates on the MPUs. They'll last longer now.
+
+Bug Fixes
+- Fixed an issue where experiments wouldn't show up after reloading a craft.
+- Fixed an issue where upgradeable SAS units weren't upgrading.
+
 0.7.7
 - Added "skinMaxTemp" to the FCP, MK1 Docking Port, Appaloosa, Brumby, and Bigby Crew Module.
 - Added Bigby Crew Module to CLS.

@@ -52,15 +52,9 @@ namespace WildBlueIndustries
                 this.isEnabled = false;
                 this.enabled = false;
             }
-        }
 
-
-        public override void OnFixedUpdate()
-        {
-            base.OnFixedUpdate();
-
-            if (HighLogic.CurrentGame.Mode != Game.Modes.SANDBOX)
-                checkForUpgrade();
+            //Check for upgrade
+            checkForUpgrade();
         }
 
         protected void checkForUpgrade()
@@ -68,29 +62,24 @@ namespace WildBlueIndustries
             ModuleSAS sasModule = this.part.FindModuleImplementing<ModuleSAS>();
             if (sasModule == null)
                 return;
-
+            if (HighLogic.LoadedSceneIsFlight == false)
+                return;
             if (upgradeChecked)
                 return;
 
-            if (ResearchAndDevelopment.Instance != null && !upgradeChecked)
-            {
-                upgradeChecked = true;
+            upgradeChecked = true;
 
-                if (ResearchAndDevelopment.GetTechnologyState(levelThreeNode) != RDTech.State.Available)
-                    sasModule.SASServiceLevel = 3;
+            if (ResearchAndDevelopment.GetTechnologyState(levelThreeNode) == RDTech.State.Available)
+                sasModule.SASServiceLevel = 3;
 
-                else if (ResearchAndDevelopment.GetTechnologyState(levelTwoNode) != RDTech.State.Available)
-                    sasModule.SASServiceLevel = 2;
+            else if (ResearchAndDevelopment.GetTechnologyState(levelTwoNode) == RDTech.State.Available)
+                sasModule.SASServiceLevel = 2;
 
-                else
-                    sasModule.SASServiceLevel = 1;
+            else
+                sasModule.SASServiceLevel = 1;
 
-                sasModule.OnAwake();
-                sasModule.OnActive();
-
-                //Switch ourself off.
-                this.isEnabled = false;
-            }
+            sasModule.OnAwake();
+            sasModule.OnActive();
         }
 
     }
