@@ -23,6 +23,23 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+0.8.0 Outpost
+
+MOLE is getting closer to Core Complete! This release adds new parts including the Mark One Habitat.
+
+New Parts
+- Added the WBM-700 fuel tank, a 2.5m fuel tank that has a crew tunnel through its center.
+- Added the IA-25, a 2.5m Interstage Adapter. It's just like the IA-18, only bigger. Its central node is setup for 1.25m parts while its outer nodes are ready for 0.625m parts.
+- Added the Titan 2.5m Decouplatron, a 2.5m version of the 1.875m Titan Decouplatron. It can be a decoupler or separator.
+- Added the SPF-4 Solar Array, a large deployable solar array that's available sooner than the more capable SPF-8. The SPF-4 cannot be retracted, and it cannot track the sun. It is inspired by solar panels found on Skylab. NOTE: For symmetrical part installations, be sure to mirror the panels so they face the desired direction. You can do this by right-clicking the part and pressing "Mirror Panel."
+- Added the Mark One Habitat (MOH), a 1.875m habitat that sleeps 2 kerbals. It provides recycling capabilities depending upon the life support mod that you have installed. It has a Dolores Habitat configuration and a Wet Workshop config (that holds LiquidFuel/Oxidizer). With Pathfinder installed, the MOH can also become a Pathfinder Geology Lab, Ponderosa, and Pigpen, albeit with reduced capability due to its smaller size.
+
+Titan II Tanks
+- Renamed the Titan II line of tanks to the Konan tanks, in honor of the proposed Titan Barbarian.
+
+Station Experiments
+- Added the Kerbal Nutrition Utilization Transfer Study (KNUTS); it requires a Mark One Habitat, Mulch, and LabTime.
+
 0.7.8.1
 
 - Fixed an issue where the Bonus Science tab would break the MOLE Operations Manager in the VAB/SPH.

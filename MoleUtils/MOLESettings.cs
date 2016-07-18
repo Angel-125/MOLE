@@ -136,6 +136,8 @@ namespace WildBlueIndustries
             {
                 payToRemodel = WBIAffordableSwitcher.payForReconfigure;
                 requireSkillCheck = WBIAffordableSwitcher.checkForSkill;
+                partsCanBreak = WBIResourceConverter.partsCanBreak;
+                requireSkillCheck = WBIResourceConverter.requireSkillCheck;
             }
 
             WBIAffordableSwitcher.payForReconfigure = payToRemodel;
