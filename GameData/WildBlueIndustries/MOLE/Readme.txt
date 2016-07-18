@@ -23,6 +23,10 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+0.8.0.1
+- Fixed an issue where the Interstage Adapters required staging to complete.
+- Station light won't throw NREs when in the VAB/SPH if turned on.
+
 0.8.0 Outpost
 
 MOLE is getting closer to Core Complete! This release adds new parts including the Mark One Habitat.
