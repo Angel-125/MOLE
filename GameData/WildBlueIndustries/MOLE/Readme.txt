@@ -23,6 +23,25 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+0.8.0.2
+
+Station Light
+- Reduced research cost and price to be in line with stock lights.
+- Moved tech node to Electrics (same as stock lights).
+
+MOH
+- Added TAC-LS recyclers to the Dolores Habitat configuration.
+- Renamed the Life Support converter (required for the KNUTS experiment when USI-LS is not installed) to KNUTS Processor.
+
+CTT
+- Added support for CTT. Tech nodes and parts: If a part isn't listed below, then it stays where it is (unless you have a mod installed that changes the tech node arrangements). MOLE parts should hover around Tier 4/Tier 5 by and large, but if you have suggestions for other CTT nodes for parts I'm happy to listen. :)
+Enhanced Survivability: Appaloosa, MK1-85 Heat Shield, Flight Control Package
+Simple Command Pods: Brumby
+
+Bug Fixes
+- Fixed an issue where players could not transfer crew out of a wet workshop that has been converted into a habitable module.
+- Fixed an issue where, if you have Pathfinder installed, reconfiguring the MOLE/MOH would not honor Pathfinder's settings for requiring resources and the proper skills to reconfigure the module.
+
 0.8.0.1
 - Fixed an issue where the Interstage Adapters required staging to complete.
 - Station light won't throw NREs when in the VAB/SPH if turned on.

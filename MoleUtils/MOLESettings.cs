@@ -44,9 +44,13 @@ namespace WildBlueIndustries
         base("MOLE Settings", 340, 100)
         {
             Resizable = false;
-            settingsPath = AssemblyLoader.loadedAssemblies.GetPathByType(typeof(MOLESettings)) + "/Settings.cfg";
-            loadSettings();
             HideCloseButton = true;
+
+            if (!Utils.IsModInstalled("Pathfinder"))
+            {
+                settingsPath = AssemblyLoader.loadedAssemblies.GetPathByType(typeof(MOLESettings)) + "/Settings.cfg";
+                loadSettings();
+            }
         }
 
         public override void DrawWindow()
