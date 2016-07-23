@@ -23,12 +23,14 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+0.8.5.1
+- Fixed an issue where the Korona did not have KIS storage.
+- All Titan & Konan tanks can now participate in Pathfinder's resource distribution system.
+
 0.8.5
 
 - Added the Mk3-75 Drydock. Like the Mk1 Drydock, the Mk3-75 requires Extraplanetary Launchpads. NOTE: If you have Pathfinder installed, you won't see Pathfinder's Stockyard250 or Stockyard375.
 - Added the Korona Supply Capsule. Based upon the stock Mk1 Command Pod, the Korona ditches the kerbal in favor of cargo, probe core, and associated avionics. As a science canister, it can carry two experiments.
-
-New Parts
 
 0.8.0.2
 
