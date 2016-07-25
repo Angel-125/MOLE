@@ -23,6 +23,28 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+0.9.5
+
+New Parts
+- Added the Mark One Botany Lab (MOBL). This research lab can produce Plants for research experiments. With sufficient tech researched, it can also become a greenhouse (a life support mod is required; it supports Snacks, TAC-LS, Kerbalism, and USI-LS). The Botany Lab can be a wet/dry workshop as well. And with Deep Freeze installed, the Botany Lab can be converted into a 3-kerbal cryopod.
+- Added the KH-10 "DenEye" telescope. It generates ScopeTime for experiments, and can integrate with the CactEye and Tarsier telescopes mods.
+- Added the 1.875m Ground Cradle. This specialized part enables you to rest your modules on the ground.
+
+Station Experiments
+- Added the Botanical Research Experiment. It requires Plants and LabTime.
+- Added the Astronomical Observation Experiment. It requires ScopeTime and an orbiting station. Current results are limited to Kerbin, but others might arrive in the future.
+
+0.9.0.1
+
+SD-18 & SD-25
+- The Adapter/Decouplers can now become separators.
+
+IA-25
+- Added option for 8 nodes around the central node, for a total of 9 nodes. Thanks for the suggestion, StevieC! :)
+
+Other
+- If fuel tanks are arrayed symmetrically, you'll no longer be able to reconfigure them. It's either that or let the game explode (ie nothing I can do about it except prevent players from changing symmetrical tanks).
+
 0.8.5.1
 - Fixed an issue where the Korona did not have KIS storage.
 - All Titan & Konan tanks can now participate in Pathfinder's resource distribution system.
