@@ -63,16 +63,11 @@
   <ItemGroup>
     <Compile Include="ModuleAbortModeEngine.cs" />
     <Compile Include="ModuleBackseatController.cs" />
-    <Compile Include="ModuleDisableDecoupler.cs" />
     <Compile Include="ModuleMarkOneLab.cs" />
     <Compile Include="ModuleDeployableWing.cs" />
-    <Compile Include="ModuleMirroredSolarPanel.cs" />
     <Compile Include="ModuleMultiEngineAdapter.cs" />
-    <Compile Include="ModuleRCSTechCheck.cs" />
     <Compile Include="ModuleRCSDisabler.cs" />
-    <Compile Include="ModuleSASUpgrade.cs" />
     <Compile Include="ModuleBrumbyTextureSwitch.cs" />
-    <Compile Include="ModuleWetWorkshop.cs" />
     <Compile Include="MOLEConfig.cs" />
     <Compile Include="MOLESettings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
