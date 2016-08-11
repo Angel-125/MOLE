@@ -23,16 +23,33 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
-0.9.5
+0.9.5 Outpost 2
 
 New Parts
-- Added the Mark One Botany Lab (MOBL). This research lab can produce Plants for research experiments. With sufficient tech researched, it can also become a greenhouse (a life support mod is required; it supports Snacks, TAC-LS, Kerbalism, and USI-LS). The Botany Lab can be a wet/dry workshop as well. And with Deep Freeze installed, the Botany Lab can be converted into a 3-kerbal cryopod.
-- Added the KH-10 "DenEye" telescope. It generates ScopeTime for experiments, and can integrate with the CactEye and Tarsier telescopes mods.
-- Added the 1.875m Ground Cradle. This specialized part enables you to rest your modules on the ground.
+- Added the Mark One Botany Lab (MOBL). This research lab can produce Plants for research experiments. With sufficient tech researched, it can also become a greenhouse (a life support mod is required; it supports Snacks, TAC-LS, Kerbalism, and USI-LS). The Botany Lab can be a wet/dry workshop as well.
+- Added the KH-10 "DenEye" telescope. It generates ScopeTime for experiments, and has a built-in Celestial Body Research experiment for making observations. The KH-10 can integrate with the CactEye and Tarsier telescopes mods as well.
+- Added the KH-10 Processor Socket, designed to fit CactEye processors. It's only available when CactEye is installed, and fits well in the 1.875m ISC.
+- Added the KH-10 Control Module. Attach this to the scope on the side with the mirror, and you can use it to point the scope at desired targets.
+- Added the 1.875m x 2m Kargo Bay.
+- Added a 0.625m decoupler/separator. You can surface-attach the decoupler/separator.
+- Added the 0.625m Korona Lite return canister. It can hold a single experiment as well as experiment data. It has a built-in parachute and heat shield as well as a no-frills probe core.
+
+MOLE
+- Increased max data storage capacity to 300 in the MOLE MPL.
+- Increased the bonus science for the MOLE experiment lab.
 
 Station Experiments
 - Added the Botanical Research Experiment. It requires Plants and LabTime.
-- Added the Astronomical Observation Experiment. It requires ScopeTime and an orbiting station. Current results are limited to Kerbin, but others might arrive in the future.
+- Changed the KNUTS experiment to convert ResearchKits into Mulch to avoid confusion when USI-LS isn't installed.
+
+Bug Fixes
+- The Fulcrum engine should gimbal properly now.
+- Fixed an issue where resources required by experiments wouldn't be accumulated.
+- Fixed an issue where the greenhouse would automatically declare failure upon first start.
+- Fixed an issue where SAS modules weren't upgrading properly.
+
+0.9.0.2
+- You can now change the configration on tanks with symmetrical parts. In the SPH/VAB it will happen automatically when you select a new configuration. After launch, you'll have the option to change symmetrical tanks.
 
 0.9.0.1
 

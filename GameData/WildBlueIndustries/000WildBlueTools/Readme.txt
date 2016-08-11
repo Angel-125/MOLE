@@ -6,6 +6,17 @@ A KSP mod that provides common functionality for mods by Wild Blue Industries.
 
 Copy the contents of the mod's GameData directory into your GameData folder.
 
+1.4.0
+- Added animation button prop to control external animations from the IVA.
+- The cabin lights button prop can now control external light animations.
+- Fixed an issue where resources required by experiments wouldn't be accumulated.
+
+1.3.13
+- Added template for Uraninite.
+
+1.3.12
+- You can now change the configration on tanks with symmetrical parts. In the SPH/VAB it will happen automatically when you select a new configuration. After launch, you'll have the option to change symmetrical tanks.
+
 1.3.11
 - Added WBISelfDestruct and WBIOmniDecouple.
 - If fuel tanks are arrayed symmetrically, you'll no longer be able to reconfigure them. It's either that or let the game explode (ie nothing I can do about it except prevent players from changing symmetrical tanks).
