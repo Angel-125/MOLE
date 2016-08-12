@@ -23,6 +23,16 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+0.9.6
+- Fixed NREs generated when converting a storage container into a science container.
+- You can now specify multiple required parts for experiments.
+- The MOLE can transmit its bonus science again.
+- Part mass is now correctly calculated.
+- The Korona can hold KIS items again.
+- Updated experiments and added new ones. Thanks again, DStaal! :)
+- The MOLE can now be configured to produce Glykerol.
+- The KH-10 plays nice with CactEye and Tarsier.
+
 0.9.5 Outpost 2
 
 New Parts
