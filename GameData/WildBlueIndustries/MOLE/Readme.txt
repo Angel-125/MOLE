@@ -23,6 +23,18 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+0.9.7
+
+New Part
+- Added a 3.75m Interstage Adapter. It can host up to 7 1.25m engines.
+
+Bug Fixes
+- Fixed RT Module Manager patches.
+- The MOH has its USI-LS recycler again.
+- Experiments can require multiple parts for real this time.
+- The MOH and Botany Lab's light strips now glow properly.
+- The MOLE Commercial Science Lab GUI should properly show up now when Pathfinder is installed.
+
 0.9.6
 - Fixed NREs generated when converting a storage container into a science container.
 - You can now specify multiple required parts for experiments.
