@@ -23,6 +23,44 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.0 Lunar Command (a.k.a. Moonbase)
+It's been a long haul to get here but MOLE is finally Core Complete! I've finally reached my original vision for the mod as a parts pack for early space station construction. It's gone through many changes, such as focusing on the 1.875m part diameter that's evolving into a modder's favorite, and providing optional support for Pathfinder- something I didn't originally intend. Core Complete means that MOLE has the minimum amount of parts, functinality, and polish to become a viable product release. Hence, expect to see the MOLE thread moved to Addon Releases. Thank you to everybody who helped test MOLE, provide feedback, improvements, and contributions to the pack. Without your help, MOLE would be in much worse shape.
+
+There's more to do! The Botany Lab will be receiving a cryopod IVA- if I can pull that off. I hope to have that done before KSP 1.2. And I'm looking at a Brumby equivalent to the Winged Gemini instead of yet another X-20 (which was canceled in favor of MOL). I'll be taking a second look at a deployable parafoil; I already have the basic code designed, but the concept needs refinement to fit into the game. And there's a possible 0.675m engine and maybe some Falcon-9-like landing legs sized for 1.875m parts. These may take awhile, I've got some work to do on my other mods.
+
+For now, I hope you enjoy the 1.0 release. Thanks again for your support! :)
+
+New Parts
+- Added the SPF-4 Solar Array, a non-retractable solar panel similar to the panels found on the real-world Apollo Telescope Mount.
+- Added a 1.875m Battery Module. It holds 2,500 electric charge.
+- Added the OMS Kit, a combination fuel tank, engine, and storage module that fits inside the Interstage Service Compartment.
+- Added a Monopropellant Power Unit. Like the stock Fuel Cell, it generates ElectricCharge, but by consuming MonoPropellant.
+- Added a 3.75m in-line radiator. It is based upon Skylab's aft-mounted radiator panel.
+- Added the Bigby Instrument Unit. It is a 3.875m diameter probe core/SAS unit that is similar to the Titan Instrument Unit.
+- Added the Bigby Solar Observatory. It generates SunExposure when it has line of sight to the sun. It can easily support stars from other mods.
+- Added the 3.75m Bigby Orbital Workshop. This kerbalized wet/dry Skylab analog represents the industrial portion of MOLE. It has templates for making Equipment (Tinker Shop) and processing asteroid resources (Rockhound). It supports OSE Workshop (Craftworks), Extraplanetary launchpads (Smelter, Partshop), and of course Pathfinder (Pathfinder geolab, Pigpen, Sunburn, Solar Flare, Watney, Brew Works, Ironworks, Nukeworks).
+
+Station Experiments
+- Added the Solar Activity Monitoring Experiment. It requires SunExposure and LabTime.
+- Removed Glykerol requirements for cryogenic experiments.
+- You will now see the stock experiment results screen immediately upon completing an experiment. That way, you can recover the lab to get the science rewards. You can still transfer an experiment to another part (Coach, Appaloosa, Korona, etc) and recover that part for science.
+
+Power Module
+- Increased the EC output to 5 EC/sec. Combined with a slight increase to its MonoPropellant storage, the Power Module will last about a day (6 hours) at full output.
+
+Command Pods
+- Added support for Kerbal Engineer.
+
+KSPedia
+- Added KSPedia entries for MOLE. I'm open to suggestions about additional entries.
+
+RealPlume
+- Added support for RealPlume. Thanks for the suggestion and tips, Nightside! :)
+KNOWN ISSUE: Currently the O-2 and the OMS Kit engines use stock plumes. I haven't figured out how to make RP work with these engines.
+
+Bug Fixes
+- Fixed an issue with the Korona Lite bouncing off the water. Don't splash down too fast though, it might sink.
+
 0.9.7
 
 New Part
