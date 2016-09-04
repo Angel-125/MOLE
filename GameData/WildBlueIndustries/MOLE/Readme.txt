@@ -1,8 +1,14 @@
 Mark One Laboratory Extensions (M.O.L.E.)
 
-Are your Mk1 command pods gathering dust? Wish you had a space station earlier in your career? Want to fly more than one kerbal at a time? Then the Mark One Laboratory Extensions (MOLE) are for you! Give your Mk1 command pod a new lease on life by adding a back seat module for an additional kerbal. Then add a docking tunnel system with integrated RCS and parachute for making rendezvous and docking easier. When you're ready for the next step, try out the Mk1.2 "Brumby" 2-seat command pod. Create a simple disposable space station by adding a Mark One Laboratory Extension, power module, and SPF-8 solar panels, and launch it on the 1.875m line of Titan fuel tanks powered by the LV-T270 "Fulcrum" engine. For a longer endurance station, add a Mark One Habitat, or if you're ready to try docking maneuvers, bring up a mini station hub. Your stations can even include the DenEye Space Telescope for, uh, astronomy! Yeah, that's it!
+Dolores Kerman flipped the ignition switch and MOLE-1 lumbered off the pad, its solid boosters struggling against the force of gravity. In time, the boosters gave way to the Titan core stage, powered by twin Fulcrum engines. A few minutes and stages later, the Mark One Laboratory Extension achieved orbit. With orbital rendezvous and docking still in R&D, MOLE-1 was part spacecraft and part space station. Once their orbital tasks were complete, Dolores and Isaxy- the scientist sitting in the Mk-1 pod's "Backseat" extension- would deorbit the combined spacecraft and ditch the station elements before re-entry.
 
-MOLE is a stand-alone parts pack with optional support for Real Chute, KIS/KAS, kOS, CactEye Telescopes Continued, Kerbal Snacks, TAC Life Support, USI-LS, and more.
+Isaxy wasted no time after achieving orbit, and immediately deployed the SPF-8 solar panels and entered the Mark One Laboratory Extension through a hatch in the heat shield. She would be spending the next 30 days studying various experiments like space adaption and protein crystal growth. Dolores, on the other hand, would be working with MOLE-1's other module. She had a script to follow to "sort out technical issues" with the space telescope while in reality, she'd be pointing the KH-10 towards the ground and taking pictures of things that were interesting to the Kerman Air Force...
+
+Are your Mk1 command pods gathering dust? Wish you had a space station earlier in your career? Want to fly more than one kerbal at a time? Then the Mark One Laboratory Extensions (MOLE) are for you! Give your Mk1 command pod a new lease on life by adding a back seat module to fly an additional kerbal. Then add a docking tunnel system with integrated RCS and parachute for making rendezvous and docking easier. When you're ready for the next step, try out the Mk1-88 "Brumby" 2-seat command pod. Create a simple disposable space station by adding a Mark One Laboratory Extension, power module, and SPF-8 solar panels, and launch it on the 1.875m line of Titan fuel tanks powered by the LV-T270 "Fulcrum" engine. For a longer endurance station, bring up a station hub and dock a variety of parts to it including a habitat, greenhouse, workshop, airlock, and even a space dock to build new vessels(*). You can conduct a variety of experiments that require long research times and trips to Kerbin to reap the science, and your stations can even include the KH-10 Telescope for, uh, astronomy! Yeah, that's it!
+
+(*) Requires Extraplanetary Launchpads.
+
+MOLE is a stand-alone parts pack with optional support for Pathfinder, Real Chute, KIS/KAS, kOS, CactEye Telescopes, Raster Prop Monitor, RPM ASET Props, Kerbal Snacks, TAC Life Support, Kerbalism, USI-LS, and more. 
 
 Real World Inspiration
 
@@ -22,6 +28,41 @@ http://www.nro.gov/foia/declass/MOL.html
 Copy the contents of the zip file to your GameData directory. Be sure to overwrite existing files and replace them.
 
 ---REVISION HISTORY---
+
+1.1 The Tires Kick Back
+NOTE: Parts in the Deprecated folder have been removed. Be sure to retire older vessels that use the deprecated parts, or copy the Deprecated folder from a previous version of MOLE.
+
+Station Experiments
+- Added the Ice Cream Research Experiment.
+- Streamlined the experiment lab GUI and updated the KSPedia pages accordingly.
+- You can now transmit results back to Kerbin for 25% of the total science. Only labs offer a transmit option. Recovery remains your best return on investment.
+- The Space Adaption Study, Power Tools Evaluation, Orbital Construction Techniques and Crystal Growth Experiments can now be run in orbit around any celestial body. If you have suggestions for experimental results text for other celestial bodies, I'm all ears. :)
+- Added Minmus to the list of worlds that you can conduct the Surface Construction Study on.
+- Added missing SunExposure requirement to the Solar Activity Monitoring Experiment.
+- Experiments can now be created in the field by some labs. To that end, experiments have the option to specify what resources they need and how much. If not specified, then a default value will be used that's defined by the experiment lab.
+- Labs have the ability to restrict the experiments they create based upon a list of tags. Hence experiments may list a set of tags as well. If an experiment has no tags that match the tags required by the lab then it won't show up in the list of experiments that it can create.
+- Experiments can now require asteroids with a minimum mass.
+NOTE: Basic and DeepFreeze experiments are now located in WildBlueTools; there is no effect to MOLE users.
+
+Bigby Orbital Workshop
+- Added a description.
+- Buffed production speeds on the BOW's templates. They take a lot but proportionally give a lot in return.
+- The BOW has a new Skylab template (now the default configuration) that lets it simultaneously become an experiment lab with 8 experiment slots and a Mobile Processing Lab with better capabilities than the stock MPL.
+- If you have a skilled Scientist aboard, and have resources, then the Skylab can create new experiments to research from the list of possible experiments. In KSP 1.2, the lab will also need a connection back to Kerbin to recieve instructions Apollo-13 style. For Science!
+- The BOW's Pathfinder template support should show up properly now. You'll need Pathfinder 1.0.0 or later for the templates to work properly.
+
+Botany Lab
+- The MOBL can now participate in Pathfinder's resource distribution.
+
+Mod Support
+- Added Remote Tech support to the new probe cores (Korna, Korona Lite, etc). Thanks Jmrd98! :)
+- Added RealPlume support to the O-2 and OMS Kit. Thanks for the help, Bombaatu! :)
+
+Bug Fixes
+- The experiment manifest for the experiment containers works again.
+- If your framerate drops when using MOLE parts, you can try using the new MM_Placeholder ModuleManager patch located in the
+WildBlueIndustries/MOLE/ModuleManagerPatches folder. Simply rename MM_Placeholder.txt to MM_Placeholder.cfg. This will swap out
+the internal spaces with placeholder spaces. Your crew portraits won't look as nice but the game won't have to render detailed internals either.
 
 1.0 Lunar Command (a.k.a. Moonbase)
 It's been a long haul to get here but MOLE is finally Core Complete! I've finally reached my original vision for the mod as a parts pack for early space station construction. It's gone through many changes, such as focusing on the 1.875m part diameter that's evolving into a modder's favorite, and providing optional support for Pathfinder- something I didn't originally intend. Core Complete means that MOLE has the minimum amount of parts, functinality, and polish to become a viable product release. Hence, expect to see the MOLE thread moved to Addon Releases. Thank you to everybody who helped test MOLE, provide feedback, improvements, and contributions to the pack. Without your help, MOLE would be in much worse shape.
