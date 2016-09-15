@@ -53,7 +53,7 @@ namespace WildBlueIndustries
             try
             {
                 if (wasAttached && this.part.isAttached == false && parentRCS != null)
-                    parentRCS.Enable();
+                    parentRCS.rcsEnabled = true;
             }
             catch (Exception ex)
             {
@@ -78,7 +78,6 @@ namespace WildBlueIndustries
                     rcsModule = parentPart.FindModuleImplementing<ModuleRCS>();
                     if (rcsModule == null)
                         return;
-                    rcsModule.Disable();
                     rcsModule.rcsEnabled = false;
                     parentRCS = rcsModule;
                     wasAttached = this.part.isAttached;

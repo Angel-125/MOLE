@@ -40,33 +40,6 @@ namespace WildBlueIndustries
             }
         }
 
-        public void RemoveParentHeatShielding()
-        {
-            List<PartResource> doomedResources = new List<PartResource>();
-
-            if (this.part.parent == null)
-                return;
-
-            //Look for ablative shielding in the parent part and remove it.
-            //The backseat will have the shielding.
-            foreach (PartResource resource in this.part.parent.Resources)
-            {
-                if (resource.resourceName == "Ablator")
-                {
-                    resource.amount = 0.001;
-                    resource.maxAmount = 0.001;
-                    doomedResources.Add(resource);
-                }
-            }
-            foreach (PartResource doomed in doomedResources)
-                this.part.Resources.list.Remove(doomed);
-        }
-
-        public void OnEditorAttach()
-        {
-            RemoveParentHeatShielding();
-        }
-
         public override void SetupAnimations()
         {
             base.SetupAnimations();
@@ -78,10 +51,6 @@ namespace WildBlueIndustries
         public override void OnStart(StartState state)
         {
             base.OnStart(state);
-
-            this.part.OnEditorAttach += OnEditorAttach;
-
-            RemoveParentHeatShielding();
 
             //Upgrade: carry cargo
             checkForUpgrade();

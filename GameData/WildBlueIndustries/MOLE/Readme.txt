@@ -29,6 +29,32 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.2
+Updated to KSP 1.2 pre-release. Expect additional patches as KSP is fixed and mods are updated. When reporting bugs, please make sure they aren't issues with KSP itself.
+
+Upgrades
+- Many parts now have part upgrades.
+
+Redecorating & Converters
+- For the modules that used to require Engineers, now any class that has the ConverterSkill qualifies to reconfigure modules. For modules that used to require Scientists, now any class with the ScienceSkill qualifies to reconfigure the modules. Ditto for converters.
+- Fixed an issue where the Glykerol Lab would despawn the IVA.
+
+Greenhouses
+- Growth time is no longer reduced based upon experienced Scientists. Yield is still affected by experience though.
+- Greenhouses now show where they're at in the growth cycle.
+- The MOBL's Botany Lab now produces Plants from Dirt, Mulch and Fertilizer; Water is no longer required.
+
+USI-LS
+- Replaced Water usage with Dirt. Apparently Fertilizer is mostly water.
+- Adjusted the resource consumption amounts to be comparable with stock USI-LS.
+- While Dirt is an extra added resource, it accounts for the possiblility of improved yields.
+
+Station Experiments
+- Updated science defs. Thanks DStaal! :)
+
+Wet Workshops
+- Added support for CryoFuels. Thanks for the suggestion, CobaltWolf! :)
+
 1.1 The Tires Kick Back
 NOTE: Parts in the Deprecated folder have been removed. Be sure to retire older vessels that use the deprecated parts, or copy the Deprecated folder from a previous version of MOLE.
 

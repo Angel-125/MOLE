@@ -40,6 +40,9 @@ namespace WildBlueIndustries
 
             if (string.IsNullOrEmpty(opsViewTitle) == false)
                 opsManagerView.WindowTitle = opsViewTitle;
+
+            if (string.IsNullOrEmpty(resourcesToKeep))
+                resourcesToKeep = "ElectricCharge";
         }
 
         public override void RedecorateModule(bool loadTemplateResources = true)

@@ -3,12 +3,9 @@ C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\MoleUtils.pdb
 C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\Assembly-CSharp-firstpass.dll
 C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\Assembly-CSharp.dll
 C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\KSPAssets.dll
-C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\KSPUtil.dll
 C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\UnityEngine.dll
 C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\UnityEngine.UI.dll
-C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\Vectrosity.dll
 C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\WildBlueTools.dll
-C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\SaveUpgradePipeline.Core.dll
 C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\TrackIRUnity.dll
 C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\Mono.Cecil.dll
 C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\TDx.TDxInput.dll
@@ -18,3 +15,4 @@ C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\UnityEngine.xml
 C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\obj\Debug\MoleUtils.dll
 C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\obj\Debug\MoleUtils.pdb
 C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\obj\Debug\MoleUtils.csprojResolveAssemblyReference.cache
+C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\StringFormatter.dll
