@@ -29,11 +29,15 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.2.1
+- Updated the part upgrades based upon newfound knowledge. Thanks NathanKell, blowfish, and JPLRepo! :)
+
 1.2
 Updated to KSP 1.2 pre-release. Expect additional patches as KSP is fixed and mods are updated. When reporting bugs, please make sure they aren't issues with KSP itself.
 
-Upgrades
+Part Upgrades
 - Many parts now have part upgrades.
+KNOWN ISSUE: part upgrade purchasing isn't showing up in the tech tree. Not sure why.
 
 Redecorating & Converters
 - For the modules that used to require Engineers, now any class that has the ConverterSkill qualifies to reconfigure modules. For modules that used to require Scientists, now any class with the ScienceSkill qualifies to reconfigure the modules. Ditto for converters.
@@ -47,7 +51,7 @@ Greenhouses
 USI-LS
 - Replaced Water usage with Dirt. Apparently Fertilizer is mostly water.
 - Adjusted the resource consumption amounts to be comparable with stock USI-LS.
-- While Dirt is an extra added resource, it accounts for the possiblility of improved yields.
+- While Dirt is an extra added resource, it accounts for the possibility of improved yields.
 
 Station Experiments
 - Updated science defs. Thanks DStaal! :)
