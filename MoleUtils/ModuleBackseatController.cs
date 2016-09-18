@@ -27,16 +27,19 @@ namespace WildBlueIndustries
 
         protected void checkForUpgrade()
         {
-            //If the player hasn't unlocked the upgradeTech node yet, then hide the RCS functionality.
-            if (ResearchAndDevelopment.Instance != null && !string.IsNullOrEmpty(upgradeTech))
-            {
-                WBIConvertibleStorage storage = this.part.FindModuleImplementing<WBIConvertibleStorage>();
+            if (HighLogic.CurrentGame.Mode == Game.Modes.SANDBOX)
+                return;
 
-                //If the tech node hasn't been researched yet then hide the RCS module and meshes
-                if (ResearchAndDevelopment.GetTechnologyState(upgradeTech) == RDTech.State.Available)
-                    storage.SetGUIVisible(true);
-                else
-                    storage.SetGUIVisible(false);
+            WBIConvertibleStorage storage = this.part.FindModuleImplementing<WBIConvertibleStorage>();
+
+            //If the player hasn't unlocked the upgradeTech node yet, then hide the resource switcher.
+            if (ResearchAndDevelopment.GetTechnologyState(upgradeTech) == RDTech.State.Available)
+            {
+                storage.SetGUIVisible(true);
+            }
+            else
+            {
+                storage.SetGUIVisible(false);
             }
         }
 
