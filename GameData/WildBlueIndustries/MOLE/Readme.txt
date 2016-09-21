@@ -29,6 +29,23 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.2.5
+- Creating new experiments now requires a connection back to Kerbin.
+- Added transmitters to the Station Hub and Solar Observatory.
+- The 1.875m Titan Fairing now has truss attachment nodes.
+- Moved parts to the new part categories.
+
+1.2.4
+- Updated RCS effects for the WB400 and Bigby Crew Module.
+
+1.2.3
+
+Cryo Engines
+- Titan tanks and wet workshops can be upgraded with zero boiloff technology.
+
+ISC
+- Updated RCS thrusters to newer part modules.
+
 1.2.1
 - Updated the part upgrades based upon newfound knowledge. Thanks NathanKell, blowfish, and JPLRepo! :)
 
