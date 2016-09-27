@@ -29,6 +29,11 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.2.6
+- Added experiment slots to the Backseat's Crew configuration, and increased the experiment slots in its Science configuration.
+- Added KSP's new part categories to the BOW's list of categories for OSE Workshop.
+- The Bigby Crew Module's RCS thrusters fire properly now.
+
 1.2.5
 - Creating new experiments now requires a connection back to Kerbin.
 - Added transmitters to the Station Hub and Solar Observatory.
