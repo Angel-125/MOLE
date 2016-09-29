@@ -29,6 +29,9 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.2.7
+- Fixed crashing issues with experiment manifests.
+
 1.2.6
 - Added experiment slots to the Backseat's Crew configuration, and increased the experiment slots in its Science configuration.
 - Added KSP's new part categories to the BOW's list of categories for OSE Workshop.
