@@ -62,8 +62,6 @@
     <Compile Include="ModuleMultiEngineAdapter.cs" />
     <Compile Include="ModuleRCSDisabler.cs" />
     <Compile Include="ModuleBrumbyTextureSwitch.cs" />
-    <Compile Include="MOLEConfig.cs" />
-    <Compile Include="MOLESettings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WBIModuleJettisonHelper.cs" />
   </ItemGroup>
