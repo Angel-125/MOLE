@@ -29,6 +29,26 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.2.9
+- Added collider to the Interstage Service Compartment's crew tube.
+- Slightly widened the 1.875m heat shield collider and 2.5m heat shield colliders.
+- Updated Module Manager
+- Updated Wild Blue Tools
+- Updated conversion ratios for Snacks
+- Updated support for USI-LS
+
+1.2.8
+- The stock Experiment Storage Unit can now store a station experiment.
+- Moved game settings to the Wild Blue tab in the Game Difficulty screen.
+
+Docking ports
+- You can now weld docking ports together. Your docked vessels become one craft. Combine with autostrut to make a solid craft. Once welded together, you can no longer undock the ports.
+The Wild Blue tab under the Game Difficulty screen has the following options for docking port welding:
+* Require an EVA to weld the ports (default: true): If false, you can weld the ports without requiring an EVA.
+* Require the repair skill to weld ports (default: true): if false, anybody can perform the weld.
+* Keep docking ports after the weld (default: false): If false, then after welding, the docking ports vanish and the parts are moved together to close the gap. If true, then the docking ports remain in place but will become unusable.
+Thanks for showing me how its done, Shadowmage! :)
+
 1.2.7
 - Fixed crashing issues with experiment manifests.
 
