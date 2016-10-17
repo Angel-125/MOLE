@@ -29,6 +29,12 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.3.0
+- Added the Mk2 Docking Port, a 1.25m docking port that can be welded. It is compatible with the stock Clamp-O-Tron.
+- Fixed issues with docking ports not docking properly.
+- The Solar Observatory functions as a probe core again.
+- Renamed SunExposure to SolarReports.
+
 1.2.9
 - Added collider to the Interstage Service Compartment's crew tube.
 - Slightly widened the 1.875m heat shield collider and 2.5m heat shield colliders.
