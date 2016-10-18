@@ -29,6 +29,12 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.3.2
+- You can weld ports from EVA.
+- Stretched the Interstage Service Compartment (ISC) so that it can host the stock SC-9000 Science Jr.. It will only be available to new vessels.
+NOTE: The ability to surface-attach parts to the doors is NOT a bug.
+- Stretched the OMS Kit to better fit the new ISC model. Storage capacity is now increased to match the Buckboard 2000. There's just enough room on the aft end of the OMS Kit to attach a Mk1 docking port.
+
 1.3.0
 - Added the Mk2 Docking Port, a 1.25m docking port that can be welded. It is compatible with the stock Clamp-O-Tron.
 - Fixed issues with docking ports not docking properly.
