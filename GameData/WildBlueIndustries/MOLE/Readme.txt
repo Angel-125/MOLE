@@ -29,6 +29,9 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.3.3
+- You can no longer transmit bonus science when CommNet is enabled and you don't have a connection back to Kerbin.
+
 1.3.2
 - You can weld ports from EVA.
 - Stretched the Interstage Service Compartment (ISC) so that it can host the stock SC-9000 Science Jr.. It will only be available to new vessels.
