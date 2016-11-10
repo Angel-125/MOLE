@@ -29,6 +29,34 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.3.5
+- Fixed specular color on the Fulcrum.
+- Increased gimbal responsiveness on the Fulcrum.
+- Updated Korona Lite drag cubes.
+- The WB-700 has the ability to toggle its decals once again.
+- Fixed test subject conditions on the Interstage Adapters so that you can complete part test contracts.
+- Added heat conductivity and body lift to the Backseat and Brumby to bring them up to KSP 1.2.1 standards.
+- Added charring modules to the heat shields and Korona Lite to bring them up to KSP 1.2.1 standards.
+- Increased max temp on the Brumby and Appaloosa. This is a temporary measure
+NOTE: Still investigating why the Brumby and Appaloosa continue to overheat. It appears to be due to the capsule's length not being protected by the heat shield. Increasing the diameter of the colliders helps but they stick out and cause drag.
+
+1.3.4
+
+New Parts
+- Added the Solary Battery Module. Available after unlocking Advanced Electrics, it is a 1.875m part that has a dual-axis solar array and a set of batteries.
+- Added the WB-2 Corvette Liquid Fuel Engine. The Corvette has two engine mount sizes: Standard (1.875m) and Wide (2.5m), along with corresponding shroud sizes. It can be upgraded to improve its thrust and ISP.
+
+Bug Fixes and Enhancements
+- Removed deprecated versions of OMS Kit and ISC.
+- The Fulcrum gimbals its thrust properly again.
+- The Bigby Orbital Workshop can create new experiments again.
+- Cleaned up some logging issues related to missing part modules and textures when supported mods aren't installed.
+- Minor corrections to MOLE's KSPedia.
+- The Brumby can now transfer all the science data from various experiments into the capsule.
+- For MOLE's docking ports, added the ability to enable/disable angle snap, and the ability to set the snap angle. 
+- If a targeted docking port doesn't support angle snap, then angle snap will automatically be turned off on the active docking port.
+- The Coach can now be configured as a CommNet center. This configuration is available after you've unlocked Electronics.
+
 1.3.3
 - You can no longer transmit bonus science when CommNet is enabled and you don't have a connection back to Kerbin.
 

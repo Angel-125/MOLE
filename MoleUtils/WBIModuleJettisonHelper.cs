@@ -24,7 +24,7 @@ namespace WildBlueIndustries
         [KSPField()]
         public string jettisonNames = string.Empty;
 
-        Dictionary<string, ModuleJettison> namedJettisons = new Dictionary<string, ModuleJettison>();
+        protected Dictionary<string, ModuleJettison> namedJettisons = new Dictionary<string, ModuleJettison>();
 
         public override void OnStart(StartState state)
         {
