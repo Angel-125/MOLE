@@ -34,9 +34,9 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 - Increased gimbal responsiveness on the Fulcrum.
 - Updated Korona Lite drag cubes.
 - The WB-700 has the ability to toggle its decals once again.
-- Fixed test subject conditions on the Interstage Adapters so that you can complete part test contracts.
 - Added heat conductivity and body lift to the Backseat and Brumby to bring them up to KSP 1.2.1 standards.
 - Added charring modules to the heat shields and Korona Lite to bring them up to KSP 1.2.1 standards.
+- Fixed test subject conditions on the Interstage Adapters so that you can complete part test contracts.
 - Increased max temp on the Brumby and Appaloosa. This is a temporary measure
 NOTE: Still investigating why the Brumby and Appaloosa continue to overheat. It appears to be due to the capsule's length not being protected by the heat shield. Increasing the diameter of the colliders helps but they stick out and cause drag.
 
