@@ -29,6 +29,9 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.3.6.2
+- Disabled angle snap
+
 1.3.6
 - Fixed issues related to docking the Mk1, Mk1 Radial, Mk2, and DR18 docking ports between each other and between their equivalent stock ports.
 - If the target docking port supports angle snap that you can turn on/off (all MOLE docking ports do), and it's turned off, then it will be turned on if the active port's angle snap is turned on.
