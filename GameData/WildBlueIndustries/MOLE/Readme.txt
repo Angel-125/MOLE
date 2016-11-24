@@ -29,6 +29,10 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.3.6.4
+- Removed duplicate Mk1 Radial Docking Port.
+- Fixed part upgrades on the Corvette.
+
 1.3.6.2
 - Disabled angle snap
 
