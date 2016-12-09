@@ -29,6 +29,14 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.3.8
+- The S.A.M.E. experiment now properly requires SolarReports.
+- KSP 1.2.2 update
+
+1.3.7
+- Greenhouse fixes
+- Templates require MaterialKits instead of Equipment if MKS is installed.
+
 1.3.6.4
 - Removed duplicate Mk1 Radial Docking Port.
 - Fixed part upgrades on the Corvette.
