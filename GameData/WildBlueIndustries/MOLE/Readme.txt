@@ -29,6 +29,11 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.4.0
+- Added the RPND-A Service Bay, a 1.875m service bay.
+- Fixed staging issues with the heat shields.
+- Added a data transfer utility to the science labs.
+
 1.3.8
 - The S.A.M.E. experiment now properly requires SolarReports.
 - KSP 1.2.2 update
