@@ -29,6 +29,15 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.4.5
+New Parts
+- WB-3 "Hemi Cuda,": a variant of the WB-2 that has a shorter nozzle for better use with landing craft, and has a higher initial thrust and ISP. It has Standard (1.875m) and Compact (1.25m) engine mounts and shrouds, and it can be surface-mounted.
+- WB-4 "Sledgehammer": This is a powerful 1.875m solid rocket motor that initially generates 900kn of thrust in a vacuum. It can be upgraded to 1200kn at Heavier Rocketry, and 1500kn at Very Heavy Rocketry.
+
+Bug Fixes & Enhancements
+- Fixed MOLE's Experiment Lab to generate LabTime properly; a 5-star scientist can push the lab output to 21 units of LabTime per day while a 0-star scientists generates the normal 6 units of LabTime per day.
+- Simplified the production chain for TAC-LS to use Waste in place of Fertilizer.
+
 1.4.0
 - Added the RPND-A Service Bay, a 1.875m service bay.
 - Fixed staging issues with the heat shields.
