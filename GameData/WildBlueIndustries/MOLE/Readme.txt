@@ -29,6 +29,11 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.4.6
+- Added a slanted adapter-tank similar to the stock C7 Brand Adapter Slanted - 2.5m to 1.25m. Thanks for the suggestion, eloquentJane! :)
+- Fixed an issue where the Snacks greenhouse configuration would appear even when Snacks wasn't installed.
+- WildBlueTools update
+
 1.4.5
 New Parts
 - WB-3 "Hemi Cuda,": a variant of the WB-2 that has a shorter nozzle for better use with landing craft, and has a higher initial thrust and ISP. It has Standard (1.875m) and Compact (1.25m) engine mounts and shrouds, and it can be surface-mounted.
