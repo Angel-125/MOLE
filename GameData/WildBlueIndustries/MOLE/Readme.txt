@@ -29,6 +29,11 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.4.6.1
+- Fixed resource dumping when modules aren't in wet workshop mode.
+- Fix for Buckboard colliders.
+- Added Coach 500, a double-height version of the 1.875m Coach.
+
 1.4.6
 - Added a slanted adapter-tank similar to the stock C7 Brand Adapter Slanted - 2.5m to 1.25m. Thanks for the suggestion, eloquentJane! :)
 - Fixed an issue where the Snacks greenhouse configuration would appear even when Snacks wasn't installed.
