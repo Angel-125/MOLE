@@ -29,6 +29,11 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.4.7
+- Fix for Coach's CommNet transmitter.
+- RealPlume patch fix. Thanks BureauJaeger! :)
+- Science container added to the Airlock Module. Thanks Bombaatu! :)
+
 1.4.6.1
 - Fixed resource dumping when modules aren't in wet workshop mode.
 - Fix for Buckboard colliders.
