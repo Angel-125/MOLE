@@ -29,6 +29,10 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.4.8
+- Updated Appaloosa and Brumby ASET cockpits to use ASET 1.4: https://spacedock.info/mod/1204/ASET%20Props
+- WBT update
+
 1.4.7
 - Fix for Coach's CommNet transmitter.
 - RealPlume patch fix. Thanks BureauJaeger! :)
