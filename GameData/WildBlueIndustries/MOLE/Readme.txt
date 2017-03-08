@@ -29,6 +29,48 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.5.0 LDEF: Long Duration Exposure Facility
+This release introduces an alternative method for conducting MOLE's station experiments in the form of LDEF Experiment Modules. There are a number of these external experiment modules to choose from. Simply fly an experiment to the station (or fly stand-alone using the support modules), start the experiment, and make sure that all the pre-requisites are met. Once the pre-requisites are met and the experiment has accumulated sufficient LabTime and/or other required resources, then either return the experiment module to Kerbin or transfer the data to a Mobile Processing Lab for further processing.
+
+YOU CAN USE THE EXPERIMENT MODULES WITH THE MOLE LAB! Remember, the MOLE Lab can generate LabTime even when there are no experiments loaded into the lab.
+
+The experiments run exactly like the existing ones; you need to make sure that the experiment's requirements are met (orbiting, specific altitude, etc.) Some experiments might require additional resources or additional parts to be on station. You generate LabTime using the MOLE Lab/LDEF Science Processor, ScopeTime using the KH-10, Plants using the Mark One Botany Lab/LDEF Botany Module, and SolarReports using the Solar Observatory.
+
+The existing MOLE science system remains unchanged; you still load experiments into containers like the Coach and Appaloosa, transfer them into the MOLE Lab/Skylab, run them, and transfer completed experiments back into a container for the trip home. The LDEF system simply provides a more intuitive interface for conducting experiments at the cost of increased part count and reduced convenience.
+
+New Parts
+
+You can find these parts in the new LDEF tab.
+
+- LDEF Core: This part is designed to host up to 4 External Experiment Carriers and/or support modules. You can place the core and its experiments in the Mk1 Interstage Service Compartment, RPND-A Service Compartment, Kargo Bay, or any other part capable of holding the rack and its experiments.
+Hint: The Mk1 Iterstage Service Compartment can hold up to 3 cores, for a total of 12 external experiments and support modules.
+
+- LDEF Double Core: A double-sized version of the core.
+
+- LDEF Tripple Core: A tripple-sized version of the core.
+
+- LDEF Experiment Module: This module houses a single experiment found in the MOLE science system. There are a number of different experiments available, each with its own module. You can press the "Show Synopsis" button to get a description of the experiment and a complete list of its requirements. Simply press the "Start Experiment" button to start the experiment, and check the status field to see what's going on. To stop the experiment, press the "Stop Experiment" button. When completed, the experiment will automatically show you the results and send you an in-game mail.
+
+- LDEF Command Processor: This module is a no-frills probe core.
+
+- LDEF Science Processor: This module generates a small amount of LabTime per day at the cost of ResearchKits and ElectricCharge.
+
+- LDEF Botany Module: This module grows Plants from Water and Fertilizer at the cost of Water, Fertilizer, and ElectricCharge.
+
+- LDEF Solar Battery: The solar battery powers your experiments and support modules.
+
+- LDEF Resource Container: This container holds a small amount of ResearchKits or other useful resources.
+
+- LDEF Equipment Container: This container is hollow and lets you attach small items.
+
+New Contracts
+- You can run LDEF experiments for Science, Rep, and Funds! The payout is proportional to where the contract asks you to run the experiment.
+
+Bug Fixes & Enhancements
+- Updated the Snacks converters to the latest standards.
+- RealPlume updates. Thanks DStall & Merkov!
+- Bug fixes for determining when an experiment has accumulated sufficient resources.
+
 1.4.9
 - Fixed scalar issues with the RPND-A Service Compartment.
 - Fixed angle snap issues with docking ports.
