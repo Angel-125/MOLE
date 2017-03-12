@@ -29,6 +29,12 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.5.1
+- Restricted the number of contracts that are offered and/or active.
+- Fixed a situation where experiments weren't registering as completed.
+- Contracts won't be offered until you've orbited the target world and have unlocked the proper tech tree.
+- Contracts that must be returned to the homeworld must be landed or splashed.
+
 1.5.0 LDEF: Long Duration Exposure Facility
 This release introduces an alternative method for conducting MOLE's station experiments in the form of LDEF Experiment Modules. There are a number of these external experiment modules to choose from. Simply fly an experiment to the station (or fly stand-alone using the support modules), start the experiment, and make sure that all the pre-requisites are met. Once the pre-requisites are met and the experiment has accumulated sufficient LabTime and/or other required resources, then either return the experiment module to Kerbin or transfer the data to a Mobile Processing Lab for further processing.
 
