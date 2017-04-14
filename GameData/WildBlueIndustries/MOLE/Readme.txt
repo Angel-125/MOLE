@@ -29,6 +29,17 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.6.0
+New Part
+- S.A.F.E.R. : The Safe Affordable Fission Engine with Radiators generates ElectricCharge for your spacecraft needs. It is based upon the real-world SAFE - 400 reactor created by NASA.
+
+Bug Fixes & Enhancements
+- Adjusted the Appaloosa's Science template to become available after unlocking Space Exploration.
+- Removed redundant experiment manifests from the Backseat Crew template.
+- Refactored TAC-LS converters to use continual production.
+- Replaced sample craft files.
+- Deprecated Titan II parts.
+
 1.5.1
 - Restricted the number of contracts that are offered and/or active.
 - Fixed a situation where experiments weren't registering as completed.
