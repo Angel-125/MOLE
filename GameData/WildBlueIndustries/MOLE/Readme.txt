@@ -29,6 +29,9 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.6.5
+- WBT Update
+
 1.6.0
 New Part
 - S.A.F.E.R. : The Safe Affordable Fission Engine with Radiators generates ElectricCharge for your spacecraft needs. It is based upon the real-world SAFE - 400 reactor created by NASA.
