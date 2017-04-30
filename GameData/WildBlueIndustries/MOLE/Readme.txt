@@ -29,6 +29,10 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.6.6
+- Minor update to consolidate ASET/RPM ModuleManager patches into one file.
+- Fix for IVA screens not remembering what image they were displaying.
+
 1.6.5
 - WBT Update
 
