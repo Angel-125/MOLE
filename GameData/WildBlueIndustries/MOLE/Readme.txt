@@ -29,6 +29,12 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.7.0
+- Recompiled plugin for KSP 1.3.
+- You can convert Equipment into MaterialKits in the 3D Print Shop.
+- Updated Snacks support.
+- Fixex KNUTS experiment to require Plants, not Mulch.
+
 1.6.6
 - Minor update to consolidate ASET/RPM ModuleManager patches into one file.
 - Fix for IVA screens not remembering what image they were displaying.

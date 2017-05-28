@@ -1,8 +1,8 @@
 ship = Dolores AFS Core
-version = 1.2.2
-description = This is the station core for the Dolores Air Force Station, a semi-secret polar orbiting space station created to maintain a network of KH-10 satellites. With probe cores untrustworthy, a Mk1 pod provides space for a single pilot.
+version = 1.3.0
+description = This is the station core for the Dolores Air Force Station, a semi-secret polar orbiting space station created to maintain a network of KH-10 satellites.
 type = VAB
-size = 6.02109575,23.9316978,3.39055824
+size = 6.02109814,22.9798546,2.9046669
 PART
 {
 	part = WBI.StationHub2_4293038658
@@ -226,511 +226,6 @@ PART
 		}
 		ACTIONS
 		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = TrajectoriesVesselSettings
-		isEnabled = True
-		EntryAngle = 0
-		EntryHorizon = False
-		HighAngle = 0
-		HighHorizon = False
-		LowAngle = 0
-		LowHorizon = False
-		GroundAngle = 0
-		GroundHorizon = False
-		ProgradeEntry = False
-		RetrogradeEntry = False
-		hasTarget = False
-		targetLocation = (0, 0, 0)
-		targetReferenceBody = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = MechJebCore
-		isEnabled = True
-		running = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			OnOrbitProgradeAction
-			{
-				actionGroup = None
-			}
-			OnOrbitRetrogradeAction
-			{
-				actionGroup = None
-			}
-			OnOrbitNormalAction
-			{
-				actionGroup = None
-			}
-			OnOrbitAntinormalAction
-			{
-				actionGroup = None
-			}
-			OnOrbitRadialInAction
-			{
-				actionGroup = None
-			}
-			OnOrbitRadialOutAction
-			{
-				actionGroup = None
-			}
-			OnKillRotationAction
-			{
-				actionGroup = None
-			}
-			OnDeactivateSmartASSAction
-			{
-				actionGroup = None
-			}
-			OnPanicAction
-			{
-				actionGroup = None
-			}
-			OnTranslatronOffAction
-			{
-				actionGroup = None
-			}
-			OnTranslatronKeepVertAction
-			{
-				actionGroup = None
-			}
-			OnTranslatronZeroSpeedAction
-			{
-				actionGroup = None
-			}
-			OnTranslatronPlusOneSpeedAction
-			{
-				actionGroup = None
-			}
-			OnTranslatronMinusOneSpeedAction
-			{
-				actionGroup = None
-			}
-			OnTranslatronToggleHSAction
-			{
-				actionGroup = None
-			}
-		}
-		MechJebLocalSettings
-		{
-			MechJebModuleMenu
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleAscentAutopilot
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleAscentGuidance
-			{
-				unlockParts = 
-				unlockTechs = unmannedTech
-			}
-			MechJebModuleAscentNavBall
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleAscentPathEditor
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleAttitudeAdjustment
-			{
-				unlockParts = 
-				unlockTechs = advFlightControl
-			}
-			MechJebModuleCustomWindowEditor
-			{
-				unlockParts = 
-				unlockTechs = flightControl
-			}
-			MechJebModuleDebugArrows
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleDockingAutopilot
-			{
-				forceRol = False
-				overrideSafeDistance = False
-				overrideTargetSize = False
-				unlockParts = 
-				unlockTechs = 
-				rol
-				{
-					_val = 0
-					_text = 0
-				}
-			}
-			MechJebModuleDockingGuidance
-			{
-				unlockParts = 
-				unlockTechs = advUnmanned
-			}
-			MechJebModuleInfoItems
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleLandingAutopilot
-			{
-				deployGears = True
-				deployChutes = True
-				rcsAdjustment = True
-				unlockParts = 
-				unlockTechs = 
-				touchdownSpeed
-				{
-					_val = 0.5
-					_text = 0.5
-				}
-				limitGearsStage
-				{
-					val = 0
-					_text = 0
-				}
-				limitChutesStage
-				{
-					val = 0
-					_text = 0
-				}
-			}
-			MechJebModuleLandingGuidance
-			{
-				landingSiteIdx = 0
-				unlockParts = 
-				unlockTechs = unmannedTech
-			}
-			MechJebModuleLandingPredictions
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleManeuverPlanner
-			{
-				unlockParts = 
-				unlockTechs = advFlightControl
-			}
-			MechJebModuleNodeEditor
-			{
-				unlockParts = 
-				unlockTechs = advFlightControl
-			}
-			MechJebModuleNodeExecutor
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleRCSBalancerWindow
-			{
-				unlockParts = 
-				unlockTechs = advFlightControl
-			}
-			MechJebModuleRendezvousAutopilot
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleRendezvousAutopilotWindow
-			{
-				unlockParts = 
-				unlockTechs = advUnmanned
-			}
-			MechJebModuleRendezvousGuidance
-			{
-				unlockParts = 
-				unlockTechs = advUnmanned
-			}
-			MechJebModuleRoverController
-			{
-				ControlHeading = False
-				ControlSpeed = False
-				BrakeOnEject = False
-				BrakeOnEnergyDepletion = False
-				WarpToDaylight = True
-				StabilityControl = False
-				LimitAcceleration = False
-				unlockParts = 
-				unlockTechs = 
-				heading
-				{
-					_val = 0
-					_text = 0
-				}
-				speed
-				{
-					_val = 10
-					_text = 10
-				}
-			}
-			MechJebModuleRoverWindow
-			{
-				unlockParts = 
-				unlockTechs = fieldScience
-			}
-			MechJebModuleScript
-			{
-				minifiedGUI = False
-				selectedSlot = 0
-				activeSavepoint = -1
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleSettings
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleSmartASS
-			{
-				mode = ORBITAL
-				target = OFF
-				advReference = INERTIAL
-				advDirection = FORWARD
-				forceRol = False
-				forcePitch = True
-				forceYaw = True
-				unlockParts = 
-				unlockTechs = flightControl
-				srfHdg
-				{
-					_val = 90
-					_text = 90
-				}
-				srfPit
-				{
-					_val = 90
-					_text = 90
-				}
-				srfRol
-				{
-					_val = 0
-					_text = 0
-				}
-				srfVelYaw
-				{
-					_val = 0
-					_text = 0
-				}
-				srfVelPit
-				{
-					_val = 0
-					_text = 0
-				}
-				srfVelRol
-				{
-					_val = 0
-					_text = 0
-				}
-				rol
-				{
-					_val = 0
-					_text = 0
-				}
-			}
-			MechJebModuleSmartRcs
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleSpaceplaneAutopilot
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleSpaceplaneGuidance
-			{
-				runwayIndex = 0
-				unlockParts = 
-				unlockTechs = unmannedTech
-			}
-			MechJebModuleStageStats
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleTargetController
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleThrustWindow
-			{
-				autostageSavedState = False
-				unlockParts = 
-				unlockTechs = advFlightControl
-			}
-			MechJebModuleTranslatron
-			{
-				unlockParts = 
-				unlockTechs = advFlightControl
-				trans_spd
-				{
-					_val = 0
-					_text = 0
-				}
-			}
-			MechJebModuleWarpHelper
-			{
-				unlockParts = 
-				unlockTechs = advFlightControl
-				phaseAngle
-				{
-					_val = 0
-					_text = 0
-				}
-			}
-			MechJebModuleWaypointWindow
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleWaypointHelpWindow
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			ModExtensionDemo
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleCustomInfoWindow
-			{
-			}
-			MechJebModuleCustomInfoWindow
-			{
-			}
-			MechJebModuleCustomInfoWindow
-			{
-			}
-			MechJebModuleCustomInfoWindow
-			{
-			}
-			MechJebModuleWarpController
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleSolarPanelController
-			{
-				prev_ShouldOpenSolarPanels = False
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleThrustController
-			{
-				limitThrottle = False
-				limiterMinThrottle = False
-				electricThrottle = False
-				unlockParts = 
-				unlockTechs = 
-				maxThrottle
-				{
-					_val = 1
-					_text = 100
-				}
-				minThrottle
-				{
-					_val = 0.050000000000000003
-					_text = 5
-				}
-				electricThrottleLo
-				{
-					_val = 0.050000000000000003
-					_text = 5
-				}
-				electricThrottleHi
-				{
-					_val = 0.14999999999999999
-					_text = 15
-				}
-			}
-			MechJebModuleRCSController
-			{
-				unlockParts = 
-				unlockTechs = 
-				Tf
-				{
-					_val = 1
-					_text = 1
-				}
-				Kp
-				{
-					_val = 0.125
-					_text = 0.125
-				}
-				Ki
-				{
-					_val = 0.070000000000000007
-					_text = 0.07
-				}
-				Kd
-				{
-					_val = 0.53000000000000003
-					_text = 0.53
-				}
-			}
-			MechJebModuleRCSBalancer
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleAttitudeController
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleStagingController
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleFlightRecorder
-			{
-				markUT = 0
-				deltaVExpended = 0
-				dragLosses = 0
-				gravityLosses = 0
-				steeringLosses = 0
-				markLAN = 0
-				markLatitude = 0
-				markLongitude = 0
-				markAltitude = 0
-				markBodyIndex = 1
-				maxDragGees = 0
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleFlightRecorderGraph
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
 		}
 		UPGRADESAPPLIED
 		{
@@ -1372,7 +867,7 @@ PART
 	dstg = 1
 	sidx = 0
 	sqor = 1
-	sepI = 1
+	sepI = -1
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -1396,7 +891,6 @@ PART
 		selectedObject = 0
 		stagingEnabled = True
 		selectedObject = 0
-		showGui = True
 		EVENTS
 		{
 		}
@@ -1523,7 +1017,7 @@ PART
 	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 1
+	sepI = -1
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -1575,13 +1069,11 @@ PART
 	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 2
+	sepI = 0
 	attm = 0
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = dockingPort3_4291931906
-	attN = top,dockingPort3_4291931906
 	attN = bottom,adapterSmallMiniShort_4292980226
 	EVENTS
 	{
@@ -1731,7 +1223,7 @@ PART
 		name = WBIConvertibleStorage
 		isEnabled = True
 		currentVolume = 0
-		templateNodes = COACH_SCIENCE;COACH_COMMNET;STORAGE_TEMPLATE
+		templateNodes = COACH_SCIENCE2;COACH_COMMNET;STORAGE_TEMPLATE
 		baseStorage = 0.00100000005
 		maxStorage = 1400
 		decalsVisible = False
@@ -1834,7 +1326,7 @@ PART
 	dstg = 1
 	sidx = 0
 	sqor = 1
-	sepI = 1
+	sepI = -1
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -1862,7 +1354,6 @@ PART
 		selectedObject = 0
 		stagingEnabled = True
 		selectedObject = 0
-		showGui = True
 		EVENTS
 		{
 		}
@@ -1989,7 +1480,7 @@ PART
 	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 1
+	sepI = -1
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -2041,7 +1532,7 @@ PART
 	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 2
+	sepI = 0
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -3103,12 +2594,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 1
+	istg = 0
 	resPri = 0
 	dstg = 0
 	sidx = 0
 	sqor = 1
-	sepI = 1
+	sepI = 0
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -3328,12 +2819,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 1
+	istg = 0
 	resPri = 0
 	dstg = 0
 	sidx = 0
 	sqor = 1
-	sepI = 1
+	sepI = 0
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -3553,12 +3044,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 1
+	istg = 0
 	resPri = 0
 	dstg = 0
 	sidx = 0
 	sqor = 1
-	sepI = 1
+	sepI = 0
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -3778,12 +3269,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 1
+	istg = 0
 	resPri = 0
 	dstg = 0
 	sidx = 0
 	sqor = 1
-	sepI = 1
+	sepI = 0
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -4003,15 +3494,15 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 2
+	istg = 1
 	resPri = 0
 	dstg = 3
 	sidx = 0
 	sqor = 2
-	sepI = 2
+	sepI = 0
 	attm = 0
-	modCost = 431.232239
-	modMass = 1.07808053
+	modCost = 333.359192
+	modMass = 0.833397985
 	modSize = 0,0,0
 	link = WBI.TitanInstrumentUnit_4292902080
 	attN = top,WBI.Mk1RadialDockingPort_4292987996
@@ -4029,7 +3520,7 @@ PART
 	{
 		name = ModuleProceduralFairing
 		isEnabled = True
-		interstageCraftID = 4291988598
+		interstageCraftID = 0
 		nArcs = 2
 		ejectionForce = 375
 		useClamshell = True
@@ -4052,28 +3543,28 @@ PART
 		}
 		XSECTION
 		{
-			h = 0.284240723
-			r = 1.695279
+			h = 0.516530991
+			r = 1.45233345
 		}
 		XSECTION
 		{
-			h = 2.28424072
-			r = 1.695279
+			h = 2.51653099
+			r = 1.45233345
 		}
 		XSECTION
 		{
-			h = 4.28424072
-			r = 1.695279
+			h = 4.51653099
+			r = 1.45233345
 		}
 		XSECTION
 		{
-			h = 5.14532089
-			r = 1.695279
+			h = 6.0295372
+			r = 0.635688424
 		}
 		XSECTION
 		{
-			h = 6.58818245
-			r = 0.615694284
+			h = 6.62737274
+			r = 0.200000003
 		}
 		UPGRADESAPPLIED
 		{
@@ -4365,7 +3856,7 @@ PART
 	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 1
+	sepI = -1
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -4452,7 +3943,7 @@ PART
 	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 1
+	sepI = -1
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -4539,7 +4030,7 @@ PART
 	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 1
+	sepI = -1
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -4626,7 +4117,7 @@ PART
 	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 1
+	sepI = -1
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -4708,12 +4199,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 2
+	istg = 1
 	resPri = 0
 	dstg = 4
 	sidx = -1
 	sqor = -1
-	sepI = 2
+	sepI = 0
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -4761,21 +4252,6 @@ PART
 			{
 				actionGroup = None
 			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FlightEngineerModule
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
 		}
 		UPGRADESAPPLIED
 		{
@@ -4889,110 +4365,6 @@ PART
 	}
 	MODULE
 	{
-		name = TrajectoriesVesselSettings
-		isEnabled = True
-		EntryAngle = 0
-		EntryHorizon = False
-		HighAngle = 0
-		HighHorizon = False
-		LowAngle = 0
-		LowHorizon = False
-		GroundAngle = 0
-		GroundHorizon = False
-		ProgradeEntry = False
-		RetrogradeEntry = False
-		hasTarget = False
-		targetLocation = (0, 0, 0)
-		targetReferenceBody = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = MechJebCore
-		isEnabled = True
-		running = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			OnOrbitProgradeAction
-			{
-				actionGroup = None
-			}
-			OnOrbitRetrogradeAction
-			{
-				actionGroup = None
-			}
-			OnOrbitNormalAction
-			{
-				actionGroup = None
-			}
-			OnOrbitAntinormalAction
-			{
-				actionGroup = None
-			}
-			OnOrbitRadialInAction
-			{
-				actionGroup = None
-			}
-			OnOrbitRadialOutAction
-			{
-				actionGroup = None
-			}
-			OnKillRotationAction
-			{
-				actionGroup = None
-			}
-			OnDeactivateSmartASSAction
-			{
-				actionGroup = None
-			}
-			OnPanicAction
-			{
-				actionGroup = None
-			}
-			OnTranslatronOffAction
-			{
-				actionGroup = None
-			}
-			OnTranslatronKeepVertAction
-			{
-				actionGroup = None
-			}
-			OnTranslatronZeroSpeedAction
-			{
-				actionGroup = None
-			}
-			OnTranslatronPlusOneSpeedAction
-			{
-				actionGroup = None
-			}
-			OnTranslatronMinusOneSpeedAction
-			{
-				actionGroup = None
-			}
-			OnTranslatronToggleHSAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
 		name = ModuleTripLogger
 		isEnabled = True
 		stagingEnabled = True
@@ -5036,12 +4408,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Heaviest
 	rigidAttachment = False
-	istg = 2
+	istg = 1
 	resPri = 0
 	dstg = 4
 	sidx = -1
 	sqor = -1
-	sepI = 2
+	sepI = 0
 	attm = 0
 	modCost = 413.100006
 	modMass = 0
@@ -5209,12 +4581,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 2
+	istg = 1
 	resPri = 0
 	dstg = 4
 	sidx = -1
 	sqor = -1
-	sepI = 2
+	sepI = 0
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -5319,7 +4691,6 @@ PART
 		selectedObject = 0
 		stagingEnabled = True
 		selectedObject = 0
-		showGui = False
 		EVENTS
 		{
 		}
@@ -5375,12 +4746,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 3
+	istg = 2
 	resPri = 0
 	dstg = 4
 	sidx = 0
 	sqor = 3
-	sepI = 2
+	sepI = 0
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -5583,12 +4954,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 4
+	istg = 3
 	resPri = 0
 	dstg = 5
 	sidx = 1
 	sqor = 4
-	sepI = 4
+	sepI = 3
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -5736,12 +5107,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 4
+	istg = 3
 	resPri = 0
 	dstg = 6
 	sidx = -1
 	sqor = -1
-	sepI = 4
+	sepI = 3
 	attm = 0
 	modCost = 826.200012
 	modMass = 0
@@ -5907,12 +5278,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 4
+	istg = 3
 	resPri = 0
 	dstg = 6
 	sidx = -1
 	sqor = -1
-	sepI = 4
+	sepI = 3
 	attm = 0
 	modCost = 826.200012
 	modMass = 0
@@ -6076,12 +5447,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 4
+	istg = 3
 	resPri = 0
 	dstg = 6
 	sidx = -1
 	sqor = -1
-	sepI = 4
+	sepI = 3
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -6172,7 +5543,7 @@ PART
 {
 	part = WBI.Fulcrum_4292900280
 	partName = Part
-	pos = 1.41561031E-06,3.54631233,-0.625000477
+	pos = 1.41561031E-06,3.54631233,-0.625000715
 	attPos = 0,0,0
 	attPos0 = 0.625000238,-1.43237305,0
 	rot = 0,0.707106829,0,0.707106829
@@ -6182,12 +5553,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 5
+	istg = 4
 	resPri = 0
 	dstg = 6
 	sidx = 0
 	sqor = 5
-	sepI = 4
+	sepI = 3
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -6381,7 +5752,7 @@ PART
 {
 	part = WBI.Fulcrum_4292900032
 	partName = Part
-	pos = 1.5348196E-06,3.54631233,0.625002265
+	pos = 1.5348196E-06,3.54631233,0.625002384
 	attPos = 0,0,0
 	attPos0 = -0.625000238,-1.43237305,0
 	rot = 0,0.707106769,0,-0.707106888
@@ -6391,12 +5762,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 5
+	istg = 4
 	resPri = 0
 	dstg = 6
 	sidx = 0
 	sqor = 5
-	sepI = 4
+	sepI = 3
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -6590,7 +5961,7 @@ PART
 {
 	part = strutConnector_4292899784
 	partName = CompoundPart
-	pos = -0.64163655,4.64794731,-0.641637325
+	pos = -0.64163667,4.64794731,-0.641637564
 	attPos = 0,0,0
 	attPos0 = 0.641637087,-0.33073616,-0.641637027
 	rot = 1.12902306E-07,0.382683635,-2.72570162E-07,-0.923879504
@@ -6600,12 +5971,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 4
+	istg = 3
 	resPri = 0
 	dstg = 6
 	sidx = -1
 	sqor = -1
-	sepI = 4
+	sepI = 3
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -6675,7 +6046,7 @@ PART
 {
 	part = strutConnector_4292899720
 	partName = CompoundPart
-	pos = 0.641640007,4.64794731,0.641638994
+	pos = 0.641640127,4.64794731,0.641639113
 	attPos = 0,0,0
 	attPos0 = -0.641637027,-0.33073616,0.641637087
 	rot = -2.72570162E-07,-0.923879564,-1.12902299E-07,-0.382683575
@@ -6685,12 +6056,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 4
+	istg = 3
 	resPri = 0
 	dstg = 6
 	sidx = -1
 	sqor = -1
-	sepI = 4
+	sepI = 3
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -6760,7 +6131,7 @@ PART
 {
 	part = strutConnector_4292899656
 	partName = CompoundPart
-	pos = 0.64059037,4.65815163,-0.640588284
+	pos = 0.640590549,4.65815163,-0.640588522
 	attPos = 0,0,0
 	attPos0 = 0.640587986,-0.320533752,0.640587866
 	rot = -2.72570162E-07,0.923879504,1.12902306E-07,-0.382683635
@@ -6770,12 +6141,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 4
+	istg = 3
 	resPri = 0
 	dstg = 6
 	sidx = -1
 	sqor = -1
-	sepI = 4
+	sepI = 3
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -6845,7 +6216,7 @@ PART
 {
 	part = strutConnector_4292899592
 	partName = CompoundPart
-	pos = -0.640587389,4.65815163,0.640590191
+	pos = -0.640587568,4.65815163,0.64059031
 	attPos = 0,0,0
 	attPos0 = -0.640588105,-0.320533752,-0.640587807
 	rot = 1.12902313E-07,-0.382683635,2.72570162E-07,-0.923879504
@@ -6855,12 +6226,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 4
+	istg = 3
 	resPri = 0
 	dstg = 6
 	sidx = -1
 	sqor = -1
-	sepI = 4
+	sepI = 3
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -6930,7 +6301,7 @@ PART
 {
 	part = radialDecoupler_4292899528
 	partName = Part
-	pos = -0.938247979,10.2575665,1.16229057E-06
+	pos = -0.938248277,10.2575665,1.16229057E-06
 	attPos = 0,-0.243400574,-4.76837158E-07
 	attPos0 = -1.19209318E-07,-1.0368824,-0.938247144
 	rot = -1.00000012,-4.03015719E-07,1.1920929E-07,2.84217094E-14
@@ -6940,12 +6311,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 5
+	istg = 4
 	resPri = 0
 	dstg = 7
 	sidx = 1
 	sqor = 5
-	sepI = 5
+	sepI = 4
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -7046,22 +6417,22 @@ PART
 {
 	part = WBI.S900Tank_4292899476
 	partName = Part
-	pos = -2.03738618,10.0378008,6.85453415E-07
+	pos = -2.03738689,10.0378008,4.47034836E-07
 	attPos = 0,0,0
 	attPos0 = -1.09913468,0.219764188,1.1920924E-07
-	rot = -1.00000012,-1.40887778E-07,0,1.0658141E-13
+	rot = -1.00000012,-1.40887778E-07,0,1.49213975E-13
 	attRot = 0,0,0,1
 	attRot0 = 1.42108513E-14,1.19209261E-07,2.62127912E-07,1
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 5
+	istg = 4
 	resPri = 0
 	dstg = 8
 	sidx = -1
 	sqor = -1
-	sepI = 5
+	sepI = 4
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -7112,22 +6483,22 @@ PART
 {
 	part = WBI.S900Tank_4292899414
 	partName = Part
-	pos = -2.03738618,6.03778458,6.85453415E-07
+	pos = -2.03738689,6.03778267,4.47034836E-07
 	attPos = 0,0,0
 	attPos0 = -8.83209623E-07,3.99999905,-5.7424497E-13
-	rot = 1.62843023E-07,-0.707106948,-1.62842909E-07,-0.707106829
+	rot = 1.62843051E-07,-0.707106948,-1.62842881E-07,-0.707106829
 	attRot = 0,0,0,1
 	attRot0 = -0.707106769,6.32202344E-08,-0.707106888,-6.32202912E-08
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 5
+	istg = 4
 	resPri = 0
 	dstg = 8
 	sidx = -1
 	sqor = -1
-	sepI = 5
+	sepI = 4
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -7178,22 +6549,22 @@ PART
 {
 	part = WBI.Sledgehammer_4292899352
 	partName = Part
-	pos = -2.03738618,4.03777122,6.85453415E-07
+	pos = -2.03738689,4.03776741,4.47034836E-07
 	attPos = 0,0,0
 	attPos0 = 9.65707549E-14,-2.00000095,-1.21646497E-06
-	rot = 1.62843037E-07,-0.707106948,-1.6284298E-07,-0.707106829
+	rot = 1.62843079E-07,-0.707106948,-1.62842966E-07,-0.707106829
 	attRot = 0,0,0,1
 	attRot0 = -3.55271283E-15,0,3.55271283E-15,1
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 6
+	istg = 5
 	resPri = 0
 	dstg = 8
 	sidx = 0
 	sqor = 6
-	sepI = 5
+	sepI = 4
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -7387,22 +6758,22 @@ PART
 {
 	part = sepMotor1_4292899050
 	partName = Part
-	pos = -2.0373888,4.21663475,-0.920943499
+	pos = -2.03739023,4.21663094,-0.920944452
 	attPos = 0,0,0
 	attPos0 = 0.920940578,-1.82113552,-1.54972076E-06
-	rot = -0.707107067,0.707106769,-8.94069672E-08,0
+	rot = -0.707107186,0.707106829,-2.98023224E-08,2.98023224E-08
 	attRot = 0,0,-0.707106769,0.707106769
 	attRot0 = 0.499999881,-0.50000006,0.50000006,-0.49999994
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 5
+	istg = 4
 	resPri = 0
 	dstg = 8
 	sidx = 2
 	sqor = 5
-	sepI = 5
+	sepI = 4
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -7498,22 +6869,22 @@ PART
 {
 	part = sepMotor1_4292899008
 	partName = Part
-	pos = -2.03738403,4.21142769,0.926983714
+	pos = -2.03738403,4.21142387,0.926984429
 	attPos = 0,0,0
 	attPos0 = -0.926979065,-1.82634449,-1.1920929E-06
-	rot = -2.08616257E-07,-1.78813934E-07,-0.707107306,-0.707106709
+	rot = -2.08616257E-07,-1.49011612E-07,-0.707107306,-0.70710659
 	attRot = 0,0,-0.707106709,-0.707106709
 	attRot0 = -0.49999994,-0.5,0.50000006,0.5
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 5
+	istg = 4
 	resPri = 0
 	dstg = 8
 	sidx = 3
 	sqor = 5
-	sepI = 5
+	sepI = 4
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -7609,22 +6980,22 @@ PART
 {
 	part = WBI.S300Tank_4292898966
 	partName = Part
-	pos = -2.03738809,12.5378122,6.85453415E-07
+	pos = -2.0373888,12.5378132,4.47034836E-07
 	attPos = 0,0,0
 	attPos0 = -1.07222161E-06,-2.50000072,1.19209069E-07
-	rot = 1.00485924E-14,0.707106888,-9.04373283E-14,0.707106888
+	rot = 1.00485924E-14,0.707106888,-1.1053452E-13,0.707106888
 	attRot = 0,0,0,1
 	attRot0 = 0.707106829,9.96227598E-08,0.707106829,-9.96226461E-08
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 5
+	istg = 4
 	resPri = 0
 	dstg = 8
 	sidx = -1
 	sqor = -1
-	sepI = 5
+	sepI = 4
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -7677,22 +7048,22 @@ PART
 {
 	part = WBI.titanNoseCone_4292898912
 	partName = Part
-	pos = -2.03738904,13.0378132,4.47034836E-07
+	pos = -2.03738976,13.0378141,2.08616257E-07
 	attPos = 0,0,0
 	attPos0 = 2.38418423E-07,0.500000238,-1.35669075E-06
-	rot = 1.00485924E-14,0.707106888,-9.04373283E-14,0.707106888
+	rot = 1.00485924E-14,0.707106888,-1.1053452E-13,0.707106888
 	attRot = 0,0,0,1
 	attRot0 = 7.10542566E-15,0,-7.10542566E-15,1
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 5
+	istg = 4
 	resPri = 0
 	dstg = 8
 	sidx = -1
 	sqor = -1
-	sepI = 5
+	sepI = 4
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -7728,22 +7099,22 @@ PART
 {
 	part = strutConnector_4292898880
 	partName = CompoundPart
-	pos = -1.39643312,12.8938427,-0.640955925
+	pos = -1.39643407,12.8938437,-0.640956521
 	attPos = 0,0,0
 	attPos0 = 0.64095521,0.356029719,0.6409536
-	rot = -5.45140324E-07,0.923879623,2.25804811E-07,-0.382683843
+	rot = -5.45140381E-07,0.923879683,2.25804868E-07,-0.382683814
 	attRot = 0,0,0,1
 	attRot0 = -5.45140267E-07,0.923879683,-2.25804214E-07,0.382683069
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 5
+	istg = 4
 	resPri = 0
 	dstg = 8
 	sidx = -1
 	sqor = -1
-	sepI = 5
+	sepI = 4
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -7813,22 +7184,22 @@ PART
 {
 	part = strutConnector_4292898816
 	partName = CompoundPart
-	pos = -1.39598942,12.8852062,0.641400456
+	pos = -1.39598966,12.8852072,0.641400814
 	attPos = 0,0,0
 	attPos0 = -0.641397476,0.347393245,0.641396403
-	rot = -1.16816025E-07,0.923879862,-4.83866955E-08,0.382683307
+	rot = -1.16816082E-07,0.923879862,-4.83866955E-08,0.382683307
 	attRot = 0,0,0,1
 	attRot0 = -4.83867488E-08,0.382683724,-1.1681589E-07,0.923879385
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 5
+	istg = 4
 	resPri = 0
 	dstg = 8
 	sidx = -1
 	sqor = -1
-	sepI = 5
+	sepI = 4
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -7898,22 +7269,22 @@ PART
 {
 	part = sepMotor1_4292898752
 	partName = Part
-	pos = -2.03738976,12.9240551,-0.93154788
+	pos = -2.03739071,12.9240561,-0.931548834
 	attPos = 0,0,0
 	attPos0 = 0.931545675,0.386242092,-1.13248939E-06
-	rot = -0.707106829,0.707107067,-2.38418579E-07,-2.98023224E-08
+	rot = -0.707106709,0.707107067,-2.68220901E-07,0
 	attRot = 0,0,-0.707106769,0.707106769
 	attRot0 = -0.499999791,0.500000119,-0.500000119,0.49999994
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 5
+	istg = 4
 	resPri = 0
 	dstg = 8
 	sidx = 4
 	sqor = 5
-	sepI = 5
+	sepI = 4
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -8009,22 +7380,22 @@ PART
 {
 	part = sepMotor1_4292898710
 	partName = Part
-	pos = -2.0373888,12.8932428,0.914650321
+	pos = -2.03738928,12.8932438,0.914651036
 	attPos = 0,0,0
 	attPos0 = -0.914646745,0.355430871,-1.609327E-06
-	rot = 0,8.94069672E-08,0.707106888,0.707107067
+	rot = 0,8.94069672E-08,0.707106829,0.707107067
 	attRot = 0,0,0.707106709,0.707106709
 	attRot0 = -0.5,-0.49999994,0.50000006,0.50000006
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 5
+	istg = 4
 	resPri = 0
 	dstg = 8
 	sidx = 5
 	sqor = 5
-	sepI = 5
+	sepI = 4
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -8120,7 +7491,7 @@ PART
 {
 	part = radialDecoupler_4292898668
 	partName = Part
-	pos = 0.938251436,10.2575665,5.66244125E-07
+	pos = 0.938251734,10.2575665,5.66244125E-07
 	attPos = 5.96046448E-08,-0.243400574,9.53674316E-07
 	attPos0 = 1.78813991E-07,-1.0368824,0.938247144
 	rot = 2.08616257E-07,4.26325641E-14,1.00000012,4.0301569E-07
@@ -8130,12 +7501,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 5
+	istg = 4
 	resPri = 0
 	dstg = 7
 	sidx = 1
 	sqor = 5
-	sepI = 5
+	sepI = 4
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -8236,22 +7607,22 @@ PART
 {
 	part = WBI.S900Tank_4292898616
 	partName = Part
-	pos = 2.0373888,10.0378008,-2.98023224E-08
+	pos = 2.03738952,10.0378008,-2.68220901E-07
 	attPos = 0,0,0
 	attPos0 = -1.09913468,0.219764188,1.1920924E-07
-	rot = 1.1920929E-07,7.10542736E-14,1.00000012,1.40887749E-07
+	rot = 1.1920929E-07,8.52651283E-14,1.00000012,1.40887735E-07
 	attRot = 0,0,0,1
 	attRot0 = 1.42108513E-14,1.19209261E-07,2.62127912E-07,1
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 5
+	istg = 4
 	resPri = 0
 	dstg = 8
 	sidx = -1
 	sqor = -1
-	sepI = 5
+	sepI = 4
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -8302,22 +7673,22 @@ PART
 {
 	part = WBI.S900Tank_4292898554
 	partName = Part
-	pos = 2.03738856,6.03778744,-2.98023224E-08
+	pos = 2.03738928,6.03778553,-2.68220901E-07
 	attPos = 0,0,0
 	attPos0 = -8.83209623E-07,3.99999905,-5.7424497E-13
-	rot = -1.62842909E-07,-0.707106769,-1.62842937E-07,0.707107008
+	rot = -1.62842909E-07,-0.707106769,-1.62842966E-07,0.707107008
 	attRot = 0,0,0,1
 	attRot0 = -0.707106769,6.32202344E-08,-0.707106888,-6.32202912E-08
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 5
+	istg = 4
 	resPri = 0
 	dstg = 8
 	sidx = -1
 	sqor = -1
-	sepI = 5
+	sepI = 4
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -8368,22 +7739,22 @@ PART
 {
 	part = WBI.Sledgehammer_4292898492
 	partName = Part
-	pos = 2.0373888,4.03777885,-2.98023224E-08
+	pos = 2.03738952,4.03777504,-2.68220901E-07
 	attPos = 0,0,0
 	attPos0 = 9.65707549E-14,-2.00000095,-1.21646497E-06
-	rot = -1.62842937E-07,-0.707106769,-1.62842966E-07,0.707107008
+	rot = -1.62842937E-07,-0.707106769,-1.62842994E-07,0.707107008
 	attRot = 0,0,0,1
 	attRot0 = -3.55271283E-15,0,3.55271283E-15,1
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 6
+	istg = 5
 	resPri = 0
 	dstg = 8
 	sidx = 0
 	sqor = 6
-	sepI = 5
+	sepI = 4
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -8577,22 +7948,22 @@ PART
 {
 	part = sepMotor1_4292898190
 	partName = Part
-	pos = 2.03739023,4.21664238,0.920944214
+	pos = 2.03739071,4.21663857,0.920944929
 	attPos = 0,0,0
 	attPos0 = 0.920941174,-1.82113743,-2.38418579E-06
-	rot = 5.96046448E-08,-3.27825546E-07,0.707107127,-0.707106709
+	rot = 8.94069672E-08,-3.27825546E-07,0.707107067,-0.707106709
 	attRot = 0,0,-0.707106769,0.707106769
 	attRot0 = 0.49999994,-0.500000119,0.50000006,-0.499999881
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 5
+	istg = 4
 	resPri = 0
 	dstg = 8
 	sidx = 2
 	sqor = 5
-	sepI = 5
+	sepI = 4
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -8688,22 +8059,22 @@ PART
 {
 	part = sepMotor1_4292898148
 	partName = Part
-	pos = 2.03738785,4.21143913,-0.926981091
+	pos = 2.0373888,4.21143532,-0.926982164
 	attPos = 0,0,0
 	attPos0 = -0.926978171,-1.82633877,-3.57627869E-07
-	rot = -0.707107246,-0.70710665,1.78813934E-07,1.1920929E-07
+	rot = -0.707107246,-0.70710659,1.78813934E-07,1.49011612E-07
 	attRot = 0,0,-0.707106709,-0.707106709
 	attRot0 = -0.49999994,-0.49999994,0.500000119,0.50000006
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 5
+	istg = 4
 	resPri = 0
 	dstg = 8
 	sidx = 3
 	sqor = 5
-	sepI = 5
+	sepI = 4
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -8799,22 +8170,22 @@ PART
 {
 	part = WBI.S300Tank_4292898106
 	partName = Part
-	pos = 2.03738999,12.5378075,-2.98023224E-08
+	pos = 2.03739071,12.5378084,-2.68220901E-07
 	attPos = 0,0,0
 	attPos0 = -5.95383085E-07,-2.49999833,7.90248057E-17
-	rot = -9.04373283E-14,0.707106829,-3.01457772E-14,-0.707106948
+	rot = -1.00485924E-13,0.707106829,0,-0.707106948
 	attRot = 0,0,0,1
 	attRot0 = 0.707106829,9.96227598E-08,0.707106829,-9.96226746E-08
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 5
+	istg = 4
 	resPri = 0
 	dstg = 8
 	sidx = -1
 	sqor = -1
-	sepI = 5
+	sepI = 4
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -8867,22 +8238,22 @@ PART
 {
 	part = WBI.titanNoseCone_4292898052
 	partName = Part
-	pos = 2.03739095,13.0378084,-2.98023224E-08
+	pos = 2.03739166,13.0378094,-2.68220901E-07
 	attPos = 0,0,0
 	attPos0 = -7.38805447E-14,0.500000119,-8.79852848E-07
-	rot = -9.04373283E-14,0.707106829,-3.01457772E-14,-0.707106948
+	rot = -1.00485924E-13,0.707106829,0,-0.707106948
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 5
+	istg = 4
 	resPri = 0
 	dstg = 8
 	sidx = -1
 	sqor = -1
-	sepI = 5
+	sepI = 4
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -8918,22 +8289,22 @@ PART
 {
 	part = strutConnector_4292898020
 	partName = CompoundPart
-	pos = 1.39643621,12.8938379,0.640957117
+	pos = 1.39643669,12.8938389,0.640957355
 	attPos = 0,0,0
 	attPos0 = 0.640955567,0.35602963,0.640953004
-	rot = 2.25804811E-07,-0.382683903,5.45140097E-07,-0.923879623
+	rot = 2.25804811E-07,-0.382683903,5.4514004E-07,-0.923879504
 	attRot = 0,0,0,1
 	attRot0 = -5.4514021E-07,0.923879743,-2.25804186E-07,0.382683069
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 5
+	istg = 4
 	resPri = 0
 	dstg = 8
 	sidx = -1
 	sqor = -1
-	sepI = 5
+	sepI = 4
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -9003,22 +8374,22 @@ PART
 {
 	part = strutConnector_4292897956
 	partName = CompoundPart
-	pos = 1.39599228,12.8852015,-0.641398549
+	pos = 1.39599276,12.8852024,-0.641399384
 	attPos = 0,0,0
 	attPos0 = -0.64139688,0.347393155,0.641396463
-	rot = -4.83867453E-08,0.382683158,1.16815933E-07,-0.923879862
+	rot = -4.83867417E-08,0.382683158,1.16815954E-07,-0.923879862
 	attRot = 0,0,0,1
 	attRot0 = -4.8386795E-08,0.382683754,-1.1681594E-07,0.923879445
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 5
+	istg = 4
 	resPri = 0
 	dstg = 8
 	sidx = -1
 	sqor = -1
-	sepI = 5
+	sepI = 4
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -9088,22 +8459,22 @@ PART
 {
 	part = sepMotor1_4292897892
 	partName = Part
-	pos = 2.03739262,12.9240503,0.931548834
+	pos = 2.03739357,12.9240513,0.931549311
 	attPos = 0,0,0
 	attPos0 = 0.931546152,0.386242002,-2.08616416E-06
-	rot = -1.1920929E-07,-1.49011612E-07,0.707106948,-0.707106948
+	rot = -5.96046448E-08,-2.08616257E-07,0.707106829,-0.707106948
 	attRot = 0,0,-0.707106769,0.707106769
 	attRot0 = -0.499999881,0.500000179,-0.500000119,0.49999994
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 5
+	istg = 4
 	resPri = 0
 	dstg = 8
 	sidx = 4
 	sqor = 5
-	sepI = 5
+	sepI = 4
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -9199,7 +8570,7 @@ PART
 {
 	part = sepMotor1_4292897850
 	partName = Part
-	pos = 2.03739071,12.8932371,-0.914648414
+	pos = 2.03739166,12.8932381,-0.914649487
 	attPos = 0,0,0
 	attPos0 = -0.914645851,0.355428874,-6.55651547E-07
 	rot = 0.707106769,0.707107067,-1.1920929E-07,-2.08616257E-07
@@ -9209,12 +8580,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 5
+	istg = 4
 	resPri = 0
 	dstg = 8
 	sidx = 5
 	sqor = 5
-	sepI = 5
+	sepI = 4
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -9310,7 +8681,7 @@ PART
 {
 	part = sepMotor1_4292897808
 	partName = Part
-	pos = -0.931978405,16.3145866,1.16229057E-06
+	pos = -0.931978643,16.3145866,1.16229057E-06
 	attPos = 0,0,0
 	attPos0 = -1.19209318E-07,-0.740406036,-0.931978285
 	rot = -2.84975101E-07,0.707106769,-2.84975044E-07,-0.707106888
@@ -9320,12 +8691,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 4
+	istg = 3
 	resPri = 0
 	dstg = 4
 	sidx = 0
 	sqor = 4
-	sepI = 2
+	sepI = 0
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -9423,7 +8794,7 @@ PART
 {
 	part = sepMotor1_4292897766
 	partName = Part
-	pos = 1.59442425E-06,16.3145866,0.931980848
+	pos = 1.59442425E-06,16.3145866,0.931981087
 	attPos = 0,0,0
 	attPos0 = -0.931978226,-0.740406036,5.96046732E-08
 	rot = -4.03015633E-07,-1.1920929E-07,4.26325641E-14,-1.00000012
@@ -9433,12 +8804,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 4
+	istg = 3
 	resPri = 0
 	dstg = 4
 	sidx = 0
 	sqor = 4
-	sepI = 2
+	sepI = 0
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -9536,7 +8907,7 @@ PART
 {
 	part = sepMotor1_4292897724
 	partName = Part
-	pos = 0.931981385,16.3145866,6.2584877E-07
+	pos = 0.931981623,16.3145866,6.2584877E-07
 	attPos = 0,0,0
 	attPos0 = 1.78813991E-07,-0.740406036,0.931978285
 	rot = -2.84975044E-07,-0.707106888,2.84975101E-07,-0.707106769
@@ -9546,12 +8917,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 4
+	istg = 3
 	resPri = 0
 	dstg = 4
 	sidx = 0
 	sqor = 4
-	sepI = 2
+	sepI = 0
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -9649,7 +9020,7 @@ PART
 {
 	part = sepMotor1_4292897682
 	partName = Part
-	pos = 1.35600567E-06,16.3145866,-0.931978941
+	pos = 1.35600567E-06,16.3145866,-0.931979179
 	attPos = 0,0,0
 	attPos0 = 0.931978226,-0.740406036,-1.19209346E-07
 	rot = 4.26325641E-14,-1.00000012,4.03015633E-07,1.1920929E-07
@@ -9659,12 +9030,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 4
+	istg = 3
 	resPri = 0
 	dstg = 4
 	sidx = 0
 	sqor = 4
-	sepI = 2
+	sepI = 0
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -10046,1639 +9417,6 @@ PART
 			{
 				actionGroup = None
 			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = WBIPartScrapper
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = dockingPort3_4291931906
-	partName = Part
-	pos = 1.47521496E-06,24.6055164,9.23871994E-07
-	attPos = 0,0,0
-	attPos0 = 0,0.260307312,0
-	rot = 0,0,-1,0
-	attRot = 0,0,-0.99999994,0
-	attRot0 = 0,0,1,0
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = -1
-	resPri = 0
-	dstg = 2
-	sidx = -1
-	sqor = -1
-	sepI = 3
-	attm = 0
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	link = rcsTankMini_4291923376
-	attN = top,WBI.Mk1RadialDockingPort_4292980186
-	attN = bottom,rcsTankMini_4291923376
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleDockingNode
-		isEnabled = True
-		crossfeed = True
-		stagingEnabled = False
-		state = Ready
-		dockUId = 0
-		dockNodeIdx = 0
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			UndockAction
-			{
-				actionGroup = None
-			}
-			DecoupleAction
-			{
-				actionGroup = None
-			}
-			EnableXFeedAction
-			{
-				actionGroup = None
-			}
-			DisableXFeedAction
-			{
-				actionGroup = None
-			}
-			ToggleXFeedAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = WBIPartScrapper
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = rcsTankMini_4291923376
-	partName = Part
-	pos = 1.47521496E-06,24.7930164,9.23871994E-07
-	attPos = 0,0,0
-	attPos0 = 0,-0.1875,0
-	rot = 0,0,0,1
-	attRot = 0,0,0,1
-	attRot0 = 0,0,1,0
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = -1
-	resPri = 0
-	dstg = 2
-	sidx = -1
-	sqor = -1
-	sepI = 3
-	attm = 0
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	link = stackDecouplerMini_4291916000
-	link = WBI.MiniOmsEngine_4291888546
-	link = WBI.MiniOmsEngine_4291886286
-	link = strutConnector_4291874432
-	link = strutConnector_4291874010
-	attN = top,stackDecouplerMini_4291916000
-	attN = bottom,dockingPort3_4291931906
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = WBIPartScrapper
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	RESOURCE
-	{
-		name = MonoPropellant
-		amount = 80
-		maxAmount = 80
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		isVisible = True
-		flowMode = Both
-	}
-}
-PART
-{
-	part = stackDecouplerMini_4291916000
-	partName = Part
-	pos = 1.47521496E-06,25.056427,9.23871994E-07
-	attPos = 0,0,0
-	attPos0 = 0,0.263410568,0
-	rot = 0,0,0,1
-	attRot = 0,0,0,1
-	attRot0 = 0,0,0,1
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 4
-	resPri = 0
-	dstg = 3
-	sidx = 2
-	sqor = 4
-	sepI = 4
-	attm = 0
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	link = HeatShield1_4291902168
-	attN = bottom,rcsTankMini_4291923376
-	attN = top,HeatShield1_4291902168
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleDecouple
-		isEnabled = True
-		ejectionForcePercent = 100
-		isDecoupled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			DecoupleAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleToggleCrossfeed
-		isEnabled = True
-		crossfeedStatus = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-			}
-			EnableAction
-			{
-				actionGroup = None
-			}
-			DisableAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleTestSubject
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = WBIPartScrapper
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = HeatShield1_4291902168
-	partName = Part
-	pos = 1.47521496E-06,25.177578,9.23871994E-07
-	attPos = 0,-0.124759674,0
-	attPos0 = 0,0.245910645,0
-	rot = 0,0,0,1
-	attRot = 0,0,0,1
-	attRot0 = 0,0,0,1
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 4
-	resPri = 0
-	dstg = 5
-	sidx = -1
-	sqor = -1
-	sepI = 5
-	attm = 0
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	link = mk1pod_4291988598
-	attN = bottom,stackDecouplerMini_4291916000
-	attN = top,mk1pod_4291988598
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleJettison
-		isEnabled = True
-		isJettisoned = True
-		shroudHideOverride = True
-		stagingEnabled = False
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			JettisonAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAblator
-		isEnabled = True
-		nominalAmountRecip = -1
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleColorChanger
-		isEnabled = True
-		animState = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-				active = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleDecouple
-		isEnabled = True
-		ejectionForcePercent = 100
-		isDecoupled = False
-		stagingEnabled = False
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			DecoupleAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleTestSubject
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleLiftingSurface
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = WBIPartScrapper
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	RESOURCE
-	{
-		name = Ablator
-		amount = 200
-		maxAmount = 200
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		isVisible = True
-		flowMode = Both
-	}
-}
-PART
-{
-	part = mk1pod_4291988598
-	partName = Part
-	pos = 1.47521496E-06,25.6046162,9.23871994E-07
-	attPos = 0,0,0
-	attPos0 = 0,0.427038193,0
-	rot = 0,0,0,1
-	attRot = 0,0,0,1
-	attRot0 = 0,0,0,1
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Heaviest
-	rigidAttachment = False
-	istg = 4
-	resPri = 0
-	dstg = 6
-	sidx = -1
-	sqor = -1
-	sepI = 5
-	attm = 0
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	link = parachuteSingle_4291942708
-	attN = bottom,HeatShield1_4291902168
-	attN = top,parachuteSingle_4291942708
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleCommand
-		isEnabled = True
-		hibernation = False
-		hibernateOnWarp = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			HibernateToggle
-			{
-				actionGroup = None
-				active = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleReactionWheel
-		isEnabled = True
-		actuatorModeCycle = 0
-		authorityLimiter = 100
-		stateString = Active
-		stagingEnabled = True
-		WheelState = Active
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			CycleAction
-			{
-				actionGroup = None
-			}
-			Activate
-			{
-				actionGroup = None
-			}
-			Deactivate
-			{
-				actionGroup = None
-			}
-			Toggle
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleColorChanger
-		isEnabled = True
-		animState = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = Light
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleScienceExperiment
-		isEnabled = True
-		Deployed = False
-		Inoperable = False
-		cooldownToGo = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			DeployAction
-			{
-				actionGroup = None
-			}
-			ResetAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleScienceContainer
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			CollectAllAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FlagDecal
-		isEnabled = True
-		flagDisplayed = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleConductionMultiplier
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleDataTransmitter
-		isEnabled = True
-		xmitIncomplete = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			StartTransmissionAction
-			{
-				actionGroup = None
-				active = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleLiftingSurface
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = RasterPropMonitorComputer
-		isEnabled = True
-		vesselDescription = This is the station core for the Dolores Air Force Station, a semi-secret polar orbiting space station created to maintain a network of KH-10 satellites. With probe cores untrustworthy, a Mk1 pod provides space for a single pilot.
-		RPMCid = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = WBIPartScrapper
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = SnacksControlSource
-		isEnabled = True
-		partialControlEnabled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = TrajectoriesVesselSettings
-		isEnabled = True
-		EntryAngle = 0
-		EntryHorizon = False
-		HighAngle = 0
-		HighHorizon = False
-		LowAngle = 0
-		LowHorizon = False
-		GroundAngle = 0
-		GroundHorizon = False
-		ProgradeEntry = False
-		RetrogradeEntry = False
-		hasTarget = False
-		targetLocation = (0, 0, 0)
-		targetReferenceBody = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = MechJebCore
-		isEnabled = True
-		running = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			OnOrbitProgradeAction
-			{
-				actionGroup = None
-			}
-			OnOrbitRetrogradeAction
-			{
-				actionGroup = None
-			}
-			OnOrbitNormalAction
-			{
-				actionGroup = None
-			}
-			OnOrbitAntinormalAction
-			{
-				actionGroup = None
-			}
-			OnOrbitRadialInAction
-			{
-				actionGroup = None
-			}
-			OnOrbitRadialOutAction
-			{
-				actionGroup = None
-			}
-			OnKillRotationAction
-			{
-				actionGroup = None
-			}
-			OnDeactivateSmartASSAction
-			{
-				actionGroup = None
-			}
-			OnPanicAction
-			{
-				actionGroup = None
-			}
-			OnTranslatronOffAction
-			{
-				actionGroup = None
-			}
-			OnTranslatronKeepVertAction
-			{
-				actionGroup = None
-			}
-			OnTranslatronZeroSpeedAction
-			{
-				actionGroup = None
-			}
-			OnTranslatronPlusOneSpeedAction
-			{
-				actionGroup = None
-			}
-			OnTranslatronMinusOneSpeedAction
-			{
-				actionGroup = None
-			}
-			OnTranslatronToggleHSAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleTripLogger
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		Log
-		{
-			flight = 0
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleKISInventory
-		isEnabled = True
-		invName = 
-		helmetEquipped = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	RESOURCE
-	{
-		name = ElectricCharge
-		amount = 50
-		maxAmount = 50
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		isVisible = True
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = MonoPropellant
-		amount = 10
-		maxAmount = 10
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		isVisible = True
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = Snacks
-		amount = 50
-		maxAmount = 50
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		isVisible = True
-		flowMode = Both
-	}
-}
-PART
-{
-	part = parachuteSingle_4291942708
-	partName = Part
-	pos = 1.47521496E-06,26.2620735,9.23871994E-07
-	attPos = 0,0,0
-	attPos0 = 0,0.657457352,0
-	rot = 0,0,0,1
-	attRot = 0,0,0,1
-	attRot0 = 0,0,0,1
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 0
-	resPri = 0
-	dstg = 5
-	sidx = 1
-	sqor = 0
-	sepI = 5
-	attm = 0
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	attN = bottom,mk1pod_4291988598
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleParachute
-		isEnabled = True
-		persistentState = STOWED
-		animTime = 0
-		minAirPressureToOpen = 0.0399999991
-		deployAltitude = 1000
-		spreadAngle = 7
-		automateSafeDeploy = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			DeployAction
-			{
-				actionGroup = None
-			}
-			CutAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleTestSubject
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleDragModifier
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleDragModifier
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = WBIPartScrapper
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = WBI.MiniOmsEngine_4291888546
-	partName = Part
-	pos = -0.312037826,24.8483181,9.42471161E-07
-	attPos = 0,0,0
-	attPos0 = -0.312039286,0.0553016663,1.85991667E-08
-	rot = -4.36340422E-08,-0.707106829,-4.36340422E-08,0.707106829
-	attRot = 0,0,0,1
-	attRot0 = -4.36340422E-08,-0.707106829,-4.36340422E-08,0.707106829
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 0
-	resPri = 0
-	dstg = 2
-	sidx = 0
-	sqor = 0
-	sepI = 0
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = WBI.MiniOmsEngine_4291886286
-	srfN = srfAttach,rcsTankMini_4291923376
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = MultiModeEngine
-		isEnabled = True
-		runningPrimary = True
-		autoSwitch = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ModeAction
-			{
-				actionGroup = None
-			}
-			ShutdownAction
-			{
-				actionGroup = None
-			}
-			ActivateAction
-			{
-				actionGroup = None
-			}
-			OnAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleEnginesFX
-		isEnabled = True
-		staged = False
-		flameout = False
-		EngineIgnited = False
-		engineShutdown = False
-		currentThrottle = 0
-		thrustPercentage = 100
-		manuallyOverridden = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			OnAction
-			{
-				actionGroup = None
-				active = False
-			}
-			ShutdownAction
-			{
-				actionGroup = None
-				active = False
-			}
-			ActivateAction
-			{
-				actionGroup = None
-				active = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleEnginesFX
-		isEnabled = False
-		staged = False
-		flameout = False
-		EngineIgnited = False
-		engineShutdown = False
-		currentThrottle = 0
-		thrustPercentage = 100
-		manuallyOverridden = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			OnAction
-			{
-				actionGroup = None
-			}
-			ShutdownAction
-			{
-				actionGroup = None
-			}
-			ActivateAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleSurfaceFX
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleDecouple
-		isEnabled = False
-		ejectionForcePercent = 100
-		isDecoupled = False
-		stagingEnabled = False
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			DecoupleAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAbortModeEngine
-		isEnabled = True
-		abortModeArmed = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ArmAbortMode
-			{
-				actionGroup = None
-			}
-			DisarmAbortMode
-			{
-				actionGroup = None
-			}
-			ToggleAbortAction
-			{
-				actionGroup = Abort
-			}
-			DecoupleAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = WBIPartScrapper
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = WBI.MiniOmsEngine_4291886286
-	partName = Part
-	pos = 0.312040746,24.8483181,8.77993443E-07
-	attPos = 0,0,0
-	attPos0 = 0.312039286,0.0553016663,-4.58785507E-08
-	rot = -4.36340386E-08,0.707106888,4.36340457E-08,0.707106769
-	attRot = 0,0,0,1
-	attRot0 = -4.36340386E-08,0.707106888,4.36340457E-08,0.707106769
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 0
-	resPri = 0
-	dstg = 2
-	sidx = 0
-	sqor = 0
-	sepI = 0
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = WBI.MiniOmsEngine_4291888546
-	srfN = srfAttach,rcsTankMini_4291923376
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = MultiModeEngine
-		isEnabled = True
-		runningPrimary = True
-		autoSwitch = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ModeAction
-			{
-				actionGroup = None
-			}
-			ShutdownAction
-			{
-				actionGroup = None
-			}
-			ActivateAction
-			{
-				actionGroup = None
-			}
-			OnAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleEnginesFX
-		isEnabled = True
-		staged = False
-		flameout = False
-		EngineIgnited = False
-		engineShutdown = False
-		currentThrottle = 0
-		thrustPercentage = 100
-		manuallyOverridden = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			OnAction
-			{
-				actionGroup = None
-				active = False
-			}
-			ShutdownAction
-			{
-				actionGroup = None
-				active = False
-			}
-			ActivateAction
-			{
-				actionGroup = None
-				active = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleEnginesFX
-		isEnabled = False
-		staged = False
-		flameout = False
-		EngineIgnited = False
-		engineShutdown = False
-		currentThrottle = 0
-		thrustPercentage = 100
-		manuallyOverridden = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			OnAction
-			{
-				actionGroup = None
-			}
-			ShutdownAction
-			{
-				actionGroup = None
-			}
-			ActivateAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleSurfaceFX
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleDecouple
-		isEnabled = False
-		ejectionForcePercent = 100
-		isDecoupled = False
-		stagingEnabled = False
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			DecoupleAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAbortModeEngine
-		isEnabled = True
-		abortModeArmed = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ArmAbortMode
-			{
-				actionGroup = None
-			}
-			DisarmAbortMode
-			{
-				actionGroup = None
-			}
-			ToggleAbortAction
-			{
-				actionGroup = Abort
-			}
-			DecoupleAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = WBIPartScrapper
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = strutConnector_4291874432
-	partName = CompoundPart
-	pos = 1.50230335E-06,24.8383408,-0.309855133
-	attPos = 0,0,0
-	attPos0 = 2.70883902E-08,0.0453243256,-0.309856057
-	rot = 1.62842809E-07,0.707106829,-1.62842795E-07,-0.707106829
-	attRot = 0,0,0,1
-	attRot0 = 1.62842809E-07,0.707106829,-1.62842795E-07,-0.707106829
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = -1
-	resPri = 0
-	dstg = 2
-	sidx = -1
-	sqor = -1
-	sepI = 3
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = strutConnector_4291874010
-	srfN = srfAttach,rcsTankMini_4291923376
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-		tgt = 4292981234
-		pos = -0.548427761,-0.882556677,-0.0162592456
-		rot = -1.31509257E-08,0.125908002,0.850807786,0.510170281
-		dir = -0.527738631,-0.849262714,-0.0156458747
-	}
-	MODULE
-	{
-		name = CModuleLinkedMesh
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = CModuleStrut
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = WBIPartScrapper
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = strutConnector_4291874010
-	partName = CompoundPart
-	pos = 1.47521496E-06,24.8383408,0.309856981
-	attPos = 0,0,0
-	attPos0 = 0,0.0453243256,0.309856057
-	rot = -1.62842809E-07,-0.707106888,-1.62842795E-07,-0.707106769
-	attRot = 0,0,0,1
-	attRot0 = -1.62842809E-07,-0.707106888,-1.62842795E-07,-0.707106769
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = -1
-	resPri = 0
-	dstg = 2
-	sidx = -1
-	sqor = -1
-	sepI = 3
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = strutConnector_4291874432
-	srfN = srfAttach,rcsTankMini_4291923376
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-		tgt = 4292981234
-		pos = -0.548433006,-0.882558584,-0.0162592456
-		rot = -3.64337076E-08,0.125908449,0.850807726,0.5101704
-		dir = -0.527741432,-0.849260926,-0.0156458076
-	}
-	MODULE
-	{
-		name = CModuleLinkedMesh
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = CModuleStrut
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
 		}
 		UPGRADESAPPLIED
 		{
