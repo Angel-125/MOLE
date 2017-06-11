@@ -29,6 +29,10 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.7.1
+- WBT Update
+- Added MechJeb support (Thanks Steve-C!)
+
 1.7.0
 - Recompiled plugin for KSP 1.3.
 - You can convert Equipment into MaterialKits in the 3D Print Shop.
