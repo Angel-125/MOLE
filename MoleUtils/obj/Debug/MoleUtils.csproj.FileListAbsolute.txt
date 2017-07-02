@@ -15,3 +15,5 @@ C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\UnityEngine.xml
 C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\obj\Debug\MoleUtils.csprojResolveAssemblyReference.cache
 C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\obj\Debug\MoleUtils.dll
 C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\obj\Debug\MoleUtils.pdb
+C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\BARIS.dll
+C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\BARIS.pdb
