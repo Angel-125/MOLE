@@ -29,6 +29,19 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.8 BARIS: Building A Rocket Isn't Simple
+
+When I began working on M.O.L.E. in late 2014, I had the idea that your early space stations would wear out and require maintenance and/or replacement. I've finally realized that vision with BARIS. You can think of BARIS (the name is a nod to Buzz Aldrin's Race Into Space) as a highly customizable Dangit-lite combined with vessel construction and event cards. Don't want your drills or converters to break? Don't want the hassle of parts wearing out? Do you prefer not to send Equipment up to repair your parts, or to requrire specific skills to repair them? No problem! All that and more are options. As always, It's Your Game, Your Choice.
+
+BARIS IS OFF BY DEFAULT! You'll have to opt-in via the Settings->Difficulty->BARIS tab.
+
+With BARIS, your space station parts now have wear and tear, which is indicated by the part's Quality rating. They're unlikely to break during their normal design life, but they can start to break down after you exceed their design life. If you perform maintenance on them, you can reduce the chance that they'll break. A broken drill or base part won't function, which can be either annoying or life threatening depending upon the mods you have installed. Once you fix the part, it will continue to function, but its design life will be reduced- unless you disable that option.
+
+Bug Fixes & Enhancements
+- CLS update - thanks Krakatoa! :)
+- USI-LS update - thanks Krakatoa! :)
+- Log spam fix for research contracts requiring landing on a specific body.
+
 1.7.2
 - WBT Update
 
