@@ -11,6 +11,15 @@ Copy the contents of the mod's GameData directory into your KSP's GameData folde
 
 ---REVISION HISTORY---
 
+1.1.0
+- Created a bridging dll for those who want to optionally incorporate BARIS into their mods.
+- Minor bug fixes.
+
+1.0.5
+- Fixed issue where Event Cards would happen even when BARIS is disabled.
+- Updated "Reliability & MTBF" KSPedia page to show where to find a part's MTBF.
+- Added new KSPedia pages describing how to enable BARIS.
+
 1.0
 - Eliminated duplicate warnings that appear when you revert a non-integrated vessel back to the editor.
 - Quality Check event results can be performed as soon as the event card is played instead of waiting for the next quality check.

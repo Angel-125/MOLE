@@ -29,6 +29,11 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.8.5
+- Although BARIS is bundled with MOLE, you now have the option to remove BARIS if desired. Simply delete the 000BARIS folder if you don't want its functionality. DO NOT DELETE the 000ABARISBridgeDoNotDelete FOLDER! That plugin is the bridge between MOLE and BARIS.
+- Recalibrated templates for Cryo Engines.
+- Removed deprecated Titan II part.
+
 1.8 BARIS: Building A Rocket Isn't Simple
 
 When I began working on M.O.L.E. in late 2014, I had the idea that your early space stations would wear out and require maintenance and/or replacement. I've finally realized that vision with BARIS. You can think of BARIS (the name is a nod to Buzz Aldrin's Race Into Space) as a highly customizable Dangit-lite combined with vessel construction and event cards. Don't want your drills or converters to break? Don't want the hassle of parts wearing out? Do you prefer not to send Equipment up to repair your parts, or to requrire specific skills to repair them? No problem! All that and more are options. As always, It's Your Game, Your Choice.

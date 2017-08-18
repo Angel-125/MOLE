@@ -2,6 +2,7 @@ C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\MoleUtils.dll
 C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\MoleUtils.pdb
 C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\Assembly-CSharp-firstpass.dll
 C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\Assembly-CSharp.dll
+C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\BARISBridge.dll
 C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\KSPAssets.dll
 C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\UnityEngine.dll
 C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\UnityEngine.UI.dll
@@ -10,15 +11,9 @@ C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\TrackIRUnity.dll
 C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\Mono.Cecil.dll
 C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\TDx.TDxInput.dll
 C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\Mono.Security.dll
+C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\BARISBridge.pdb
 C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\WildBlueTools.pdb
 C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\UnityEngine.xml
+C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\obj\Debug\MoleUtils.csprojResolveAssemblyReference.cache
 C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\obj\Debug\MoleUtils.dll
 C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\obj\Debug\MoleUtils.pdb
-C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\BARIS.dll
-C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\BARIS.pdb
-C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\MarkdownSeparator.exe
-C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\RunPowershell.bat
-C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\xmldoc2md.ps1
-C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\xmldoc2md.xsl
-C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\RunMDSeparator.bat
-C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\obj\Debug\MoleUtils.csprojResolveAssemblyReference.cache
