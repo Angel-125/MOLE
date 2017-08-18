@@ -13,6 +13,9 @@ Copy the contents of the mod's GameData directory into your KSP's GameData folde
 
 1.1.0
 - Created a bridging dll for those who want to optionally incorporate BARIS into their mods.
+- Event cards won't spawn during high timewarp.
+- New debug option: In the editor, you can add flight experience to parts in the currently loaded vessel.
+- Dropped KSP 1.2.2 support.
 - Minor bug fixes.
 
 1.0.5
