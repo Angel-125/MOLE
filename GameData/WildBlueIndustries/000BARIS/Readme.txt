@@ -13,10 +13,15 @@ Copy the contents of the mod's GameData directory into your KSP's GameData folde
 
 1.1.0
 - Created a bridging dll for those who want to optionally incorporate BARIS into their mods.
-- Event cards won't spawn during high timewarp.
-- New debug option: In the editor, you can add flight experience to parts in the currently loaded vessel.
-- Dropped KSP 1.2.2 support.
-- Minor bug fixes.
+- Event cards won't spawn during high timewarp, but if the timer expires then you'll receive an event card once you exit timewarp.
+- New debug option: In the editor, you can add flight experience to parts in the currently loaded vessel. Similarly, you can do the same for the active vessel in flight. This should help players integrate BARIS into existing saves.
+- Vessels will make a Reliability check a few minutes after launch if you haven't already achieved orbit. This will cover SSTOs and add extra pucker factor.
+- Added new "Event Card" hints for first-time players.
+- Clarified KSPedia entry for KCT support.
+- Moved stock launch clamp to Engineering 101 to help with early-game static fire tests.
+- When staging events fail, parts might still gain flight experience. The odds of that happening is configurable from the BARIS settings screen.
+- Fixed issue with Astronaut payroll not showing up when KCT is installed.
+- Dropped support for KSP 1.2.2; you can thank the bridging dll for that...
 
 1.0.5
 - Fixed issue where Event Cards would happen even when BARIS is disabled.
