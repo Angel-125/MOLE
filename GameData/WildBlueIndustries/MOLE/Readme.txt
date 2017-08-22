@@ -29,6 +29,9 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.8.6
+- BARIS Update
+
 1.8.5
 - Although BARIS is bundled with MOLE, you now have the option to remove BARIS if desired. Simply delete the 000BARIS folder if you don't want its functionality. DO NOT DELETE the 000ABARISBridgeDoNotDelete FOLDER! That plugin is the bridge between MOLE and BARIS.
 - Recalibrated templates for Cryo Engines.

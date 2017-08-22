@@ -11,6 +11,16 @@ Copy the contents of the mod's GameData directory into your KSP's GameData folde
 
 ---REVISION HISTORY---
 
+1.2.0
+- Fixed issues with event card tips repeatedly showing up.
+- Tool tip cards won't show up if BARIS is disabled.
+- Parts on new vessels will receive default flight experience points when launches can't fail.
+- Parts created in the field will receive default flight experience if none existed before. This will help with incorporating BARIS into existing games.
+- Improvements to flight experience will now affect vessels currently undergoing vehicle integration.
+- Fixed issue with flight experience not being added to parts after vehicle integration was completed.
+- New VAB/SPH button: Test Bench - If you assemble a collection of parts in the VAB/SPH, you can spend Science in Science Sandbox and Career games and/or Funds in Career games to simulate launch conditions and gain flight experience. That flight experience will improve your vessel Reliability ratings on future craft. You can adjust the per-part Funds cost in the Difficulties screen; Science cost is based on how many flights it takes to gain a flight experience bonus point.
+- Vehicle integration rush jobs are now only available in Career games.
+
 1.1.0
 - Created a bridging dll for those who want to optionally incorporate BARIS into their mods.
 - Event cards won't spawn during high timewarp, but if the timer expires then you'll receive an event card once you exit timewarp.
