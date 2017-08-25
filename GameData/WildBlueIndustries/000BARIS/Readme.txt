@@ -11,6 +11,30 @@ Copy the contents of the mod's GameData directory into your KSP's GameData folde
 
 ---REVISION HISTORY---
 
+1.2.5
+Test Bench
+- Test Bench now calculates the simulation costs based upon breakable parts, not all the parts in the vessel.
+- Test Bench lists both initial and integrated Reliability, both before and after purchasing a Reliability upgrade.
+- Test Bench lets you add 1, 5, and 10 points of Reliability at a time, with appropriate cost increases.
+- For KCT users, the VAB/SPH BARIS button will show what the vessel's reliability will be after construction.
+
+Escape Pods
+- Removed escape pod flag from ModuleQualityControl; it was causing confusion.
+
+Part Failures
+- Messages are now displayed in the correct sequence during a staging event's critical failure.
+- Added new Settings option to give parts the option to potentially explode during failures. It is off by default. They can explode during failed staging events and during post-launch critical failures when the part has run out of MTBF.
+- Added new Settings option to control how likely a part will explode during staging events.
+- Added new Settings option to control how likely a part will explode during a post-launch activity when the part critically fails and is out of MTBF.
+- Critical failures are less likely to happen during post-launch activities.
+- Revised engine failure modes: shutdown (75% chance unless engine can't shut down, in which case it explodes); stuck on (20% chance unless engine can't shut down, in which case it explodes); explode (5% chance).
+- Increased the maximum number of seconds in which to make a staging check.
+- Fixed persistence issues with broken parts.
+- Crew will no longer try to escape an unkermanned vessel.
+
+Event Cards
+- The available event cards now depend upon the current game mode.
+
 1.2.0
 - Fixed issues with event card tips repeatedly showing up.
 - Tool tip cards won't show up if BARIS is disabled.
