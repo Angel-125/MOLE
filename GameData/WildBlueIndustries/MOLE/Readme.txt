@@ -29,6 +29,9 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.8.8
+- BARIS Update
+
 1.8.6
 - BARIS Update
 

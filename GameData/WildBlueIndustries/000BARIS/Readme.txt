@@ -7,9 +7,33 @@ Event cards!
 
 ---INSTALLATION---
 
-Copy the contents of the mod's GameData directory into your KSP's GameData folder. For KSP 1.2.2, you need to also copy the Extras/KSP122DLL/BARIS.dll into GameData/WildBlueIndustries/000BARIS folder.
+Copy the contents of the mod's GameData directory into your KSP's GameData folder. Your folders should look like this:
+GameData/WildBlueIndustries/000ABARISBridgeDoNotDelete
+GameData/WildBlueIndustries/000BARIS
+GameData/ModuleManager.dll
+
+NOTE: ModuleManager is REQUIRED.
 
 ---REVISION HISTORY---
+
+1.2.7
+Event Cards
+- Vehicle integration completed event result won't be available when KCT is installed.
+
+MTBF
+- Part condition is now based on MTBF instead of part quality.
+- New Condition summary: Maintenance Required - When MTBF runs out, this summary will indicate that the part needs periodic maintenance in order to maintain its quality.
+- As parts gain flight experience, they'll gain MTBF in addition to their flight experience bonus.
+- MTBF capped at 5,112 hours (2 kerbal-years).
+- ModuleQualityControl now allows part-based MTBF caps just like it does with quality rating caps. These caps override the global settings.
+- Fixed issue where MTBF improvements gained through part upgrades wasn't being applied.
+- Fixed issue where MTBF improvements gained through facility upgrades wasn't being applied.
+
+Configuration
+- Added new Constants.cfg file; many of BARIS's constant values can be configured with this file, including the MTBF cap...
+
+Other Fixes
+- Fixed issue where the odds of a part exploding during launch and/or post-launch weren't honoring a 0% chance.
 
 1.2.5
 Test Bench
