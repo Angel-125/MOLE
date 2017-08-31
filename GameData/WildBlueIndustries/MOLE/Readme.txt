@@ -28,6 +28,16 @@ http://www.nro.gov/foia/declass/MOL.html
 Copy the contents of the zip file to your GameData directory. Be sure to overwrite existing files and replace them.
 
 ---REVISION HISTORY---
+1.8.9
+- Changed OMS Kit's default template to Monopropellant storage.
+- Revised the OMS Kit's description to help players understand its use.
+- Changed Coach's default template to ResearchKits.
+- Science storage templates now unlocked at Space Exploration (when you get the M.O.L.E. station part).
+- Experiments list what parts they require.
+- The Brumby can now be upgraded for unkermanned flight.
+- BARIS update.
+
+Reminder: The O-2 "Oxygen" motor and the OMS Kit can both serve as Launch Escape Systems.
 
 1.8.8
 - BARIS Update

@@ -16,6 +16,25 @@ NOTE: ModuleManager is REQUIRED.
 
 ---REVISION HISTORY---
 
+1.3.0
+MTBF
+- Deactivated parts will lose MTBF at a slower rate (default: 1/10th) than activated parts. Think hibernation mode... 
+NOTE: the hibertating MTBF decay rate is varied per part. Deactivated engines lose MTBF slower than deactivated fuel tanks, for instance. Look at MM_BARIS.cfg for examples.
+
+Launch Escapes
+- Base chance to escape an exploding vehicle is now based on the kerbal with the highest Stupidity in the crew.
+
+Fuel Tanks
+- Additional MM patches for fuel tanks- thanks Hotaru! :)
+- Fuel tanks will make quality checks when the player locks or unlocks its resources.
+- Fuel tanks will make quality checks when a resource is emptied or filled to capacity.
+- Fuel tanks will be considered deactivated if all their resources are locked.
+- You can toggle the lock/unlock state of all resources in a tank using the new "Toggle Resource Locks" context menu button and Action Group button.
+
+Bug Fixes
+- Fixed bug where parts were losing MTBF faster than intended.
+- Fixed bug where some parts were allowed to break even when prevented from breaking.
+
 1.2.7
 Event Cards
 - Vehicle integration completed event result won't be available when KCT is installed.
