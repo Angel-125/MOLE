@@ -28,6 +28,15 @@ http://www.nro.gov/foia/declass/MOL.html
 Copy the contents of the zip file to your GameData directory. Be sure to overwrite existing files and replace them.
 
 ---REVISION HISTORY---
+
+1.8.10
+- All configurable parts now require an Engineer to reconfigure instead of a mix of Engineer and Scientist.
+- With Pathfinder installed, the DenEye can also perform geo surveys just like the T.E.R.R.A.I.N. in addition to generating ScopeTime and its built-in ground surveillance experiment. It will consume ResearchKits in the process.
+- Play mode support added.
+- Added support for Classic Stock play mode and Pristine mode.
+- CRP is now a separate download.
+- Updated to KSP 1.3.1.
+
 1.8.9
 - Changed OMS Kit's default template to Monopropellant storage.
 - Revised the OMS Kit's description to help players understand its use.
