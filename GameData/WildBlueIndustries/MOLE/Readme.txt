@@ -29,7 +29,7 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
-1.8.10
+1.8.11
 - All configurable parts now require an Engineer to reconfigure instead of a mix of Engineer and Scientist.
 - With Pathfinder installed, the DenEye can also perform geo surveys just like the T.E.R.R.A.I.N. in addition to generating ScopeTime and its built-in ground surveillance experiment. It will consume ResearchKits in the process.
 - Play mode support added.
