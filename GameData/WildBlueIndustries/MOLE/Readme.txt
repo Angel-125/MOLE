@@ -29,6 +29,19 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.9.0
+New Parts
+- Bigby Decoupler (Specialized Construction): This expensive Size 3 decoupler was built to help launch the Bigby Orbital Workshop.
+- Bigby Fairing (Specialized Construction): This fairing was specially built to help launch the Bigby Orbital Workshop.
+
+New Experiment
+- Gravioli Wave Experiment: You'll need a DenEye telescope and Bigby Solar Observatory along with a MOLE lab to look for gravioli waves in the cosmos.
+
+Bug Fixes & Enhancements
+- Moved the IA-375 Interstage Adapter to Specialized Construction.
+- The Coach 500 now stored up to 8 science experiments.
+- WBT Update
+
 1.8.11
 - All configurable parts now require an Engineer to reconfigure instead of a mix of Engineer and Scientist.
 - With Pathfinder installed, the DenEye can also perform geo surveys just like the T.E.R.R.A.I.N. in addition to generating ScopeTime and its built-in ground surveillance experiment. It will consume ResearchKits in the process.
