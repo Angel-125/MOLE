@@ -29,6 +29,9 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.9.1
+- WBT update
+
 1.9.0
 New Parts
 - Bigby Decoupler (Specialized Construction): This expensive Size 3 decoupler was built to help launch the Bigby Orbital Workshop.
