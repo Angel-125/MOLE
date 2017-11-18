@@ -29,6 +29,9 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.9.2
+- All docking ports now have configurable lights. They'll automatically switch on when you set them as your docking target.
+
 1.9.1
 - WBT update
 
