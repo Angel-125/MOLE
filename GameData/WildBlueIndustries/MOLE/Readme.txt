@@ -29,6 +29,11 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.9.3
+- TAC-LS balancing- thanks Space Kadet! :)
+- Fixed missing resource icons
+- WBT Update
+
 1.9.2
 - All docking ports now have configurable lights. They'll automatically switch on when you set them as your docking target.
 
