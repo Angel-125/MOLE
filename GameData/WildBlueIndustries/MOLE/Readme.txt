@@ -29,6 +29,18 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.10.0
+
+IA-25: Leveled the central attachment node with the rest of the engines.
+
+MOLE: Reworked the IVA to be horizontal like the the MOH and MOBL.
+
+New Contract
+- Touring: This contract requires you to send 1 or more tourists to a specific vessel and return them home safely after a few days stay.
+
+ARP Icons
+Added new Alternate Resource Panel icons courtesy of JadeOfMaar. These look great! :)
+
 1.9.3
 - TAC-LS balancing- thanks Space Kadet! :)
 - Fixed missing resource icons
