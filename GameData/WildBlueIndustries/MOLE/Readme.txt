@@ -29,6 +29,10 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.10.1
+- WBT update
+- Module Manager update
+
 1.10.0
 
 IA-25: Leveled the central attachment node with the rest of the engines.
