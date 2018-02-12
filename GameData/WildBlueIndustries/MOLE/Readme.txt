@@ -29,6 +29,9 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.10.2
+- OSE Workshop now functions properly for the Mark One Habitat when you install both OSE Workshop and Pathfinder.
+
 1.10.1
 - WBT update
 - Module Manager update
