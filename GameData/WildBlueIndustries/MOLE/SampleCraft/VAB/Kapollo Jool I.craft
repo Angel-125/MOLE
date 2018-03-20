@@ -5,7 +5,7 @@ type = VAB
 size = 5.76961899,36.2827606,6.60080385
 PART
 {
-	part = Mark1-2Pod_4293897908
+	part = mk1-3pod_4293897908
 	partName = Part
 	pos = -0.40687421,31.20644,0.0571687184
 	attPos = 0,0,0
@@ -930,7 +930,7 @@ PART
 	modSize = 0,0,0
 	link = WBI.S25Separator_4293878168
 	attN = bottom,WBI.S25Separator_4293878168
-	attN = top,Mark1-2Pod_4293897908
+	attN = top,mk1-3pod_4293897908
 	EVENTS
 	{
 	}
@@ -1383,7 +1383,7 @@ PART
 	modSize = 0,0,0
 	link = LaunchEscapeSystem_4293807690
 	attN = top,LaunchEscapeSystem_4293807690
-	attN = bottom,Mark1-2Pod_4293897908
+	attN = bottom,mk1-3pod_4293897908
 	EVENTS
 	{
 	}
@@ -1473,7 +1473,7 @@ PART
 	modMass = 0
 	modSize = 0,0,0
 	sym = parachuteRadial_4293822612
-	srfN = srfAttach,Mark1-2Pod_4293897908
+	srfN = srfAttach,mk1-3pod_4293897908
 	EVENTS
 	{
 	}
@@ -1598,7 +1598,7 @@ PART
 	modMass = 0
 	modSize = 0,0,0
 	sym = parachuteRadial_4293823730
-	srfN = srfAttach,Mark1-2Pod_4293897908
+	srfN = srfAttach,mk1-3pod_4293897908
 	EVENTS
 	{
 	}
@@ -1722,7 +1722,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	srfN = srfAttach,Mark1-2Pod_4293897908
+	srfN = srfAttach,mk1-3pod_4293897908
 	EVENTS
 	{
 	}

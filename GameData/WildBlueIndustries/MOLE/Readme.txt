@@ -29,6 +29,21 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.12
+
+Bug Fixes & Enhancements
+- Recompiled for KSP 1.4.1
+- Optimized several meshes to help improve rendering rates.
+- Lightened the Brumby capsule's dry mass to make it comparable to the DLC mk2.
+- The Brumby can now carry two science experiments.
+- The Bigby Crew Module can now carry four science experiments.
+- Removed helmet requirements in the Appaloosa, Brumby, and Bigby Crew Module to remain consistent with stock command pods.
+- Fixed MOBL crew spaces.
+- Fixed several part descriptions.
+
+Experiments
+- Added new Breakthrough Research experiment. It has a small chance of creating an experimental version of a part that's located in an unresearched tech node. The experimental part is fully functional, just like those that you get with part test contracts. You have a chance to create an experimental part even after the Breakthrough Research experiment stops producing Science.
+
 1.10.2
 - OSE Workshop now functions properly for the Mark One Habitat when you install both OSE Workshop and Pathfinder.
 
