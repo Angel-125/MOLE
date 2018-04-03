@@ -30,7 +30,7 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 ---REVISION HISTORY---
 
 1.15 MOLE: Feature Complete!
-The last major parts update to MOLE introduces some new items to round out the 1.875m station parts inculding a cupola and a programmable station arm.
+The last major parts update to MOLE introduces some new items to round out the 1.875m station parts including a cupola and a programmable station arm.
 
 New Parts
 - Mk1 Cupola (Space Exploration): This 1.875m cupola provides excellent views and can double as an airlock.
