@@ -6,6 +6,9 @@ A KSP mod that provides common functionality for mods by Wild Blue Industries.
 
 Copy the contents of the mod's GameData directory into your GameData folder.
 
+X
+- KerbalActuators plugin added to WBT (it's a separate DLL). KerbalActuators is still available as a separate modlet...
+
 1.50
 - Recompiled for KSP 1.4.1
 - Gave ElectroPlasma a small amount of density.

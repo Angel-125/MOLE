@@ -29,6 +29,16 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.15 MOLE: Feature Complete!
+The last major parts update to MOLE introduces some new items to round out the 1.875m station parts inculding a cupola and a programmable station arm.
+
+New Parts
+- Mk1 Cupola (Space Exploration): This 1.875m cupola provides excellent views and can double as an airlock.
+- Mk1 Station Arm (Advanced Construction): This arm can be use to maneuver payloads around in orbit.
+
+Bug Fixes & Enhancements
+- Re-textured the Titan tanks to bring them up to DSEV standards.
+
 1.12
 
 Bug Fixes & Enhancements
@@ -61,7 +71,7 @@ New Contract
 - Touring: This contract requires you to send 1 or more tourists to a specific vessel and return them home safely after a few days stay.
 
 ARP Icons
-Added new Alternate Resource Panel icons courtesy of JadeOfMaar. These look great! :)
+- Added new Alternate Resource Panel icons courtesy of JadeOfMaar. These look great! :)
 
 1.9.3
 - TAC-LS balancing- thanks Space Kadet! :)
