@@ -1,0 +1,64 @@
+PART
+{
+	name = WBI_PrototypeParaglider
+	module = Part
+	author = Angel-125
+	rescaleFactor = 1
+	node_attach = 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1
+//	CoLOffset = -1.875, 0.0, 0.0
+//	CoPOffset = -1.875, 0.0, 0.0
+	TechRequired = advLanding
+	entryCost = 6400
+	cost = 500
+	category = Aero
+	subcategory = 0
+	title = Prototype Paraglider
+	manufacturer = Wild Blue Industries
+	description = A prototype paraglider used to test folding wing concepts. It ain't pretty but it works. Use at your own risk.
+	attachRules = 0,1,0,1,1
+	mass = 0.2
+	thermalMassModifier = 8.0
+	// heatConductivity = 0.06 // half default
+	emissiveConstant = 0.95
+	dragModelType = none
+	maximum_drag = 0.02
+	minimum_drag = 0.02
+	angularDrag = 2
+	crashTolerance = 15
+	maxTemp = 2400
+	explosionPotential = 0.1
+	fuelCrossFeed = True
+	bulkheadProfiles = srf
+
+	MODEL
+	{
+		model = WildBlueIndustries/MOLE/Parts/Aero/PrototypeParaglider/SimpleWing
+	}
+
+	MODULE
+	{
+		name = ModuleAnimateGeneric
+		animationName = Deploy
+		actionGUIName = Toggle Wing
+		startEventGUIName = Retract
+		endEventGUIName = Extend
+	}
+
+	MODULE
+	{
+		name = ModuleLiftingSurface
+		useInternalDragModel = True
+		deflectionLiftCoeff = 4.0
+		dragAtMaxAoA = 0.5
+		dragAtMinAoA = 0.0
+	}
+
+	MODULE
+	{
+		name = ModuleDeployableWing
+		deflectionLiftCoeffDeployed = 4.0
+		deflectionLiftCoeffStowed = 0.0
+		dragModelTypeDeployed = none
+		dragModelTypeStowed = default
+	}
+}
