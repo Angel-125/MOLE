@@ -29,6 +29,9 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.15.3
+- WBT and BARIS bridge update.
+
 1.15.1
 - Recompiled for KSP 1.4.3.
 - Improved resource summary in the geology lab.
