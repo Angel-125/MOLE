@@ -29,6 +29,9 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.15.5
+- Recompiled for KSP 1.4.4
+
 1.15.4
 - WBT Update
 - Classic Stock templates update - thanks JadeOfMaar! :)
