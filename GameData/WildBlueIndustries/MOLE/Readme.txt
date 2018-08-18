@@ -29,6 +29,10 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.15.8
+- WBT update.
+- Fixed click-through issues with windows displayed in the editor.
+
 1.15.7
 - Bug fixes for science experiments
 
