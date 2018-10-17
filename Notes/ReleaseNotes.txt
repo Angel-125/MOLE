@@ -1,8 +1,5 @@
-Omni Converters & Storage
-- Added search functions to OmniStorage and OmniConverter GUI.
-- Play Mode now lists which mods support a particular mode.
+Last release for KSP 1.4.5!
 
-Classic Stock
-- Added new Classic Stock omni converters: Propellium Distiller, Oxium Distiller, Snack Grinder (requres Snacks), Soil Dehydrator (requires Snacks).
-- MOLE, MOH, and BOW all default to Omni templates.
-- Fixes Play Mode failing to rename certain files. NOTE: You might need to reset your current play mode. Simply open the WBT app from the Space Center, choose another mode, press OK, and again open the app, selecting your original play mode. Then be sure to restart KSP.
+Bug Fixes & Enhancements
+- Fixed issue where switching Play Modes would cause some files to not be renamed and cause all kinds of fun for players...
+NOTE: For the changes to take effect, you'll need to switch your Play Mode to some mode other than the current one, then switch it to the desired mode.

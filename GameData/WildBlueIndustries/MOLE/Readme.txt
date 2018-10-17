@@ -29,6 +29,13 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.16.1
+Last release for KSP 1.4.5!
+
+Bug Fixes & Enhancements
+- Fixed issue where switching Play Modes would cause some files to not be renamed and cause all kinds of fun for players...
+NOTE: For the changes to take effect, you'll need to switch your Play Mode to some mode other than the current one, then switch it to the desired mode.
+
 1.16
 
 Omni Converters & Storage

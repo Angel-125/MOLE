@@ -1,0 +1,10 @@
+@PART[WBILDEFBotanyModule]
+{
+	@MODULE[ModuleResourceConverter]
+	{
+		@INPUT_RESOURCE[Fertilizer]
+		{
+			@name = Compost
+		}
+	}
+}
