@@ -29,6 +29,10 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.16.2
+- Updated for KSP 1.5
+- Fixed issue with experiment manifests not remembering what experiments you loaded in after you revert your flights.
+
 1.16.1
 Last release for KSP 1.4.5!
 
