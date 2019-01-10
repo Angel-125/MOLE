@@ -1,0 +1,34 @@
+@MOH[Dolores]
+{
+	MODULE:NEEDS[!USILifeSupport]
+	{
+		name = WBIResourceConverter
+		ConverterName = KNUTS Processor
+		StartActionName = Start Processor
+		StopActionName = Stop Processor
+		AutoShutdown = false
+		GeneratesHeat = false
+		UseSpecialistBonus = false
+		crewsRequired = 2
+		checkCrewsWholeVessel = true
+
+		INPUT_RESOURCE
+		{
+			ResourceName = ResearchKits
+			Ratio = 0.00075
+		}
+
+		INPUT_RESOURCE
+		{
+			ResourceName = ElectricCharge
+			Ratio = 1
+		}
+
+		OUTPUT_RESOURCE
+		{
+			ResourceName = Mulch
+			Ratio = 0.00075
+			DumpExcess = false
+		}
+	}
+}

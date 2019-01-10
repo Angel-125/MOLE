@@ -1,0 +1,147 @@
+MOBL:NEEDS[SnacksUtils]
+{
+	author = Angel-125
+	name = Greenhouse
+	title = Greenhouse (Snacks)
+	shortName = Greenhouse
+	needs = SnacksUtils
+	mass = 1.375
+	requiredResource = Equipment
+	requiredAmount = 550
+	reconfigureSkill = ScienceSkill
+	logoPanel = WildBlueIndustries/MOLE/Decals/Greenhouse
+	glowPanel = WildBlueIndustries/MOLE/Decals/GreenhouseGlow
+	description = The greenhouse can supplement your snacks if you're patient.
+	toolTip = The Greenhouse can produce snacks to extend your endurance.
+	toolTipTitle = Your First Greenhouse
+	ignoreMaterialModifier = true
+	TechRequired = advExploration
+
+	MODULE
+	{
+		name = WBIModuleGreenhouse
+		ConverterName = Greenhouse
+		StartActionName = Start Grenhouse
+		StopActionName = Stop Greenhouse
+		AutoShutdown = false
+		GeneratesHeat = false
+		UseSpecialistBonus = true
+		SpecialistEfficiencyFactor = 0.2
+		ExperienceEffect = ScienceSkill
+		EfficiencyBonus = 1
+		hoursPerCycle = 168 //Number of hours to grow crops
+		minimumSuccess = 45
+		criticalSuccess = 90
+		criticalFail = 20
+		cropResource = Snacks
+
+		//Calibrated for 1 snack per meal, 3 meals per day
+		//Supports 2 kerbals
+		cropYield = 168
+
+		criticalSuccessBonus = 0.25
+		failureLoss = 0.5
+
+		INPUT_RESOURCE
+		{
+			ResourceName = Water
+			Ratio = 0.000218750
+		}
+
+		INPUT_RESOURCE
+		{
+			ResourceName = Fertilizer
+			Ratio = 0.000072917
+		}
+
+		INPUT_RESOURCE
+		{
+			ResourceName = ElectricCharge
+			Ratio = 12
+		}
+	}
+
+	RESOURCE
+	{
+		name = Fertilizer
+		amount = 250
+		maxAmount = 250
+		isTweakable = true
+	}
+
+	RESOURCE
+	{
+		name = Water
+		amount = 250
+		maxAmount = 250
+		isTweakable = true
+	}
+}
+
+@MOH[Dolores]:NEEDS[SnacksUtils]
+{
+	//This is calibrated for 4 kerbals at 100% efficiency when then consume
+	//1 snack per meal and 1 meal per day.
+	//In game, the player can adjust the efficiency of the recycler from 10% to 100%.
+	//Given the dynamic nature, the input/output ratio is ALWAYS set to 0.00004630,
+	//which gives a daily input/output of 1.00008 per day. The recycler will then adjust
+	//the input/output ratio based upon RecyclerCapacity and recycler efficiency.
+	MODULE
+	{
+		name = SoilRecycler
+		ConverterName = Soil Recycler
+		StartActionName = Start Soil Recycler
+		StopActionName = Stop Soil Recycler
+		AutoShutdown = false
+		GeneratesHeat = false
+		UseSpecialistBonus = true
+		SpecialistEfficiencyFactor = 0.2
+		UseSpecializationBonus = true
+		SpecialistEfficiencyFactor = 0.1
+		ExperienceEffect = ScienceSkill
+		EfficiencyBonus = 1.0
+		RecyclerCapacity = 2
+	 
+		INPUT_RESOURCE
+		{
+			ResourceName = Soil
+			Ratio = 0.000034723
+			FlowMode = ALL_VESSEL
+  		}
+
+		INPUT_RESOURCE
+		{
+			ResourceName = ElectricCharge
+			Ratio = 6
+		}
+
+		OUTPUT_RESOURCE
+		{
+			ResourceName = Snacks
+			Ratio = 0.000034723
+			DumpExcess = false
+			FlowMode = ALL_VESSEL
+		}
+	}
+
+	RESOURCE
+	{
+		name = Soil
+		amount = 0
+		maxAmount = 200
+	}
+
+	RESOURCE
+	{
+		name = Water
+		amount = 0
+		maxAmount = 200
+	}
+
+	RESOURCE
+	{
+		name = Fertilizer
+		amount = 0
+		maxAmount = 200
+	}
+}
