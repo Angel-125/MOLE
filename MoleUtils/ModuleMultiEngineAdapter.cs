@@ -40,6 +40,9 @@ namespace WildBlueIndustries
         [KSPField()]
         public float nodeRadius;
 
+        [KSPField]
+        public float nodePlacementRadius;
+
         [KSPField()]
         public int maxNodes;
 
@@ -69,12 +72,12 @@ namespace WildBlueIndustries
             SetupNodes();
         }
 
-        public override void OnStart(StartState state)
+        public override void OnAwake()
         {
-            base.OnStart(state);
+            base.OnAwake();
 
-            if (string.IsNullOrEmpty(nodes) || 
-                string.IsNullOrEmpty(labels) || 
+            if (string.IsNullOrEmpty(nodes) ||
+                string.IsNullOrEmpty(labels) ||
                 string.IsNullOrEmpty(nodePrefix))
             {
                 Events["ToggleNodes"].active = false;
@@ -82,10 +85,10 @@ namespace WildBlueIndustries
             }
 
             //Get the values we need
-            char[] delimiter = new char []{ ',' };
+            char[] delimiter = new char[] { ',' };
             string[] values = nodes.Split(delimiter);
             int index;
-            
+
             //Node values
             nodeValues = new int[values.Length];
             for (index = 0; index < values.Length; index++)
@@ -101,6 +104,11 @@ namespace WildBlueIndustries
                 this.part.OnEditorAttach += onEditorAttach;
         }
 
+        public override void OnStart(StartState state)
+        {
+            base.OnStart(state);
+        }
+
         protected void onEditorAttach()
         {
             SetupNodes();
@@ -111,7 +119,6 @@ namespace WildBlueIndustries
             int numberOfNodes = nodeValues[nodeIndex];
             float angle;
             Dictionary<string, AttachNode> engineMounts = new Dictionary<string, AttachNode>();
-            AttachNode engineMount;
 
             //Set stack symmetry
             if (numberOfNodes > 0)
@@ -125,6 +132,41 @@ namespace WildBlueIndustries
             //Setup GUI
             nodeType = labelValues[nodeIndex];
 
+            //Shuffle the nodes
+            int count = this.part.attachNodes.Count;
+            AttachNode node;
+            int nodesMoved = 1; //Center is never moved.
+            for (int index = 0; index < count; index++)
+            {
+                node = this.part.attachNodes[index];
+                if (!node.id.Contains(nodePrefix) || node.id.Contains(nodePrefix + "0"))
+                    continue;
+
+                if (nodesMoved <= numberOfNodes)
+                {
+                    //Calculate angle
+                    angle = Mathf.PI * 2.0f * nodesMoved / numberOfNodes;
+
+                    //Set position
+                    node.position.x = Mathf.Cos(angle) * nodePlacementRadius;
+                    node.position.z = Mathf.Sin(angle) * nodePlacementRadius;
+
+                    //Set node type and radius
+                    node.nodeType = AttachNode.NodeType.Stack;
+                    node.radius = nodeRadius;
+
+                    //Track how many nodes we've moved.
+                    nodesMoved += 1;
+                }
+                else
+                {
+                    //Set node type and radius
+                    node.nodeType = AttachNode.NodeType.Dock;
+                    node.radius = 0.0001f;
+                }
+            }
+
+            /*
             //Find the nodes
             foreach (AttachNode node in this.part.attachNodes)
             {
@@ -160,6 +202,7 @@ namespace WildBlueIndustries
                     engineMount.position.z = 10000f;
                 }
             }
+            */
         }
     }
 }
