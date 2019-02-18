@@ -29,6 +29,13 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.17.2
+- Fixed overchange of Equipment costs for OmniConverter templates.
+- Fixed incorrect display of Equipment costs in the Operations Manager.
+- Fixed duplicate OmniConverter and OmniStorage loadouts that happen when you revert a flight back to the editor and create a new part.
+- Fixed Botany Module's Classic Stock resource requirements - Thanks JadeOfMaar!
+- Updated plume effects - Thanks JadeOfMaar!
+
 1.17.1
 - Fixed propellant issues with the Fulcrum, Corvette, and Hemi Cuda.
 - Corvette and Hemi Cuda's Raptalox mode moved to Classic Stock only.
