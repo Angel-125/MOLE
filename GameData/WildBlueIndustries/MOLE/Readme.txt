@@ -29,6 +29,13 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.17.1
+- Fixed propellant issues with the Fulcrum, Corvette, and Hemi Cuda.
+- Corvette and Hemi Cuda's Raptalox mode moved to Classic Stock only.
+- Removed Proplox propellant option for Corvette and Hemi Cuda.
+- Fixed issues with interstage adapter nodes.
+- Fixed issues with WBIMultiModeEngine not reporting delta-v stats properly to Kerbal Engineer. NOTE: Stock delta-v won't recognize the engine switch. Nothing I can do for now...
+
 1.17
 - Recompiled for KSP 1.6
 - Bug fixes.
