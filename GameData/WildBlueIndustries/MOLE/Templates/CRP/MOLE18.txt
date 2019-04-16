@@ -4,8 +4,8 @@ MOLE:NEEDS[Pathfinder]
 	author = Angel-125
 	shortName = Glykerol
 	title = Glykerol Lab
-	logoPanel = WildBlueIndustries/000WildBlueTools/Decals/Coolant
-	glowPanel = WildBlueIndustries/000WildBlueTools/Decals/CoolantGlow
+	logoPanel = WildBlueIndustries/000WildBlueTools/Decals/Glykerol
+	glowPanel = WildBlueIndustries/000WildBlueTools/Decals/GlykerolGlow
 	description = This specialized lab is capable of producing glykerol, a substance that's effective at freezing living things.
 	mass = 1.375
 	TechRequired = advExploration
@@ -82,8 +82,8 @@ MOLE:NEEDS[!Pathfinder]
 	author = Angel-125
 	shortName = Glykerol
 	title = Glykerol Lab
-	logoPanel = WildBlueIndustries/000WildBlueTools/Decals/Coolant
-	glowPanel = WildBlueIndustries/000WildBlueTools/Decals/CoolantGlow
+	logoPanel = WildBlueIndustries/000WildBlueTools/Decals/Glykerol
+	glowPanel = WildBlueIndustries/000WildBlueTools/Decals/GlykerolGlow
 	description = This specialized lab is capable of producing glykerol, a substance that's effective at freezing living things.
 	mass = 0.375
 	TechRequired = advExploration
