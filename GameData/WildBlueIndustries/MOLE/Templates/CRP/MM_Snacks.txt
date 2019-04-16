@@ -9,8 +9,8 @@ MOBL:NEEDS[SnacksUtils]
 	requiredResource = Equipment
 	requiredAmount = 550
 	reconfigureSkill = ScienceSkill
-	logoPanel = WildBlueIndustries/MOLE/Decals/Greenhouse
-	glowPanel = WildBlueIndustries/MOLE/Decals/GreenhouseGlow
+	logoPanel = WildBlueIndustries/000WildBlueTools/Decals/Greenhouse
+	glowPanel = WildBlueIndustries/000WildBlueTools/Decals/GreenhouseGlow
 	description = The greenhouse can supplement your snacks if you're patient.
 	toolTip = The Greenhouse can produce snacks to extend your endurance.
 	toolTipTitle = Your First Greenhouse
