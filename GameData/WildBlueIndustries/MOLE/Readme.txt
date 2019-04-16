@@ -29,6 +29,10 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.18
+- Updated for KSP 1.7
+- included is the move of a CRP template to its proper place; it was erroneously appearing under classic stock (Thanks JadeOfMaar!)
+
 1.17.2
 - Fixed overchange of Equipment costs for OmniConverter templates.
 - Fixed incorrect display of Equipment costs in the Operations Manager.
