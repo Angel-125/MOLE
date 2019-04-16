@@ -31,7 +31,12 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 1.18
 - Updated for KSP 1.7
-- included is the move of a CRP template to its proper place; it was erroneously appearing under classic stock (Thanks JadeOfMaar!)
+
+JadeOfMaar's Awesome Updates
+- Sledgehammer engine becomes switchable between 6 modes, each per unique SolidFuel grain geometry, granting different thrust curves, 2 of which are ideal for vacuum. Warning: switching mode on a Sledgehammer engine in-flight will start the engine.
+- Remade all template decals and added new ones.
+- Plume update for liquid engines (Kerolox and Raptalox modes)
+
 
 1.17.2
 - Fixed overchange of Equipment costs for OmniConverter templates.
