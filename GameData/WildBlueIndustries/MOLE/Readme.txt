@@ -29,6 +29,9 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.18.3
+- Removed part restrictions on several experiments.
+
 1.18
 - Updated for KSP 1.7
 
