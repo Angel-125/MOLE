@@ -29,6 +29,15 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.19.1
+- WBT update.
+
+1.19.0
+- Added support for Air and Stress from Snacks.
+
+1.18.4
+- Updated Snacks support.
+
 1.18.3
 - Removed part restrictions on several experiments.
 
