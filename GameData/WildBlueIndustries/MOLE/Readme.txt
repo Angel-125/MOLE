@@ -29,6 +29,9 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.20.0
+- Updated to KSP 1.8
+
 1.19.1
 - WBT update.
 
