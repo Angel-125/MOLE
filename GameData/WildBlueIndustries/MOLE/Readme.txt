@@ -29,6 +29,24 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.21.0
+- Compatibility update
+- Added new MOLE White theme to several parts: MOLE, MOH, MOBL, Kargo Bay, Battery Module, Power Module, Coach, Titan Instrument Unit, and Solar Power Module.
+- Remodled the Appaloosa; it has texture options to match the Mk-1 Command Pod. Both Stock and Restock are supported. The previous version of the Appaloosa has been deprecated.
+- Mk 1 Flight Control Package has texture options to match the Mk-1 Command Pod. Both Stock and Restock are supported. The previous version has been deprecated.
+- Mk 1 Docking Port and Mk 1 Radial Docking Port have texture options to match the Mk-1 Command Pod. Both Stock and Restock are supported. The previous version has been deprecated.
+- Remodeled the Mk 2 Docking Port to match standards with the Mk 1 ports. It has two part variants. The previous version has been deprecated.
+
+New Parts
+- SPF-1 Solar Array: Radially mounted, slightly better that the stock 3x2 array.
+- SPF-2 Solar Array: Radially mounted, about twice and powerful as the SPF-1.
+- SPF-3 Solar Array: Stack mounted, equal power generation to the Solar Battery Module. It lacks the batteries but you can attach it to Size 0 parts.
+- Bolt Abort Motor: This is the abort-only version of the O-2 "Oxygen" motor. It's available earlier in the tech tree.
+- Appaloosa Block 2: A 3-seat variant of the Appaloosa.
+- Appaloosa Orbital Module: A 2-seat module with a single Omni Converter.
+- Appaloosa Shielded Tank: A specially designed tank that also has a heat shield.
+- WB-20R "Colt" Liquid Fuel Engine: This is a radially mounted engine that also sports RCS thrusters.
+
 1.20.0
 - Updated to KSP 1.8
 

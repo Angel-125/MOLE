@@ -1,0 +1,113 @@
+PART
+{
+	// --- general parameters ---
+	name = wbiMADC
+	module = Part
+	author = Angel-125
+
+	// --- asset parameters ---
+	rescaleFactor = 1
+	MODEL
+	{
+		model = WildBlueIndustries/MOLE/Parts/Command/Appaloosa/MADC
+	}
+
+	// --- node definitions ---
+	node_stack_right = 0.82471, 0, 0, 1, 0, 0, 1
+	node_stack_left = -0.82471, 0, 0, -1, 0, 0, 1
+	node_stack_back = 0, 0, 0.82471, 0, 0, 1, 1
+	node_stack_front = 0, 0,-0.82471, 0, 0, -1, 1
+	node_stack_top = 0, 0.82471, 0, 0, 1, 0, 1
+	node_stack_bottom = 0,-0.82471, 0, 0, -1, 0, 1
+
+	// --- editor parameters ---
+	TechRequired = exploration
+	entryCost = 7500
+	cost = 6200
+	category = Utility
+	subcategory = 0
+	title = Multi Axis Docking Hub
+	manufacturer = Wild Blue Industries
+	description = This module is handy for the budget conscious who need a station node that doubles as an airlock.
+
+	// attachment rules: stack, srfAttach, allowStack, allowSrfAttach, allowCollision
+	attachRules = 1,1,1,1,0
+
+	// --- standard part parameters ---
+	mass = 1.0
+	dragModelType = default
+	maximum_drag = 0.2
+	minimum_drag = 0.3
+	angularDrag = 2
+	crashTolerance = 6
+	breakingForce = 2500
+	breakingTorque = 2500
+	maxTemp = 900
+	CrewCapacity = 1
+	vesselType = Station
+	fuelCrossFeed = True
+	bulkheadProfiles = size1p5
+
+	INTERNAL
+	{
+		name = WBI_AirlockSpace
+	}
+
+	MODULE
+	{
+		name = ModuleColorChanger
+		shaderProperty = _EmissiveColor
+		animRate = 0.8
+		animState = false
+		useRate = true
+		toggleInEditor = true
+		toggleInFlight = true
+		toggleInFlight = true
+		unfocusedRange = 5
+		toggleName = #autoLOC_502011 //#autoLOC_502011 = Toggle Lights
+		eventOnName = #autoLOC_502012 //#autoLOC_502012 = Lights On
+		eventOffName = #autoLOC_502013 //#autoLOC_502013 = Lights Off
+		toggleAction = True
+		defaultActionGroup = Light
+		redCurve
+		{
+			key = 0 0 0 3
+			key = 1 1 0 0
+		}
+		greenCurve
+		{
+			key = 0 0 0 1
+			key = 1 1 1 0
+		}
+		blueCurve
+		{
+			key = 0 0 0 0
+			key = 1 0.7 1.5 0
+		}
+		alphaCurve
+		{
+			key = 0 1
+		}
+	}
+
+	MODULE:NEEDS[KIS]
+	{
+		name = ModuleKISInventory
+		maxVolume = 200
+		externalAccess = true
+		internalAccess = true
+		slotsX = 3
+		slotsY = 3
+		slotSize = 50
+		itemIconResolution = 128
+		selfIconResolution = 128
+		openSndPath = KIS/Sounds/containerOpen
+		closeSndPath = KIS/Sounds/containerClose
+		defaultMoveSndPath = KIS/Sounds/itemMove
+	}
+
+	MODULE
+	{
+		name = WBIPropStateHelper
+	}
+}

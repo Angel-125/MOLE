@@ -108,6 +108,12 @@ namespace WildBlueIndustries
                 decoupler.enabled = false;
                 decoupler.stagingEnabled = false;
             }
+            else
+            {
+                Events["Decouple"].active = false;
+                Actions["DecoupleAction"].active = false;
+                Actions["DecoupleAction"].actionGroup = KSPActionGroup.None;
+            }
         }
     }
 }
