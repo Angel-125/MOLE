@@ -29,6 +29,10 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.21.1
+- Fixed engine plume effects on the Colt.
+- Fixed texture issues with the Appaloosa Orbital Module.
+
 1.21.0
 - Compatibility update
 - Added new MOLE White theme to several parts: MOLE, MOH, MOBL, Kargo Bay, Battery Module, Power Module, Coach, Titan Instrument Unit, and Solar Power Module.
