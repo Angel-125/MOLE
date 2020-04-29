@@ -29,6 +29,11 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.22.0
+- Shiny Solar Panels Update
+- Bug fixes
+- New modular LDEF experiment.
+
 1.21.1
 - Fixed engine plume effects on the Colt.
 - Fixed texture issues with the Appaloosa Orbital Module.
