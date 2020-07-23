@@ -29,6 +29,10 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.22.1
+- The MOLE Mobile Processing Lab can now generate LabTime from ResearchKits in addition to its stock Mobile Processing Lab capabilities.
+- Minor refit to the Mk2 docking port.
+
 1.22.0
 - Shiny Solar Panels Update
 - Bug fixes
