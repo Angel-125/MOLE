@@ -29,6 +29,16 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.23
+
+Thanks to JadeOfMaar:
+- Added BetterSRBs integration for Sledgehammer SRM.
+- Added experiment slot patch for Restock+ conical science box.
+- Fixed Raptium tuning in LFO engines (corvette, Hemi-Cuda, Fulcrum).
+- Fixed Sledgehammer SRM multimode behavior.
+- Fixed Sledgehammer SRM plumes behavior.
+- Fixed SRMFuel flow mode to make it respect staging.
+
 1.22.1
 - The MOLE Mobile Processing Lab can now generate LabTime from ResearchKits in addition to its stock Mobile Processing Lab capabilities.
 - Minor refit to the Mk2 docking port.
