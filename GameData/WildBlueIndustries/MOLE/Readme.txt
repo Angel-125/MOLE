@@ -29,6 +29,62 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.23
+
+Thanks to JadeOfMaar:
+- Added BetterSRBs integration for Sledgehammer SRM.
+- Added experiment slot patch for Restock+ conical science box.
+- Fixed Raptium tuning in LFO engines (corvette, Hemi-Cuda, Fulcrum).
+- Fixed Sledgehammer SRM multimode behavior.
+- Fixed Sledgehammer SRM plumes behavior.
+- Fixed SRMFuel flow mode to make it respect staging.
+
+1.22.1
+- The MOLE Mobile Processing Lab can now generate LabTime from ResearchKits in addition to its stock Mobile Processing Lab capabilities.
+- Minor refit to the Mk2 docking port.
+
+1.22.0
+- Shiny Solar Panels Update
+- Bug fixes
+- New modular LDEF experiment.
+
+1.21.1
+- Fixed engine plume effects on the Colt.
+- Fixed texture issues with the Appaloosa Orbital Module.
+
+1.21.0
+- Compatibility update
+- Added new MOLE White theme to several parts: MOLE, MOH, MOBL, Kargo Bay, Battery Module, Power Module, Coach, Titan Instrument Unit, and Solar Power Module.
+- Remodled the Appaloosa; it has texture options to match the Mk-1 Command Pod. Both Stock and Restock are supported. The previous version of the Appaloosa has been deprecated.
+- Mk 1 Flight Control Package has texture options to match the Mk-1 Command Pod. Both Stock and Restock are supported. The previous version has been deprecated.
+- Mk 1 Docking Port and Mk 1 Radial Docking Port have texture options to match the Mk-1 Command Pod. Both Stock and Restock are supported. The previous version has been deprecated.
+- Remodeled the Mk 2 Docking Port to match standards with the Mk 1 ports. It has two part variants. The previous version has been deprecated.
+
+New Parts
+- SPF-1 Solar Array: Radially mounted, slightly better that the stock 3x2 array.
+- SPF-2 Solar Array: Radially mounted, about twice and powerful as the SPF-1.
+- SPF-3 Solar Array: Stack mounted, equal power generation to the Solar Battery Module. It lacks the batteries but you can attach it to Size 0 parts.
+- Bolt Abort Motor: This is the abort-only version of the O-2 "Oxygen" motor. It's available earlier in the tech tree.
+- Appaloosa Block 2: A 3-seat variant of the Appaloosa.
+- Appaloosa Orbital Module: A 2-seat module with a single Omni Converter.
+- Appaloosa Shielded Tank: A specially designed tank that also has a heat shield.
+- WB-20R "Colt" Liquid Fuel Engine: This is a radially mounted engine that also sports RCS thrusters.
+
+1.20.0
+- Updated to KSP 1.8
+
+1.19.1
+- WBT update.
+
+1.19.0
+- Added support for Air and Stress from Snacks.
+
+1.18.4
+- Updated Snacks support.
+
+1.18.3
+- Removed part restrictions on several experiments.
+
 1.18
 - Updated for KSP 1.7
 
