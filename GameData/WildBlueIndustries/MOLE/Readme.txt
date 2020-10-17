@@ -29,6 +29,9 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.24
+- Fixed missing textures
+
 1.23
 
 Thanks to JadeOfMaar:

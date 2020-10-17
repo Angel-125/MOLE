@@ -1,0 +1,308 @@
+PART
+{
+	// this is a sample config file, for determining a good file format for defining part parameters
+	// comment line - ignored by cfg parser
+	// empty lines, or lines without a '=' sign are also ignored
+	// all other lines are split at the '=' sign, and the left operand is used to know what parameter we are setting
+	// diferent parameters require data in different formats (see docs), and each module has it's own parameters (again, see docs)
+	// each assignment must be in a single line. Lines without assignments will be ignored. (You CAN turn on word wrap, though)
+	// each keyword here relates to an existing variable in the assigned module. If the keyword isn't found, it is ignored.
+	// conversely, if a keyword is left unassigned (as in not in the file), it will be initialized with it's default value
+	// This is done automatically, so any public variable defined in the loaded module can be accessed this way (provided it's value can be parsed)
+
+
+	// --- general parameters ---
+	name = wbiAppaloosa
+	module = Part
+	author = Angel-125
+
+	// --- asset parameters ---
+	MODEL
+	{
+		model = WildBlueIndustries/MOLE/Parts/Command/Appaloosa/appaloosa
+	}
+	rescaleFactor = 1
+
+	// --- node definitions ---
+	// definition format is Position X, Position Y, Position Z, Up X, Up Y, Up Z
+	node_stack_top = 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 1
+	node_stack_bottom = 0.0, -0.25, 0.0, 0.0, -1.0, 0.0, 1
+
+
+	// --- editor parameters ---
+	TechRequired = flightControl
+	entryCost = 1000
+	cost = 800
+	category = Pods
+	subcategory = 0
+	title = Mk1-85 Appaloosa
+	manufacturer = Wild Blue Industries
+	description = The Mk1-85, known as the Appaloosa and nicknamed the "Backseat" by pilots, is what happens when engineers spill coffee on blueprints and then try to interpret the smeared results. It was originally intended as an upgraded Mk1 Command Pod, but when submitted to KSC for review, the company received a resounding "NO" in response. Wild Blue Industries saved face by offering the Mk1-85 as a backseat extension for the Mk1 that can be upgraded before launch as technology improves.
+
+	// attachment rules: stack, srfAttach, allowStack, allowSrfAttach, allowCollision
+	attachRules = 1,0,1,1,0
+
+	// --- standard part parameters ---
+	mass = 1.4
+	dragModelType = default
+	maximum_drag = 0.2
+	minimum_drag = 0.15
+	angularDrag = 2
+	crashTolerance = 14
+	breakingForce = 200
+	breakingTorque = 200
+	maxTemp = 2400 //1300
+//	skinMaxTemp = 2300
+	CoMOffset = 0,-.6,0
+	CoPOffset = 0.0, -0.4, 0.0 //drag force offset, should be ahead of center of mass
+	CenterOfBuoyancy = 0.0, 0.5, 0.0
+	CenterOfDisplacement = 0.0, -1.7, 0.0
+	buoyancyUseSine = False
+	buoyancy = 1.1
+	bulkheadProfiles = size1, size1p5
+	emissiveConstant = 0.9
+	thermalMassModifier = 8.0
+	bodyLiftOnlyUnattachedLift = True
+	bodyLiftOnlyAttachName = bottom
+	vesselType = Ship
+
+	// --- internal setup ---
+	CrewCapacity = 1
+
+	INTERNAL
+	{
+		name = WBI_BackseatSpaceStock
+	}
+
+	MODULE
+	{
+		name = ModuleCommand
+		minimumCrew = 1
+		defaultControlPointDisplayName = #autoLOC_6011003 //#autoLOC_6011003 = Default
+		CONTROLPOINT
+		{
+			name = reverse
+			displayName = #autoLOC_6011004 //#autoLOC_6011004 = Reversed
+			orientation = 0,0,180
+		}
+
+	}
+
+//	MODULE
+//	{
+//		name = WBILight
+//		animationName = BackseatLights
+//		actionGUIName = Toggle Lights
+//		startEventGUIName = Lights On
+//		endEventGUIName = Lights Off
+//		ecRequired = 0.001
+//	}
+
+	EFFECTS
+	{
+		running
+		{
+			AUDIO_MULTI
+			{
+				channel = Ship
+				transformName = rcsThruster
+				clip = sound_rocket_mini
+				volume = 0.0 0.0
+				volume = 0.1 0.0
+				volume = 0.5 0.025
+				volume = 1.0 0.1
+				pitch = 0.0 0.75
+				pitch = 1.0 1.5
+				loop = true
+			}
+			MODEL_MULTI_PARTICLE
+			{
+				modelName = Squad/FX/Monoprop_small
+				transformName = rcsThruster
+				emission = 0.0 0.0
+				emission = 0.1 0.0
+				emission = 1.0 1.0
+				speed = 0.0 0.8
+				speed = 1.0 1.0
+				localRotation = -90, 0, 0
+			}
+		}		
+	}
+	
+//	MODULE
+//	{
+//		name = ModuleRCSFX
+//		moduleIsEnabled = false
+//		stagingEnabled = False
+//		thrusterTransformName = rcsThruster
+//		thrusterPower = 1
+//		resourceName = MonoPropellant
+//		resourceFlowMode = STAGE_PRIORITY_FLOW
+//		runningEffectName = running
+//		atmosphereCurve
+//		{
+//			key = 0 240
+//			key = 1 100
+//			key = 4 0.001
+//		}
+
+//		showUpgradesInModuleInfo = true
+//		UPGRADES
+//		{
+//			UPGRADE
+//			{
+//				name__ = WBIFlightControl1
+//				description__ = Has Reaction Control System (RCS)
+//				moduleIsEnabled = true
+//			}
+//		}
+//	}
+
+//	MODULE
+//	{
+//		name = WBIModuleRCSTechCheck
+//		objects = RCSNodes
+//	}
+
+	MODULE
+	{
+		name = ModuleReactionWheel
+		
+		PitchTorque = 5
+		YawTorque = 5
+		RollTorque = 5
+		
+		RESOURCE
+		{
+			name = ElectricCharge
+			rate = 0.24
+		}
+	}
+
+	MODULE
+	{
+		name = ModuleScienceExperiment	
+	
+		experimentID = crewReport
+	
+		experimentActionName = Crew Report
+		resetActionName = Discard Crew Report
+		reviewActionName = Review Report
+	
+		useStaging = False	
+		useActionGroups = True
+		hideUIwhenUnavailable = True	
+		rerunnable = True
+	
+		xmitDataScalar = 1.0
+	}
+
+	MODULE
+	{
+		name = ModuleScienceContainer
+	
+		reviewActionName = Review Stored Data
+		storeActionName = Store Experiments
+		evaOnlyStorage = True
+		storageRange = 1.3
+		canBeTransferredToInVessel = True
+		canTransferInVessel = True
+	}
+
+	MODULE
+	{
+		name = ModuleDataTransmitter
+		antennaType = INTERNAL
+		packetInterval = 1.0
+		packetSize = 2
+		packetResourceCost = 12.0
+		requiredResource = ElectricCharge
+		antennaPower = 5000
+		optimumRange = 2500
+		packetFloor = .1
+		packetCeiling = 5
+	}
+	MODULE
+	{
+		name = ModuleLiftingSurface
+		useInternalDragModel = False
+		deflectionLiftCoeff = 0.35
+		liftingSurfaceCurve = CapsuleBottom
+		disableBodyLift = False
+		omnidirectional = False
+		perpendicularOnly = True
+		transformDir = Y
+		transformSign = -1
+		nodeEnabled = True
+		attachNodeName = bottom
+	}
+
+	MODULE
+	{
+		name = WBIPropStateHelper
+	}
+
+	MODULE
+	{
+		name = ModuleResourceConverter
+		ConverterName = MPU
+		StartActionName = Start MPU
+		StopActionName = Stop MPU
+		FillAmount = 0.99		 
+		AutoShutdown = true
+		GeneratesHeat = false
+		TemperatureModifier = 60
+		UseSpecializationBonus = true
+		SpecialistEfficiencyFactor = 0.1
+		ExperienceEffect = ConverterSkill
+		EfficiencyBonus = 1.0
+		 
+		INPUT_RESOURCE
+		{
+			ResourceName = MonoPropellant
+			Ratio = 0.00375
+			FlowMode = ALL_VESSEL
+		}
+
+		OUTPUT_RESOURCE
+		{
+			ResourceName = ElectricCharge
+			Ratio = 0.75
+			DumpExcess = false
+		}
+	}
+
+//	MODULE
+//	{
+//		name = WBINodeMover
+//		nodeName = top
+//		primaryNodePosition = 0.386
+//		altNodePosition = 0.5211682
+//	}
+
+	MODULE
+	{
+		name = ModuleConductionMultiplier
+		modifiedConductionFactor = 0.003
+		convectionFluxThreshold = 3000
+	}
+
+	MODULE:NEEDS[KerbalEngineer]
+	{
+		name = FlightEngineerModule
+	}
+
+	MODULE:NEEDS[kOS]
+	{
+		name = kOSProcessor
+		diskSpace = 5000
+	}
+
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 100
+		maxAmount = 100
+	}
+
+}
