@@ -29,25 +29,18 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
-1.24.1
+1.25.0
+- Reverted back to MOLE 1.22 and manually reapplied JadeOfMaar's updates.
+- Replaced Sledgehammer's MultiModeEngine and multiple engines with new WBIModuleEnginesSRB. This new module lets you define THRUST_PROFILE nodes within the part module. Simply select the desired thrust profile in the editor.
+- Adding Sledgehammer SRB segments will now slightly boost thrust.
+- Defined THRUST_PROFILE nodes for BetterSRB support based on JadeOfMaar's update.
+- Bug fixes from Wild Blue Tools
+
+1.24.2
 - Fixed missing parts
 
 1.24
 - Fixed missing textures
-
-1.23
-
-Thanks to JadeOfMaar:
-- Added BetterSRBs integration for Sledgehammer SRM.
-- Added experiment slot patch for Restock+ conical science box.
-- Fixed Raptium tuning in LFO engines (corvette, Hemi-Cuda, Fulcrum).
-- Fixed Sledgehammer SRM multimode behavior.
-- Fixed Sledgehammer SRM plumes behavior.
-- Fixed SRMFuel flow mode to make it respect staging.
-
-1.22.1
-- The MOLE Mobile Processing Lab can now generate LabTime from ResearchKits in addition to its stock Mobile Processing Lab capabilities.
-- Minor refit to the Mk2 docking port.
 
 1.22.0
 - Shiny Solar Panels Update

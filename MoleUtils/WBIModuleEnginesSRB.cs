@@ -29,12 +29,16 @@ namespace WildBlueIndustries
     {
         public string name = string.Empty;
         public float maxThrust = 0f;
+        public string powerEffectName = string.Empty;
         public FloatCurve thrustCurve = new FloatCurve();
 
         public WBIThrustProfile(ConfigNode node)
         {
             if (node.HasValue("name"))
                 name = node.GetValue("name");
+
+            if (node.HasValue("powerEffectName"))
+                powerEffectName = node.GetValue("powerEffectName");
 
             if (node.HasValue("maxThrust"))
                 float.TryParse(node.GetValue("maxThrust"), out maxThrust);
@@ -167,6 +171,8 @@ namespace WildBlueIndustries
 
             maxThrust = profile.maxThrust;
             thrustCurve = profile.thrustCurve;
+            if (profile.powerEffectName != string.Empty)
+                powerEffectName = profile.powerEffectName;
 
             profileName = profile.name;
         }
