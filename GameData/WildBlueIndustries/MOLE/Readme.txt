@@ -29,6 +29,12 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.26.0
+- KSP 1.11.1 support.
+- Mk2 Docking Port now has a "Buffalo" part variant that's designed to fit the Buffalo Crew Module.
+- 1.875m Titan parts are hidden when Making History DLC is installed.
+- Deprecated the mini grabbing unit since one exists in stock now.
+
 1.25.0
 - Reverted back to MOLE 1.22 and manually reapplied JadeOfMaar's updates.
 - Replaced Sledgehammer's MultiModeEngine and multiple engines with new WBIModuleEnginesSRB. This new module lets you define THRUST_PROFILE nodes within the part module. Simply select the desired thrust profile in the editor.
