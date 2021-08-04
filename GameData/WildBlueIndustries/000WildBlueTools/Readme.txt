@@ -6,6 +6,12 @@ A KSP mod that provides common functionality for mods by Wild Blue Industries.
 
 Copy the contents of the mod's GameData directory into your GameData folder.
 
+1.83.0
+- Bug fixes & KSP 1.12.2 update
+
+1.82.1
+- Bug fixes
+
 1.82.0
 - Add stock inventory support to several parts.
 - Bug fixes for OmniStorage.

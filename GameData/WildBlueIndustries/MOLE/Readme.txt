@@ -29,6 +29,9 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.26.1
+- Recompiled for KSP 1.12.2.
+
 1.26.0
 - KSP 1.11.1 support.
 - Mk2 Docking Port now has a "Buffalo" part variant that's designed to fit the Buffalo Crew Module.

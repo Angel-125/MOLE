@@ -78,3 +78,4 @@ C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\obj\Debug\MoleUtils.csproj.Cor
 C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\obj\Debug\MoleUtils.csproj.CopyComplete
 C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\obj\Debug\MoleUtils.dll
 C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\obj\Debug\MoleUtils.pdb
+C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\UnityEngine.SubsystemsModule.dll
