@@ -97,10 +97,6 @@
     <Compile Include="WBIModuleJettisonHelper.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\BARIS\BARISBridge\BARISBridge.csproj">
-      <Project>{8D46364B-4F22-403D-84E3-C2DCA8E49A4A}</Project>
-      <Name>BARISBridge</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\WildBlueTools\WildBlueTools.csproj">
       <Project>{CC0BDF1A-9641-4628-9F0F-3500DDC99534}</Project>
       <Name>WildBlueTools</Name>

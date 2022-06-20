@@ -29,6 +29,9 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.27.0
+- Removed BARIS dependency dll.
+
 1.26.1
 - Recompiled for KSP 1.12.2.
 
