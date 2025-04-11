@@ -95,11 +95,16 @@
     <Compile Include="ModuleBrumbyTextureSwitch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WBIModuleJettisonHelper.cs" />
+    <Compile Include="WBIModuleMirroredSolarPanel.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\WildBlueTools\WildBlueTools.csproj">
-      <Project>{CC0BDF1A-9641-4628-9F0F-3500DDC99534}</Project>
-      <Name>WildBlueTools</Name>
+    <ProjectReference Include="..\..\WBIResources\Source\WBIResources.csproj">
+      <Project>{9e6c131f-3161-486a-84f3-9f16768b4d4b}</Project>
+      <Name>WBIResources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WBIScience\Source\WBIScience\WBIScience.csproj">
+      <Project>{cca4cc8e-adb8-4572-8b65-ad67ecf48e5f}</Project>
+      <Name>WBIScience</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
@@ -107,12 +112,7 @@
     <PostBuildEvent>xcopy /Y "$(TargetPath)" "C:\KSPDev\GameData\WildBlueIndustries\MOLE\Plugins\"﻿
 xcopy /Y "$(TargetDir)$(TargetName).pdb" "C:\KSPDev\GameData\WildBlueIndustries\MOLE\Plugins\"
 xcopy /Y "$(TargetDir)$(TargetName).dll" "C:\KSPDev\GameData\WildBlueIndustries\MOLE\Plugins\"
-
-xcopy /Y  "C:\KSPDev\GameData\WildBlueIndustries\MOLE\MOLE.version" "C:\Projects\KSP\WildBlueIndustries\MOLE\Notes\"
-
-del "C:\Projects\KSP\WildBlueIndustries\MOLE\GameData\WildBlueIndustries\000WildBlueTools\MiniAVC.xml"
-del "C:\Projects\KSP\WildBlueIndustries\MOLE\GameData\WildBlueIndustries\001KerbalActuators\MiniAVC.xml"
-del "C:\Projects\KSP\WildBlueIndustries\MOLE\GameData\WildBlueIndustries\MOLE\MiniAVC.xml"</PostBuildEvent>
+</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

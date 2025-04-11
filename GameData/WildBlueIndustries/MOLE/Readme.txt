@@ -29,6 +29,16 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.30.0
+This has been a long time coming, but the 10+ year-old template system, which was a holdover from the earliest days of Multipurpose Colony Modules, is being retired in favor of the more flexible Omni Converter and Omni Storage system.
+Existing parts are deprecated, so your existing bases are safe. But new bases will use the new Omni system instead.
+
+BE SURE TO DELETE YOUR WildBlueIndustries/000WildBlueTools folder if you have one!
+
+- All convertible storage and template modules have been replaced with OmniStorage and OmniConverters.
+NOTE: This may affect vessels in flight, but you can easily reconfigure your modules by turning off resource and skill requirements in Game Settings -> WBIResources.
+- Play Mode is no longer a factor; if you have Community Resource Pack installed, you get CRP converters. If you have Classic Stock Resources installed, you get Classic Stock converters. If you have both installed, you get both.
+
 1.27.0
 - Removed BARIS dependency dll.
 

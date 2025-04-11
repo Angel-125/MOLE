@@ -1,0 +1,48 @@
+@PART[WBIKNUTS]
+{
+	@description = The kerbal Nutrition Utilization Transfer Study (KNUTS) studies how the kerbal's body processes nutrients, both incoming and outgoing. Ok, it's a fancy way of saying that the experiment studies mulch.
+
+	RESOURCE
+	{
+		name = Mulch
+		amount = 0
+		maxAmount = 194.4
+		isTweakable = false
+	}
+}
+
+EXPERIMENT_DEFINITION
+{
+	id = WBIKNUTS
+	title = Kerbal Nutrition Utilization Transfer Study (KNUTS)
+	baseValue = 30
+	scienceCap = 60
+	dataScale = 1
+	biomeMask = 7
+	situationMask = 63
+	description = The kerbal Nutrition Utilization Transfer Study (KNUTS) studies how the kerbal's body processes nutrients, both incoming and outgoing. Ok, it's a fancy way of saying that the experiment studies mulch.
+	mass = 0.01
+	techRequired = spaceExploration
+	tags = mole
+	minCrew = 2
+	requiredResources = LabTime,36;Mulch,194.4
+	situations = ORBITING
+	requiredPart = Mark One Habitat
+	requiredPart = M.O.L.E.
+	requiredPart = LDEF Science Processor
+	requiredPart = Bigby Orbital Workshop
+	requiredPart = D2 Centrifuge
+	requiredPart = D2 Science Module
+	requiredPart = GondoLab
+	requiredPart = Doc Science Lab
+
+	RESULTS
+	{
+		default = The crew was too busy munching on snacks to remember to study the byproducts.
+		KerbinInSpace = In a microgravity environment, it appears that kerbals lose kalcium from their bones.
+		KerbinInSpace = Hot Pockets are sounding really good right now.
+		MunInSpace = The crew thinks that the study would work better with chocoloate chip cookies.
+		MinmusInSpace = Research has concluded that kerbals really like Minmus Mint ice cream.
+		DunaInSpace = The crew has a hankering for pizza.
+	}
+}

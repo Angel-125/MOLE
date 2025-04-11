@@ -1,0 +1,49 @@
+@PART[WBI_WB400,WBI_Titan450,WBI_Titan900,WBI_Titan1800,WBI_Adapter,WBI_SlantedAdapter,WBI_TitanAdapterTank,WBI_WB700,WBI_Coach500,WBI_Coach225,WBI_Backseat2,WBI_Korona]
+{
+	!MODULE[WBIConvertibleStorage]{}
+}
+
+@PART[WBI_WB400,WBI_Titan450,WBI_Titan900,WBI_Titan1800,WBI_Adapter,WBI_SlantedAdapter,WBI_TitanAdapterTank,WBI_WB700]
+{
+	!MODULE[WBIConvertibleStorage]{}
+}
+
+@PART[WBI_MOH18]:HAS[@MODULE[WBIMultiConverter]]
+{
+	!MODULE[WBIMultiConverter]{}
+	!MODULE[ModuleQualityControl]{}
+}
+@PART[WBI_MOH18]:HAS[@MODULE[WBIMultipurposeHab]]
+{
+	!MODULE[WBIMultipurposeHab]{}
+	!MODULE[ModuleQualityControl]{}
+}
+
+@PART[WBI_MOBL18]:HAS[@MODULE[WBIMultiConverter]]
+{
+	!MODULE[WBIMultiConverter]{}
+	!MODULE[ModuleQualityControl]{}
+}
+
+@PART[WBI_Mole182,WBI_BOW]:HAS[@MODULE[ModuleMarkOneLab]]
+{
+	!MODULE[ModuleMarkOneLab]{}
+	!MODULE[ModuleQualityControl]{}
+}
+@PART[WBI_Mole182,WBI_BOW]:HAS[@MODULE[WBIMultipurposeLab]]
+{
+	!MODULE[WBIMultipurposeLab]{}
+	!MODULE[ModuleQualityControl]{}
+}
+
+@PART[WBI_SolarObservatory]
+{
+	!MODULE[WBIResourceConverter]{}
+	!MODULE[ModuleQualityControl]{}
+}
+
+@PART[WBI_DenEye]
+{
+	!MODULE[ModuleBreakableConverter]{}
+	!MODULE[ModuleQualityControl]{}
+}
