@@ -13,8 +13,9 @@ C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\UnityEngine.TextRend
 C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\UnityEngine.UI.dll
 C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\UnityEngine.UIElementsModule.dll
 C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\UnityEngine.UIModule.dll
+C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\WBIResources.dll
+C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\WBIScience.dll
 C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\UnityEngine.AudioModule.dll
-C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\UnityEngine.UnityWebRequestWWWModule.dll
 C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\UnityEngine.ParticleSystemModule.dll
 C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\KSPTrackIR.dll
 C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\UnityEngine.UnityWebRequestModule.dll
@@ -30,6 +31,7 @@ C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\UnityEngine.VRModule
 C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\UnityEngine.UnityWebRequestTextureModule.dll
 C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\UnityEngine.UnityWebRequestAudioModule.dll
 C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\UnityEngine.UnityWebRequestAssetBundleModule.dll
+C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\UnityEngine.UnityWebRequestWWWModule.dll
 C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\TDx.TDxInput.dll
 C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\UnityEngine.Physics2DModule.dll
 C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\UnityEngine.SharedInternalsModule.dll
@@ -64,13 +66,11 @@ C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\UnityEngine.SpriteSh
 C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\UnityEngine.WindModule.dll
 C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\UnityEngine.ARModule.dll
 C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\UnityEngine.InputModule.dll
+C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\WBIResources.pdb
+C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\WBIScience.pdb
 C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\KSPAssets.XmlSerializers.dll
+C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\obj\Debug\MoleUtils.csproj.AssemblyReference.cache
 C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\obj\Debug\MoleUtils.csproj.CoreCompileInputs.cache
 C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\obj\Debug\MoleUtils.csproj.CopyComplete
 C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\obj\Debug\MoleUtils.dll
 C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\obj\Debug\MoleUtils.pdb
-C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\obj\Debug\MoleUtils.csproj.AssemblyReference.cache
-C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\WBIResources.dll
-C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\WBIScience.dll
-C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\WBIResources.pdb
-C:\Projects\KSP\WildBlueIndustries\MOLE\MoleUtils\bin\Debug\WBIScience.pdb

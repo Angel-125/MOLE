@@ -31,7 +31,6 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 1.30.0
 This has been a long time coming, but the 10+ year-old template system, which was a holdover from the earliest days of Multipurpose Colony Modules, is being retired in favor of the more flexible Omni Converter and Omni Storage system.
-Existing parts are deprecated, so your existing bases are safe. But new bases will use the new Omni system instead.
 
 BE SURE TO DELETE YOUR WildBlueIndustries/000WildBlueTools folder if you have one!
 
