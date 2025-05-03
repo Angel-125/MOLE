@@ -96,6 +96,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WBIModuleJettisonHelper.cs" />
     <Compile Include="WBIModuleMirroredSolarPanel.cs" />
+    <Compile Include="WBIWetWorkshop.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\WBIResources\Source\WBIResources.csproj">
