@@ -29,6 +29,10 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.30.3
+- Fixed missing Experiment Lab UI not showing
+- Removed sample craft files
+
 1.30.2
 - Bug fixes
 - Wet Workshop is back!
