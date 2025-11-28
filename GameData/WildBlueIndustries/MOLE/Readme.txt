@@ -29,6 +29,10 @@ Copy the contents of the zip file to your GameData directory. Be sure to overwri
 
 ---REVISION HISTORY---
 
+1.30.4
+- Fixed resource management in the WBIWetWorkshop part module.
+- Corrected propellant values for wet workshop tanks.
+
 1.30.3
 - Fixed missing Experiment Lab UI not showing
 - Removed sample craft files

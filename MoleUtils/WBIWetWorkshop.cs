@@ -560,8 +560,8 @@ namespace WildBlueIndustries
                     continue;
                 }
 
-                // Add resource if needed.
-                if (part.Resources.Contains(resourceName) == false && isDeployed)
+                // Add deployed resource if needed.
+                if (part.Resources.Contains(resourceName) == false && (isDeployed && isTankResource == false) || (isDeployed == false && isTankResource))
                 {
                     if (debugMode)
                         Debug.Log("[WBIWetWorkshop] - adding resource: " + resourceName);
