@@ -86,27 +86,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ModuleAbortModeEngine.cs" />
-    <Compile Include="ModuleBackseatController.cs" />
     <Compile Include="WBIModuleEnginesSRB.cs" />
-    <Compile Include="ModuleMarkOneLab.cs" />
-    <Compile Include="ModuleDeployableWing.cs" />
-    <Compile Include="ModuleMultiEngineAdapter.cs" />
-    <Compile Include="ModuleRCSDisabler.cs" />
-    <Compile Include="ModuleBrumbyTextureSwitch.cs" />
+    <Compile Include="MoleUtilsSettings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WBIModuleJettisonHelper.cs" />
     <Compile Include="WBIModuleMirroredSolarPanel.cs" />
+    <Compile Include="WBIModuleLight.cs" />
     <Compile Include="WBIWetWorkshop.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\WBIResources\Source\WBIResources.csproj">
-      <Project>{9e6c131f-3161-486a-84f3-9f16768b4d4b}</Project>
-      <Name>WBIResources</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\WBIScience\Source\WBIScience\WBIScience.csproj">
-      <Project>{cca4cc8e-adb8-4572-8b65-ad67ecf48e5f}</Project>
-      <Name>WBIScience</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

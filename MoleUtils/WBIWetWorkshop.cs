@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using UnityEngine;
 using KSP.IO;
-using WBIResources;
 using KSP.Localization;
 
 /*
@@ -26,11 +25,20 @@ namespace WildBlueIndustries
         public ModuleResource resource;
     }
 
-    public class WBIWetWorkshop : ExtendedPartModule, IModuleInfo
+    public class WBIWetWorkshop : PartModule, IModuleInfo
     {
         #region Fields
         [KSPField]
+        public string moduleID = string.Empty;
+
+        [KSPField]
         public string managedObjects = string.Empty;
+
+        [KSPField]
+        public string fuelTankMesh = string.Empty;
+
+        [KSPField]
+        public string workshopMesh = string.Empty;
 
         [KSPField(isPersistant = true)]
         public bool isDeployed;
@@ -135,11 +143,47 @@ namespace WildBlueIndustries
                 {
                     Events["ConvertToTank"].active = true;
                     Events["ConvertToWorkshop"].active = false;
+                    setObjectsVisible(workshopMesh, true);
+                    setObjectsVisible(fuelTankMesh, false);
+                    setObjectsVisible(true);
                 }
                 else
                 {
                     Events["ConvertToTank"].active = false;
                     Events["ConvertToWorkshop"].active = true;
+                    setObjectsVisible(workshopMesh, false);
+                    setObjectsVisible(fuelTankMesh, true);
+                    setObjectsVisible(false);
+                }
+
+                updateManagedModules();
+                updateManagedResources();
+            }
+            else if (HighLogic.LoadedSceneIsFlight)
+            {
+                if (isDeployed)
+                {
+                    Events["ConvertToTank"].active = allowTankConversionInFlight;
+                    Events["ConvertToTank"].guiActive = allowTankConversionInFlight;
+                    Events["ConvertToWorkshop"].active = false;
+                    Events["ConvertToWorkshop"].guiActive = false;
+                    part.CrewCapacity = crewCapacity;
+                    part.SpawnIVA();
+                    setObjectsVisible(true);
+                    setObjectsVisible(workshopMesh, true);
+                    setObjectsVisible(fuelTankMesh, false);
+                }
+                else
+                {
+                    Events["ConvertToTank"].active = false;
+                    Events["ConvertToTank"].guiActive = false;
+                    Events["ConvertToWorkshop"].active = true;
+                    Events["ConvertToWorkshop"].guiActive = true;
+                    part.CrewCapacity = 0;
+                    part.DespawnIVA();
+                    setObjectsVisible(false);
+                    setObjectsVisible(workshopMesh, false);
+                    setObjectsVisible(fuelTankMesh, true);
                 }
 
                 updateManagedModules();
@@ -150,9 +194,9 @@ namespace WildBlueIndustries
         public override void OnAwake()
         {
             base.OnAwake();
-            debugMode = WBIResourcesSettings.EnableDebugLogging;
-            payToReconfigure = WBIResourcesSettings.PayToReconfigure;
-            requiresSkillCheck = WBIResourcesSettings.RequiresSkillCheck;
+            debugMode = MoleUtilsSettings.EnableDebugLogging;
+            payToReconfigure = MoleUtilsSettings.PayToReconfigure;
+            requiresSkillCheck = MoleUtilsSettings.RequiresSkillCheck;
         }
         #endregion
 
@@ -169,12 +213,16 @@ namespace WildBlueIndustries
             if (HighLogic.LoadedSceneIsEditor)
             {
                 Events["ConvertToTank"].active = true;
+                Events["ConvertToTank"].guiActive = true;
+                Events["ConvertToWorkshop"].guiActive = false;
                 Events["ConvertToWorkshop"].active = false;
             }
             else if (HighLogic.LoadedSceneIsFlight)
             {
                 Events["ConvertToTank"].active = allowTankConversionInFlight;
+                Events["ConvertToTank"].guiActive = allowTankConversionInFlight;
                 Events["ConvertToWorkshop"].active = false;
+                Events["ConvertToWorkshop"].guiActive = false;
                 part.CrewCapacity = crewCapacity;
                 part.SpawnIVA();
             }
@@ -182,6 +230,8 @@ namespace WildBlueIndustries
             updateManagedModules();
             updateManagedResources();
             setObjectsVisible(true);
+            setObjectsVisible(workshopMesh, true);
+            setObjectsVisible(fuelTankMesh, false);
 
             //Dirty the GUI
             MonoUtilities.RefreshContextWindows(part);
@@ -196,12 +246,16 @@ namespace WildBlueIndustries
             if (HighLogic.LoadedSceneIsEditor)
             {
                 Events["ConvertToTank"].active = false;
+                Events["ConvertToTank"].guiActive = false;
                 Events["ConvertToWorkshop"].active = true;
+                Events["ConvertToWorkshop"].guiActive = true;
             }
             else if (HighLogic.LoadedSceneIsFlight)
             {
                 Events["ConvertToTank"].active = false;
+                Events["ConvertToTank"].guiActive = false;
                 Events["ConvertToWorkshop"].active = true;
+                Events["ConvertToWorkshop"].guiActive = true;
                 part.CrewCapacity = 0;
                 part.DespawnIVA();
             }
@@ -209,6 +263,8 @@ namespace WildBlueIndustries
             updateManagedModules();
             updateManagedResources();
             setObjectsVisible(false);
+            setObjectsVisible(workshopMesh, false);
+            setObjectsVisible(fuelTankMesh, true);
 
             //Dirty the GUI
             MonoUtilities.RefreshContextWindows(part);
@@ -216,6 +272,41 @@ namespace WildBlueIndustries
         #endregion
 
         #region Helpers
+        /// <summary>
+        /// Retrieves this module's config node from the part config.
+        /// </summary>
+        public ConfigNode getPartConfigNode(string className = "")
+        {
+            if (!HighLogic.LoadedSceneIsEditor && !HighLogic.LoadedSceneIsFlight)
+                return null;
+            if (part.partInfo == null || part.partInfo.partConfig == null)
+                return null;
+
+            ConfigNode[] nodes = part.partInfo.partConfig.GetNodes("MODULE");
+            for (int index = 0; index < nodes.Length; index++)
+            {
+                ConfigNode node = nodes[index];
+                if (!node.HasValue("name"))
+                    continue;
+
+                string configuredClassName = node.GetValue("name");
+                if (configuredClassName != ClassName && configuredClassName != className)
+                    continue;
+
+                if (!string.IsNullOrEmpty(moduleID) && node.HasValue("moduleID"))
+                {
+                    if (moduleID == node.GetValue("moduleID"))
+                        return node;
+                }
+                else
+                {
+                    return node;
+                }
+            }
+
+            return null;
+        }
+
         bool canReconfigure()
         {
             // Check for skill requirements
@@ -425,6 +516,42 @@ namespace WildBlueIndustries
 
             char[] delimiters = { ',' };
             string[] transformNames = managedObjects.Replace(" ", "").Split(delimiters);
+            Transform[] targets;
+
+            //Sanity checks
+            if (transformNames == null || transformNames.Length == 0)
+            {
+                Debug.Log("transformNames are null");
+                return;
+            }
+
+            //Go through all the named panels and find their transforms.
+            foreach (string transformName in transformNames)
+            {
+                //Get the targets
+                targets = part.FindModelTransforms(transformName);
+                if (targets == null)
+                {
+                    Debug.Log("No targets found for " + transformName);
+                    continue;
+                }
+
+                foreach (Transform target in targets)
+                {
+                    target.gameObject.SetActive(isVisible);
+                    Collider collider = target.gameObject.GetComponent<Collider>();
+                    if (collider != null)
+                        collider.enabled = isVisible;
+                }
+            }
+        }
+        public void setObjectsVisible(string meshNames, bool isVisible)
+        {
+            if (string.IsNullOrEmpty(meshNames))
+                return;
+
+            char[] delimiters = { ',' };
+            string[] transformNames = meshNames.Replace(" ", "").Split(delimiters);
             Transform[] targets;
 
             //Sanity checks

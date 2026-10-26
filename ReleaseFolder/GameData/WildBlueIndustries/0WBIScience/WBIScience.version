@@ -1,0 +1,23 @@
+{
+    "NAME":"WBIWidgets",
+    "URL":"https://raw.githubusercontent.com/Angel-125/WBIScience/main/ReleaseFolder/GameData/WildBlueIndustries/0WBIScience/WBIScience.version",
+    "DOWNLOAD":"https://github.com/Angel-125/WBIWidgets/releases",
+    "GITHUB":
+    {
+        "USERNAME":"Angel-125",
+        "REPOSITORY":"WBIWidgets",
+        "ALLOW_PRE_RELEASE":false
+    },
+    "VERSION":
+    {
+	"MAJOR":1,
+	"MINOR":5,
+	"PATCH":1
+    },
+    "KSP_VERSION_MIN":
+    {
+        "MAJOR":1,
+        "MINOR":12,
+        "PATCH":5
+    }
+}
