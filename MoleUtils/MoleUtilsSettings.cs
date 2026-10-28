@@ -17,20 +17,58 @@ namespace WildBlueIndustries
 
         public static bool EnableDebugLogging
         {
-            get { return HighLogic.CurrentGame.Parameters.CustomParams<MoleUtilsSettings>().enableDebugLogging; }
-            set { HighLogic.CurrentGame.Parameters.CustomParams<MoleUtilsSettings>().enableDebugLogging = value; }
+            get
+            {
+                MoleUtilsSettings settings = CurrentSettings;
+                return settings != null ? settings.enableDebugLogging : false;
+            }
+            set
+            {
+                MoleUtilsSettings settings = CurrentSettings;
+                if (settings != null)
+                    settings.enableDebugLogging = value;
+            }
         }
 
         public static bool PayToReconfigure
         {
-            get { return HighLogic.CurrentGame.Parameters.CustomParams<MoleUtilsSettings>().payToReconfigure; }
-            set { HighLogic.CurrentGame.Parameters.CustomParams<MoleUtilsSettings>().payToReconfigure = value; }
+            get
+            {
+                MoleUtilsSettings settings = CurrentSettings;
+                return settings != null ? settings.payToReconfigure : true;
+            }
+            set
+            {
+                MoleUtilsSettings settings = CurrentSettings;
+                if (settings != null)
+                    settings.payToReconfigure = value;
+            }
         }
 
         public static bool RequiresSkillCheck
         {
-            get { return HighLogic.CurrentGame.Parameters.CustomParams<MoleUtilsSettings>().requiresSkillCheck; }
-            set { HighLogic.CurrentGame.Parameters.CustomParams<MoleUtilsSettings>().requiresSkillCheck = value; }
+            get
+            {
+                MoleUtilsSettings settings = CurrentSettings;
+                return settings != null ? settings.requiresSkillCheck : true;
+            }
+            set
+            {
+                MoleUtilsSettings settings = CurrentSettings;
+                if (settings != null)
+                    settings.requiresSkillCheck = value;
+            }
+        }
+
+        private static MoleUtilsSettings CurrentSettings
+        {
+            get
+            {
+                if (HighLogic.CurrentGame == null || HighLogic.CurrentGame.Parameters == null)
+                    return null;
+
+                return HighLogic.CurrentGame.Parameters.CustomParams<MoleUtilsSettings>();
+            }
         }
 
         public override string DisplaySection

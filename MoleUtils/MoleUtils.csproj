@@ -91,6 +91,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WBIModuleMirroredSolarPanel.cs" />
     <Compile Include="WBIModuleLight.cs" />
+    <Compile Include="WBIModuleRCSTechCheck.cs" />
     <Compile Include="WBIWetWorkshop.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

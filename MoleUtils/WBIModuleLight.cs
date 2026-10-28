@@ -16,7 +16,7 @@ namespace WildBlueIndustries
     /// used by MOLE's station light and drydocks without requiring WBIResources.
     /// </summary>
     [KSPModule("Light")]
-    public class WBIModuleLight : PartModule
+    public class MOLEModuleLight : PartModule
     {
         private const int DefaultAnimationLayer = 3;
 
@@ -69,7 +69,7 @@ namespace WildBlueIndustries
         private float previousGreen;
         private float previousBlue;
         private float previousLevel;
-        private WBIModuleLightFixedUpdateHelper fixedUpdateHelper;
+        private MOLEModuleLightFixedUpdateHelper fixedUpdateHelper;
 
         [KSPEvent(guiActive = true, guiActiveEditor = true, guiName = "Toggle Lights", active = true,
             externalToEVAOnly = false, unfocusedRange = 3f, guiActiveUnfocused = true)]
@@ -115,7 +115,7 @@ namespace WildBlueIndustries
 
             if (fixedUpdateHelper == null)
             {
-                fixedUpdateHelper = part.gameObject.AddComponent<WBIModuleLightFixedUpdateHelper>();
+                fixedUpdateHelper = part.gameObject.AddComponent<MOLEModuleLightFixedUpdateHelper>();
                 fixedUpdateHelper.onFixedUpdate = onFixedUpdate;
             }
             fixedUpdateHelper.enabled = true;
@@ -251,7 +251,7 @@ namespace WildBlueIndustries
         }
     }
 
-    public class WBIModuleLightFixedUpdateHelper : MonoBehaviour
+    public class MOLEModuleLightFixedUpdateHelper : MonoBehaviour
     {
         public Callback onFixedUpdate;
 
