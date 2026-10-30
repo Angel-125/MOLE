@@ -1,0 +1,4 @@
+C:\KSPDev\GameData\WildBlueIndustries\MOLE\obj\Debug\WBIResources.csproj.AssemblyReference.cache
+C:\KSPDev\GameData\WildBlueIndustries\MOLE\obj\Debug\WBIResources.csproj.CoreCompileInputs.cache
+C:\KSPDev\GameData\WildBlueIndustries\MOLE\obj\Debug\WBIResources.dll
+C:\KSPDev\GameData\WildBlueIndustries\MOLE\obj\Debug\WBIResources.pdb

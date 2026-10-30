@@ -28,33 +28,10 @@ http://www.nro.gov/foia/declass/MOL.html
 Copy the contents of the zip file to your GameData directory. Be sure to overwrite existing files and replace them.
 
 ---CHANGES---
-New Parts
 
-- Bigby Endcap: This is an adapter part that connects 3.75 m (Size 3) to 1.875 m (Size 1p5) parts.
-- Mk1 Decoupler: Functionally identical to the stock TD-06 Decoupler, the Mk1 Decoupler is styled to match the R&R Section.
-- Mk2 Service Module: This service module is also an adapter between the 1.875 m and 2.5 m part sizes. It provides several internal layout variants to support a variety of different needs- no simple shelf or open configurations like the stock SM-18 Service Module!
-- Mk2 Crew Extension Module: This is a long-time coming, but this Bigby Crew Module replacement is a better match for the Restock Mk2 Command Pod.
-- Rendezvous & Recovery Section: Named after a section of the Gemini spacecraft, this kerbal version serves a similar function. Fitted over the stock Mk16 Parachute, it covers the chute during flight and decouples when needed. It also has a hollow space up top for a stock Mk12-R Radial-Mount Drogue Chute.  Finally, the R&R Section holds a small amount of Monopropellant.
+ Bug Fixes
 
-Changes
-
-- Removed hard dependency on WBIResources.
-- Added limited support for UnKerballedStart.
-- Updated model for the DR-18 Docking Ring.
-- Updated model for the Station Logistics Hub.
-- Updated model for the Bigby Fairing. It is taller than the original and holds resources. Parts existing in the field are unaffected.
-- Updated the Mk1 Radial Docking Port to have a non-crew hatch cosmetic part variant.
-- Updated the models for the Battery Module, Power Module, and Solar Battery Module. Parts existing in the field are unaffected.
-- Updated the model for the Bigby Orbital Workshop. The update gives it Restock texturing and fixes an issue where the part was slightly too tall. It is now properly 5.625 m tall- the same height as a stock S3-7200 and S3-3600 stacked together. Parts existing in the field are unaffected.
-- Updated the models for M.O.L.E., Mark One Botany Lab, and Mark One Habitat. This fixes a long-standing issue where the part lengths were slightly too tall. They're now properly 1.875 m tall- the same height the Making History FL-TX900. Parts existing in the field are unaffected.
-- If you have Buffalo 2 installed, then you'll get updated artwork for the M.O.L.E., Mark One Botany Lab, and Mark One Habitat, but you'll need to build new craft with the revised parts to make use of them. Uninstalling Buffalo 2 won't affect the parts in the field, other than returning to their original appearance.
-- Deprecated the old Airlock Module- the Appaloosa Orbital Module functionally takes its place.
-- Deprecated the old OMS Kit.
-- Deprecated the old Korona.
-- Hid a bunch of parts that have Restock/RestockPlus equivalents. They'll show up again if you uninstall Restock/RestockPlus. Existing craft will be unaffected.
-- Updated converter efficiency ratings- experienced kerbals matter!
-- Fixed issue where WBIWetWorkshop wouldn't properly let you convert a tank into a workshop while in flight.
-- Fixed resource issues with WBIWetWorkshop.
+- Fixed incorrect cost and mass reports of several parts.
 
 ---END CHANGES---
 
